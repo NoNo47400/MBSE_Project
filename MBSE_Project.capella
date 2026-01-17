@@ -44,6 +44,56 @@
           id="1a0da006-d435-48be-bdcb-428d2ed7c469" name="Operational Activities">
         <ownedOperationalActivities xsi:type="org.polarsys.capella.core.data.oa:OperationalActivity"
             id="a5f46d92-34cd-493b-ac9e-9f79391cc92f" name="Root Operational Activity">
+          <ownedFunctionalChains xsi:type="org.polarsys.capella.core.data.oa:OperationalProcess"
+              id="a49a023b-ae89-4c08-8dab-7307e5e309c4" name="Analyser l'environnement en temps réel">
+            <ownedFunctionalChainInvolvements xsi:type="org.polarsys.capella.core.data.fa:FunctionalChainInvolvementLink"
+                id="179cb40e-4017-49e1-b2e4-f7feec558cd0" involved="#d2c1e623-b5ad-4523-ab24-60385bd879ea"
+                source="#aa66a164-63cb-4b19-9a35-9238b4be4838" target="#d227fd51-5012-43ef-b7e4-562133b358e1"/>
+            <ownedFunctionalChainInvolvements xsi:type="org.polarsys.capella.core.data.fa:FunctionalChainInvolvementFunction"
+                id="d227fd51-5012-43ef-b7e4-562133b358e1" involved="#3a09f48c-ed64-48c6-9d46-a6605f458cfc"/>
+            <ownedFunctionalChainInvolvements xsi:type="org.polarsys.capella.core.data.fa:FunctionalChainInvolvementFunction"
+                id="aa66a164-63cb-4b19-9a35-9238b4be4838" involved="#2bfa7746-932f-41e3-abee-3d4a5ca4fad3"/>
+            <ownedFunctionalChainInvolvements xsi:type="org.polarsys.capella.core.data.fa:FunctionalChainInvolvementLink"
+                id="6cf81d6a-e57f-4f23-b7d4-68d7c4c83f5a" involved="#728c1072-d3bf-4359-9e38-90caa3b28e08"
+                source="#432a47f6-a62d-4774-ac61-d696e050636f" target="#d227fd51-5012-43ef-b7e4-562133b358e1"/>
+            <ownedFunctionalChainInvolvements xsi:type="org.polarsys.capella.core.data.fa:FunctionalChainInvolvementFunction"
+                id="432a47f6-a62d-4774-ac61-d696e050636f" involved="#0473a58d-43c2-4a77-b1fa-30524e5dc6a2"/>
+            <ownedFunctionalChainInvolvements xsi:type="org.polarsys.capella.core.data.fa:FunctionalChainInvolvementLink"
+                id="dd3cc51f-ff3e-4557-a898-c3bf4b897a59" involved="#7757c963-ace2-452a-83cf-4e349bc25535"
+                source="#12fa1835-7437-471a-9126-1d1de635685b" target="#d227fd51-5012-43ef-b7e4-562133b358e1"/>
+            <ownedFunctionalChainInvolvements xsi:type="org.polarsys.capella.core.data.fa:FunctionalChainInvolvementFunction"
+                id="12fa1835-7437-471a-9126-1d1de635685b" involved="#bb3ff8af-7d40-4021-b98b-2fcc76c27bb2"/>
+          </ownedFunctionalChains>
+          <ownedFunctionalChains xsi:type="org.polarsys.capella.core.data.oa:OperationalProcess"
+              id="2a30365a-2a06-4e36-b193-9f53055262cc" name="Se déplacer intelligemment le long d'un chemin quelconque">
+            <ownedFunctionalChainInvolvements xsi:type="org.polarsys.capella.core.data.fa:FunctionalChainInvolvementLink"
+                id="b3f6708e-1fc5-44ec-93fa-bbe9b1cc7f70" involved="#320798a7-8f5e-419c-ae62-2cd93cba40aa"
+                source="#c94713a6-529e-4295-8c04-ebd36cea2881" target="#6f3fbfe2-a3ba-4f6e-94c8-4118019f0e55"/>
+            <ownedFunctionalChainInvolvements xsi:type="org.polarsys.capella.core.data.fa:FunctionalChainInvolvementFunction"
+                id="6f3fbfe2-a3ba-4f6e-94c8-4118019f0e55" involved="#e6ca8b94-e0cb-4fc9-b7e8-3c76c26e8a9d"/>
+            <ownedFunctionalChainInvolvements xsi:type="org.polarsys.capella.core.data.fa:FunctionalChainInvolvementFunction"
+                id="c94713a6-529e-4295-8c04-ebd36cea2881" involved="#48e84c42-12d6-4105-9af2-06f87fb177f7"/>
+            <ownedFunctionalChainInvolvements xsi:type="org.polarsys.capella.core.data.fa:FunctionalChainInvolvementLink"
+                id="6b349db3-0cde-44f4-88ac-2b280b166e97" involved="#134ff492-873b-4d07-ad8b-94dd020f8879"
+                source="#96692689-2cc6-45d1-aa66-9e94fa5fdc2e" target="#c94713a6-529e-4295-8c04-ebd36cea2881"/>
+            <ownedFunctionalChainInvolvements xsi:type="org.polarsys.capella.core.data.fa:FunctionalChainInvolvementFunction"
+                id="96692689-2cc6-45d1-aa66-9e94fa5fdc2e" involved="#58e30b86-e34b-4521-9e85-cb3e62d8211e"/>
+            <ownedFunctionalChainInvolvements xsi:type="org.polarsys.capella.core.data.fa:FunctionalChainInvolvementLink"
+                id="f1cc1c31-a11f-4c74-96ba-a53d50de2b9d" involved="#e8d4efc1-2571-46e5-86bb-78582998d9e1"
+                source="#c94713a6-529e-4295-8c04-ebd36cea2881" target="#e11d0268-3ad2-4ad9-8e0e-bf2f2cc93393"/>
+            <ownedFunctionalChainInvolvements xsi:type="org.polarsys.capella.core.data.fa:FunctionalChainInvolvementFunction"
+                id="e11d0268-3ad2-4ad9-8e0e-bf2f2cc93393" involved="#595bbc6a-aa4e-49e5-b575-b733b126f3d6"/>
+            <ownedFunctionalChainInvolvements xsi:type="org.polarsys.capella.core.data.fa:FunctionalChainInvolvementLink"
+                id="fb05cfc5-a44c-4ce9-848e-8dc09ed7a8dc" involved="#c12c077c-141d-4292-9654-e4af397ea7ea"
+                source="#c94713a6-529e-4295-8c04-ebd36cea2881" target="#f10f3c74-3cb7-4d1e-8a1e-9911b12a3bb6"/>
+            <ownedFunctionalChainInvolvements xsi:type="org.polarsys.capella.core.data.fa:FunctionalChainInvolvementFunction"
+                id="f10f3c74-3cb7-4d1e-8a1e-9911b12a3bb6" involved="#e2cfe51b-29e5-402e-8348-5d3d18b7d092"/>
+            <ownedFunctionalChainInvolvements xsi:type="org.polarsys.capella.core.data.fa:FunctionalChainInvolvementLink"
+                id="04a5a414-209f-4462-b548-021f3ca4a45c" involved="#82cf328b-9978-40bf-8876-d026474d576a"
+                source="#f10f3c74-3cb7-4d1e-8a1e-9911b12a3bb6" target="#9aea6d20-8deb-484a-9bd2-b1136440dfa2"/>
+            <ownedFunctionalChainInvolvements xsi:type="org.polarsys.capella.core.data.fa:FunctionalChainInvolvementFunction"
+                id="9aea6d20-8deb-484a-9bd2-b1136440dfa2" involved="#bb3ff8af-7d40-4021-b98b-2fcc76c27bb2"/>
+          </ownedFunctionalChains>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.oa:OperationalActivity"
               id="e2cfe51b-29e5-402e-8348-5d3d18b7d092" name="Définir le parcours d'inspection"/>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.oa:OperationalActivity"

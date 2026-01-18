@@ -157,7 +157,7 @@
               id="edaaa761-50fe-492a-b767-6985421feb65" involved="#9c51e97c-c488-4cfe-b84c-e3b0cd92ab17"/>
         </ownedOperationalCapabilities>
         <ownedOperationalCapabilities xsi:type="org.polarsys.capella.core.data.oa:OperationalCapability"
-            id="6c5fd6ce-ae42-4d01-96fa-8ab1c6e0aa78" name="Surveiller les zones prédéfinies"
+            id="6c5fd6ce-ae42-4d01-96fa-8ab1c6e0aa78" name="Inspecter la présence d’objets"
             summary="Capacité d’inspecter la présence d’objets sur son parcours">
           <ownedEntityOperationalCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.oa:EntityOperationalCapabilityInvolvement"
               id="a63e8527-620f-4cb7-94b6-2793461dae31" involved="#9c51e97c-c488-4cfe-b84c-e3b0cd92ab17"/>
@@ -189,6 +189,12 @@
             summary="Toutes les heures, le système démarre une nouvelle inspection">
           <ownedEntityOperationalCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.oa:EntityOperationalCapabilityInvolvement"
               id="2443e517-d032-45d7-8b36-577bb25e1f6c" involved="#9c51e97c-c488-4cfe-b84c-e3b0cd92ab17"/>
+        </ownedOperationalCapabilities>
+        <ownedOperationalCapabilities xsi:type="org.polarsys.capella.core.data.oa:OperationalCapability"
+            id="7e925b8f-8f3a-45b8-98e4-e937d22a40fb" name="Définir les objets à detecter"
+            summary="Capacité à récupérer des images des objets détectés pendant l’inspection en temps réel">
+          <ownedEntityOperationalCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.oa:EntityOperationalCapabilityInvolvement"
+              id="69cb02d8-2074-4eeb-9b94-788f2299c321" involved="#9c51e97c-c488-4cfe-b84c-e3b0cd92ab17"/>
         </ownedOperationalCapabilities>
       </ownedAbstractCapabilityPkg>
       <ownedInterfacePkg xsi:type="org.polarsys.capella.core.data.cs:InterfacePkg"

@@ -750,10 +750,10 @@
       <ownedAbstractCapabilityPkg xsi:type="org.polarsys.capella.core.data.ctx:CapabilityPkg"
           id="3a473a37-5511-4891-8f28-d45b5479662c" name="Capabilities">
         <ownedCapabilities xsi:type="org.polarsys.capella.core.data.ctx:Capability"
-            id="5b58b807-9f85-44dc-b165-db08eb6c0e90" name="Communiquer avec la supervision "
+            id="5b58b807-9f85-44dc-b165-db08eb6c0e90" name="Communiquer le visuel des objects avec la supervision "
             summary="Recevoir des ordres, envoyer des images" description="&lt;p>Ici est compris le logiciel/app pour d&amp;eacute;finir le chemin et retransmettre les images et flux vid&amp;eacute;o&lt;/p>&#xA;">
           <includes xsi:type="org.polarsys.capella.core.data.interaction:AbstractCapabilityInclude"
-              id="5bf0e671-bdad-4878-8aa0-f5662a89b092" included="#f2a7f567-bf0f-458d-ab96-227fab43855f"/>
+              id="3aa415c7-84b4-4429-824e-3a50c7b71db9" included="#f2a7f567-bf0f-458d-ab96-227fab43855f"/>
           <ownedCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.ctx:CapabilityInvolvement"
               id="ad649291-3682-46d2-b534-3a812eeeba31" involved="#c9954e88-423f-4442-9dcd-8c6cdd7711db"/>
           <ownedCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.ctx:CapabilityInvolvement"
@@ -767,16 +767,14 @@
           <ownedCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.ctx:CapabilityInvolvement"
               id="3bc1c512-4e48-4d3e-8e2d-2e2e861e46f5" involved="#2029eaf2-3774-40e2-b42f-7a6991bc0e21"/>
           <ownedCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.ctx:CapabilityInvolvement"
-              id="2f5668c1-854d-4126-a728-35c17ff05320" involved="#c88acec8-687d-4648-992c-4f3ef307e8a0"/>
-          <ownedCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.ctx:CapabilityInvolvement"
               id="76278abc-6443-44fc-a087-72f69b1e2a18" involved="#84830790-a05b-4eec-a9ba-14de87f1550d"/>
         </ownedCapabilities>
         <ownedCapabilities xsi:type="org.polarsys.capella.core.data.ctx:Capability"
             id="bd69ccc1-a93c-43bb-813f-f0d7be9bf5ed" name="Parcourir le tracé en évitant les obstacles">
           <includes xsi:type="org.polarsys.capella.core.data.interaction:AbstractCapabilityInclude"
-              id="74febf23-1225-4881-acbb-27517bc23885" included="#f2a7f567-bf0f-458d-ab96-227fab43855f"/>
-          <includes xsi:type="org.polarsys.capella.core.data.interaction:AbstractCapabilityInclude"
               id="7bf5aae9-2f62-488b-8894-80808ae85c4e" included="#2f401f09-5496-4dc5-9e23-d0b66aabb3b2"/>
+          <includes xsi:type="org.polarsys.capella.core.data.interaction:AbstractCapabilityInclude"
+              id="aafa2dcb-d953-400d-9519-9bdea1357a24" included="#45c67b7e-d5d8-4eae-ac60-602a85b72dd6"/>
           <ownedCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.ctx:CapabilityInvolvement"
               id="9957ce85-96f3-43ec-bd9c-47314d71d642" involved="#c9954e88-423f-4442-9dcd-8c6cdd7711db"/>
         </ownedCapabilities>
@@ -790,22 +788,11 @@
               id="dda63707-98ce-4276-af9c-8f38a96aaade" involved="#c9954e88-423f-4442-9dcd-8c6cdd7711db"/>
         </ownedCapabilities>
         <ownedCapabilities xsi:type="org.polarsys.capella.core.data.ctx:Capability"
-            id="f2a7f567-bf0f-458d-ab96-227fab43855f" name="Détecter les objets et obstacles">
-          <ownedConstraints xsi:type="org.polarsys.capella.core.data.capellacore:Constraint"
-              id="d4b51b52-34eb-4b4b-8e4d-94b9805887de" name="Détecter et éviter les obstacles statiques et en mouvement (1m/s max)"
-              constrainedElements="#f2a7f567-bf0f-458d-ab96-227fab43855f">
-            <ownedSpecification xsi:type="org.polarsys.capella.core.data.information.datavalue:OpaqueExpression"
-                id="e43c25b3-2622-4706-bfba-7b7620ef7572">
-              <bodies></bodies>
-              <languages>capella:linkedText</languages>
-            </ownedSpecification>
-          </ownedConstraints>
+            id="f2a7f567-bf0f-458d-ab96-227fab43855f" name="Détecter les objets d'interet">
           <ownedCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.ctx:CapabilityInvolvement"
               id="a75ecb4f-c0f0-4f51-871e-feda308f32b7" involved="#c9954e88-423f-4442-9dcd-8c6cdd7711db"/>
           <ownedCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.ctx:CapabilityInvolvement"
               id="eb6025b2-0de3-41bc-8c8d-2b169e8cb252" involved="#df3b9eaa-7909-4b7e-8a00-a9f1b09d83da"/>
-          <ownedCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.ctx:CapabilityInvolvement"
-              id="5e6a6611-53d2-4efe-a30f-50b904f466fe" involved="#57c00f5f-0a15-4c36-aca1-dead8c5705b1"/>
           <ownedCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.ctx:CapabilityInvolvement"
               id="4ea64ee3-14ce-4b25-a517-7bc1bd60ab34" involved="#2029eaf2-3774-40e2-b42f-7a6991bc0e21"/>
         </ownedCapabilities>
@@ -820,12 +807,30 @@
               <languages>capella:linkedText</languages>
             </ownedSpecification>
           </ownedConstraints>
+          <ownedConstraints xsi:type="org.polarsys.capella.core.data.capellacore:Constraint"
+              id="d4b51b52-34eb-4b4b-8e4d-94b9805887de" name="Détecter et éviter les obstacles statiques et en mouvement (1m/s max)"
+              constrainedElements="#2f401f09-5496-4dc5-9e23-d0b66aabb3b2 #45c67b7e-d5d8-4eae-ac60-602a85b72dd6">
+            <ownedSpecification xsi:type="org.polarsys.capella.core.data.information.datavalue:OpaqueExpression"
+                id="e43c25b3-2622-4706-bfba-7b7620ef7572">
+              <bodies></bodies>
+              <languages>capella:linkedText</languages>
+            </ownedSpecification>
+          </ownedConstraints>
           <includes xsi:type="org.polarsys.capella.core.data.interaction:AbstractCapabilityInclude"
-              id="411450b7-e855-4cd7-a9b7-a9efd5fc8b65" included="#f2a7f567-bf0f-458d-ab96-227fab43855f"/>
+              id="215c787c-f1ba-48ea-a496-3443ad634ebc" included="#45c67b7e-d5d8-4eae-ac60-602a85b72dd6"/>
           <ownedCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.ctx:CapabilityInvolvement"
               id="53f41418-2db8-4869-84da-5efd76bcdda3" involved="#c9954e88-423f-4442-9dcd-8c6cdd7711db"/>
           <ownedCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.ctx:CapabilityInvolvement"
               id="9145c54a-8549-4418-b8c9-b0a16f69a8ad" involved="#2029eaf2-3774-40e2-b42f-7a6991bc0e21"/>
+        </ownedCapabilities>
+        <ownedCapabilities xsi:type="org.polarsys.capella.core.data.ctx:Capability"
+            id="45c67b7e-d5d8-4eae-ac60-602a85b72dd6" name="Détecter les obstacles à éviter">
+          <ownedCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.ctx:CapabilityInvolvement"
+              id="fad53298-4fa3-44f9-bccc-973f1fc2f5d1" involved="#c9954e88-423f-4442-9dcd-8c6cdd7711db"/>
+          <ownedCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.ctx:CapabilityInvolvement"
+              id="0ffc677e-ac22-4553-8a22-c1a056ff8baa" involved="#57c00f5f-0a15-4c36-aca1-dead8c5705b1"/>
+          <ownedCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.ctx:CapabilityInvolvement"
+              id="04ae493c-e20e-4828-83cb-ef414871b6c1" involved="#2029eaf2-3774-40e2-b42f-7a6991bc0e21"/>
         </ownedCapabilities>
       </ownedAbstractCapabilityPkg>
       <ownedInterfacePkg xsi:type="org.polarsys.capella.core.data.cs:InterfacePkg"

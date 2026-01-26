@@ -750,163 +750,14 @@
       <ownedAbstractCapabilityPkg xsi:type="org.polarsys.capella.core.data.ctx:CapabilityPkg"
           id="3a473a37-5511-4891-8f28-d45b5479662c" name="Capabilities">
         <ownedCapabilities xsi:type="org.polarsys.capella.core.data.ctx:Capability"
-            id="1245de6d-83d1-44af-8a41-53bd45c80a45" name="Surveiller le périmètre"
-            summary="Détecter les anomalies">
-          <ownedScenarios xsi:type="org.polarsys.capella.core.data.interaction:Scenario"
-              id="923ced5e-4fdd-4afd-a5a7-e3731cb5486c" name="[ES] Surveiller le périmètre"
-              kind="DATA_FLOW">
-            <ownedInstanceRoles xsi:type="org.polarsys.capella.core.data.interaction:InstanceRole"
-                id="6b5569af-47fd-4536-86ba-83034ee25315" name="Robot" representedInstance="#323b23b4-2b26-40cd-8860-d5fb78ac11d6"/>
-            <ownedInstanceRoles xsi:type="org.polarsys.capella.core.data.interaction:InstanceRole"
-                id="ff484d49-af6f-4ef1-a5cf-eed731e92fd8" name="Objet d'intêret "
-                representedInstance="#1ed2093f-3c80-47f5-b3ff-ea6e006ec560"/>
-            <ownedInstanceRoles xsi:type="org.polarsys.capella.core.data.interaction:InstanceRole"
-                id="831a92bf-f120-4bb9-ae28-eff8065195ec" name="Obstacles (mobiles et statiques)"
-                representedInstance="#2afa0bd7-ade2-4681-9e81-b0502209eeaf"/>
-            <ownedInstanceRoles xsi:type="org.polarsys.capella.core.data.interaction:InstanceRole"
-                id="5c0e1fca-64c6-4401-a74f-e6f1325f73df" name="Météo" representedInstance="#f3ccf198-8f85-414f-980f-2daa01cd2ef0"/>
-            <ownedInstanceRoles xsi:type="org.polarsys.capella.core.data.interaction:InstanceRole"
-                id="82a987d9-5a6b-44ef-91ac-0aa673ed324d" name="Campus" representedInstance="#efd89ec1-ef7c-4f5e-8890-dafcb89d4c26"/>
-            <ownedInteractionFragments xsi:type="org.polarsys.capella.core.data.interaction:InteractionState"
-                id="7a912218-9fb3-42fd-9afd-cfb05eec5843" coveredInstanceRoles="#6b5569af-47fd-4536-86ba-83034ee25315"
-                relatedAbstractState="#5dd2b8b5-d9ab-435a-a5b3-8f67d9e99c2e"/>
-            <ownedInteractionFragments xsi:type="org.polarsys.capella.core.data.interaction:InteractionState"
-                id="ffa12a7a-b7c2-4a9d-8e49-63f2f33c9204" coveredInstanceRoles="#6b5569af-47fd-4536-86ba-83034ee25315"
-                relatedAbstractState="#5dd2b8b5-d9ab-435a-a5b3-8f67d9e99c2e"/>
-            <ownedInteractionFragments xsi:type="org.polarsys.capella.core.data.interaction:FragmentEnd"
-                id="7aedb5f0-9952-4e03-a644-717a0c4a11ab" name="start" coveredInstanceRoles="#6b5569af-47fd-4536-86ba-83034ee25315 #ff484d49-af6f-4ef1-a5cf-eed731e92fd8 #831a92bf-f120-4bb9-ae28-eff8065195ec #5c0e1fca-64c6-4401-a74f-e6f1325f73df #82a987d9-5a6b-44ef-91ac-0aa673ed324d"/>
-            <ownedInteractionFragments xsi:type="org.polarsys.capella.core.data.interaction:InteractionOperand"
-                id="ef238b18-cb64-4275-b1f7-e2464b490c7f" name="operand 1" coveredInstanceRoles="#6b5569af-47fd-4536-86ba-83034ee25315 #ff484d49-af6f-4ef1-a5cf-eed731e92fd8 #831a92bf-f120-4bb9-ae28-eff8065195ec #5c0e1fca-64c6-4401-a74f-e6f1325f73df #82a987d9-5a6b-44ef-91ac-0aa673ed324d"/>
-            <ownedInteractionFragments xsi:type="org.polarsys.capella.core.data.interaction:InteractionState"
-                id="9f5d8742-d94f-447b-a2db-fb2026fbb7e5" name="Identifier les anomalies"
-                coveredInstanceRoles="#6b5569af-47fd-4536-86ba-83034ee25315" relatedAbstractFunction="#da4cb0e5-9612-49e1-89d6-b7096dc377af"/>
-            <ownedInteractionFragments xsi:type="org.polarsys.capella.core.data.interaction:InteractionState"
-                id="05aea16b-4c42-4d76-b726-4556013cd00d" name="Occuper l'espace (Obstacle)"
-                coveredInstanceRoles="#831a92bf-f120-4bb9-ae28-eff8065195ec" relatedAbstractFunction="#e2249a22-7869-4aeb-9544-715a111e6883"/>
-            <ownedInteractionFragments xsi:type="org.polarsys.capella.core.data.interaction:InteractionState"
-                id="517a377a-964c-40e8-9e98-0ae39387eaa1" name="Gérer conditions Météo"
-                coveredInstanceRoles="#5c0e1fca-64c6-4401-a74f-e6f1325f73df" relatedAbstractFunction="#2fc29ef3-8068-4790-bb0d-e9f3673afa33"/>
-            <ownedInteractionFragments xsi:type="org.polarsys.capella.core.data.interaction:InteractionState"
-                id="f3af2aa1-3148-40f2-af5e-a9c2d36333a5" name="Occuper l'espace (Intêret)"
-                coveredInstanceRoles="#ff484d49-af6f-4ef1-a5cf-eed731e92fd8" relatedAbstractFunction="#231dc72b-9120-48df-8795-9322ff75e85c"/>
-            <ownedInteractionFragments xsi:type="org.polarsys.capella.core.data.interaction:InteractionState"
-                id="9b99336d-25c0-4c86-a8ad-1f3a28723339" name="Renvoyer la lumière"
-                coveredInstanceRoles="#82a987d9-5a6b-44ef-91ac-0aa673ed324d" relatedAbstractFunction="#6cb93a3b-b3aa-4702-9941-bba00b001715"/>
-            <ownedInteractionFragments xsi:type="org.polarsys.capella.core.data.interaction:InteractionState"
-                id="d6235f7f-7032-4bac-b74e-f927ab590696" name="Identifier les anomalies"
-                coveredInstanceRoles="#6b5569af-47fd-4536-86ba-83034ee25315" relatedAbstractFunction="#da4cb0e5-9612-49e1-89d6-b7096dc377af"/>
-            <ownedInteractionFragments xsi:type="org.polarsys.capella.core.data.interaction:InteractionState"
-                id="0ffce677-0e6a-4024-9281-8fd04e29b14b" name="Transmettre le flux d'informations"
-                coveredInstanceRoles="#6b5569af-47fd-4536-86ba-83034ee25315" relatedAbstractFunction="#e91353ce-5b4d-40f6-8d01-26a4b90d0ae9"/>
-            <ownedInteractionFragments xsi:type="org.polarsys.capella.core.data.interaction:InteractionState"
-                id="39dd7f16-70ee-4525-86e4-25925fa5271d" name="Occuper l'espace (Intêret)"
-                coveredInstanceRoles="#ff484d49-af6f-4ef1-a5cf-eed731e92fd8" relatedAbstractFunction="#231dc72b-9120-48df-8795-9322ff75e85c"/>
-            <ownedInteractionFragments xsi:type="org.polarsys.capella.core.data.interaction:InteractionState"
-                id="55d037af-14e8-4a6a-b416-be3dfc44b65a" name="Renvoyer la lumière"
-                coveredInstanceRoles="#82a987d9-5a6b-44ef-91ac-0aa673ed324d" relatedAbstractFunction="#6cb93a3b-b3aa-4702-9941-bba00b001715"/>
-            <ownedInteractionFragments xsi:type="org.polarsys.capella.core.data.interaction:InteractionState"
-                id="4feb779d-7130-4fee-b5cb-77949c9b1cca" name="Gérer conditions Météo"
-                coveredInstanceRoles="#5c0e1fca-64c6-4401-a74f-e6f1325f73df" relatedAbstractFunction="#2fc29ef3-8068-4790-bb0d-e9f3673afa33"/>
-            <ownedInteractionFragments xsi:type="org.polarsys.capella.core.data.interaction:InteractionState"
-                id="0e2886d1-c38e-4937-a735-8a5e352cb377" name="Occuper l'espace (Obstacle)"
-                coveredInstanceRoles="#831a92bf-f120-4bb9-ae28-eff8065195ec" relatedAbstractFunction="#e2249a22-7869-4aeb-9544-715a111e6883"/>
-            <ownedInteractionFragments xsi:type="org.polarsys.capella.core.data.interaction:InteractionState"
-                id="b57449fa-3184-4e0a-8e8f-3678bc94258b" name="Transmettre le flux d'informations"
-                coveredInstanceRoles="#6b5569af-47fd-4536-86ba-83034ee25315" relatedAbstractFunction="#e91353ce-5b4d-40f6-8d01-26a4b90d0ae9"/>
-            <ownedInteractionFragments xsi:type="org.polarsys.capella.core.data.interaction:InteractionState"
-                id="9d022098-8762-47d0-89d2-b636e3ca6097" name="Prévenir la supervision"
-                coveredInstanceRoles="#6b5569af-47fd-4536-86ba-83034ee25315" relatedAbstractFunction="#8487aaf9-6dd2-4edb-8b7f-4155abd2d794"/>
-            <ownedInteractionFragments xsi:type="org.polarsys.capella.core.data.interaction:InteractionState"
-                id="82ee84b6-22da-4e05-8480-d6c7558725a1" name="Prévenir la supervision"
-                coveredInstanceRoles="#6b5569af-47fd-4536-86ba-83034ee25315" relatedAbstractFunction="#8487aaf9-6dd2-4edb-8b7f-4155abd2d794"/>
-            <ownedInteractionFragments xsi:type="org.polarsys.capella.core.data.interaction:FragmentEnd"
-                id="076d5ca1-8e42-469c-9ccf-57de194144b0" name="end" coveredInstanceRoles="#6b5569af-47fd-4536-86ba-83034ee25315 #ff484d49-af6f-4ef1-a5cf-eed731e92fd8 #831a92bf-f120-4bb9-ae28-eff8065195ec #5c0e1fca-64c6-4401-a74f-e6f1325f73df #82a987d9-5a6b-44ef-91ac-0aa673ed324d"/>
-            <ownedTimeLapses xsi:type="org.polarsys.capella.core.data.interaction:StateFragment"
-                id="2e290a22-a076-4ddb-a4e2-7a7e982aefb6" start="#7a912218-9fb3-42fd-9afd-cfb05eec5843"
-                finish="#ffa12a7a-b7c2-4a9d-8e49-63f2f33c9204" relatedAbstractState="#5dd2b8b5-d9ab-435a-a5b3-8f67d9e99c2e"/>
-            <ownedTimeLapses xsi:type="org.polarsys.capella.core.data.interaction:StateFragment"
-                id="498a0e6a-50db-40bf-9d81-ea41c752c30f" start="#f3af2aa1-3148-40f2-af5e-a9c2d36333a5"
-                finish="#39dd7f16-70ee-4525-86e4-25925fa5271d" relatedAbstractFunction="#231dc72b-9120-48df-8795-9322ff75e85c"/>
-            <ownedTimeLapses xsi:type="org.polarsys.capella.core.data.interaction:StateFragment"
-                id="a61bf841-9e80-4ec6-a0e5-14d87ef46361" start="#9f5d8742-d94f-447b-a2db-fb2026fbb7e5"
-                finish="#d6235f7f-7032-4bac-b74e-f927ab590696" relatedAbstractFunction="#da4cb0e5-9612-49e1-89d6-b7096dc377af"/>
-            <ownedTimeLapses xsi:type="org.polarsys.capella.core.data.interaction:StateFragment"
-                id="ba09dd16-676a-4fe8-9be6-981030577086" start="#0ffce677-0e6a-4024-9281-8fd04e29b14b"
-                finish="#b57449fa-3184-4e0a-8e8f-3678bc94258b" relatedAbstractFunction="#e91353ce-5b4d-40f6-8d01-26a4b90d0ae9"/>
-            <ownedTimeLapses xsi:type="org.polarsys.capella.core.data.interaction:StateFragment"
-                id="bd559ed3-1a3d-4fda-bf4d-b7becb684201" start="#9d022098-8762-47d0-89d2-b636e3ca6097"
-                finish="#82ee84b6-22da-4e05-8480-d6c7558725a1" relatedAbstractFunction="#8487aaf9-6dd2-4edb-8b7f-4155abd2d794"/>
-            <ownedTimeLapses xsi:type="org.polarsys.capella.core.data.interaction:CombinedFragment"
-                id="2aa14f30-b1d1-4942-9afe-ad26ac87b9a8" name="combined fragment"
-                start="#7aedb5f0-9952-4e03-a644-717a0c4a11ab" finish="#076d5ca1-8e42-469c-9ccf-57de194144b0"
-                operator="LOOP" referencedOperands="#ef238b18-cb64-4275-b1f7-e2464b490c7f"/>
-            <ownedTimeLapses xsi:type="org.polarsys.capella.core.data.interaction:StateFragment"
-                id="2a17e5aa-c93a-48ca-ac3e-1045c4a72e2b" start="#05aea16b-4c42-4d76-b726-4556013cd00d"
-                finish="#0e2886d1-c38e-4937-a735-8a5e352cb377" relatedAbstractFunction="#e2249a22-7869-4aeb-9544-715a111e6883"/>
-            <ownedTimeLapses xsi:type="org.polarsys.capella.core.data.interaction:StateFragment"
-                id="ad96336f-8ad1-425a-b047-5bee74f6a094" start="#517a377a-964c-40e8-9e98-0ae39387eaa1"
-                finish="#4feb779d-7130-4fee-b5cb-77949c9b1cca" relatedAbstractFunction="#2fc29ef3-8068-4790-bb0d-e9f3673afa33"/>
-            <ownedTimeLapses xsi:type="org.polarsys.capella.core.data.interaction:StateFragment"
-                id="a27c16b3-5c21-4d88-8914-56172e49d750" start="#9b99336d-25c0-4c86-a8ad-1f3a28723339"
-                finish="#55d037af-14e8-4a6a-b416-be3dfc44b65a" relatedAbstractFunction="#6cb93a3b-b3aa-4702-9941-bba00b001715"/>
-          </ownedScenarios>
-          <ownedCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.ctx:CapabilityInvolvement"
-              id="22c26d8b-1a14-4468-9623-be62e83d754e" involved="#c9954e88-423f-4442-9dcd-8c6cdd7711db"/>
-          <ownedCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.ctx:CapabilityInvolvement"
-              id="5a56134f-9f75-4d8a-9357-0f5d301831e0" involved="#df3b9eaa-7909-4b7e-8a00-a9f1b09d83da"/>
-          <ownedCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.ctx:CapabilityInvolvement"
-              id="2f36306c-dac2-44e3-af4d-45461fe20332" involved="#61f0ec69-5266-4b74-a8a7-e05a3f2feaba"/>
-          <ownedCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.ctx:CapabilityInvolvement"
-              id="2a1550c4-6b2f-4dfd-a1d9-7343a70df89c" involved="#f57d6ffb-72a2-4486-ad15-682e1a9eb97e"/>
-          <ownedCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.ctx:CapabilityInvolvement"
-              id="5c148be8-d053-4d3f-887a-801316d48a93" involved="#c88acec8-687d-4648-992c-4f3ef307e8a0"/>
-          <ownedCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.ctx:CapabilityInvolvement"
-              id="4e3e8e49-344e-454f-a1cd-bcba8c3988a2" involved="#8ddff415-f10b-4557-adc7-7df425a1ace9"/>
-          <ownedCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.ctx:CapabilityInvolvement"
-              id="bd6421f4-467d-4186-b532-e41932b8936e" involved="#2029eaf2-3774-40e2-b42f-7a6991bc0e21"/>
-          <ownedCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.ctx:CapabilityInvolvement"
-              id="0f514d16-cd2c-47aa-853a-3a827a98ecbc" involved="#57c00f5f-0a15-4c36-aca1-dead8c5705b1"/>
-        </ownedCapabilities>
-        <ownedCapabilities xsi:type="org.polarsys.capella.core.data.ctx:Capability"
-            id="ac6b9b17-4d82-4db1-bd2b-9a0536021417" name="Naviguer sur le campus"
-            summary="Capacité de mouvement et d'évitements d'obstacles">
-          <ownedScenarios xsi:type="org.polarsys.capella.core.data.interaction:Scenario"
-              id="6b3781d4-2df6-40b3-80d3-9cae35e02d99" name="[FS] Naviguer sur le campus"
-              kind="FUNCTIONAL">
-            <ownedInstanceRoles xsi:type="org.polarsys.capella.core.data.interaction:InstanceRole"
-                id="b662c999-c333-4203-a3db-da0c83a518a9" name="Gérer l'état de la batterie"
-                representedInstance="#91a883c3-612e-4183-a0d7-91941b3ef2a0"/>
-          </ownedScenarios>
-          <ownedAbstractFunctionAbstractCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.interaction:AbstractFunctionAbstractCapabilityInvolvement"
-              id="6a927bab-1b00-4500-8189-6e558b637ea1" involved="#91a883c3-612e-4183-a0d7-91941b3ef2a0"/>
-          <ownedCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.ctx:CapabilityInvolvement"
-              id="0a66c426-8b1c-4dc1-9af0-8982d2546c1c" involved="#c9954e88-423f-4442-9dcd-8c6cdd7711db"/>
-          <ownedCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.ctx:CapabilityInvolvement"
-              id="0a793c5b-d65d-4d3a-88b6-54643a15e663" involved="#57c00f5f-0a15-4c36-aca1-dead8c5705b1"/>
-          <ownedCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.ctx:CapabilityInvolvement"
-              id="d073dea4-6415-4807-aca3-e7a97611d037" involved="#61f0ec69-5266-4b74-a8a7-e05a3f2feaba"/>
-          <ownedCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.ctx:CapabilityInvolvement"
-              id="2a8ea9c5-34ae-45d2-886d-f29a12ea73cf" involved="#2029eaf2-3774-40e2-b42f-7a6991bc0e21"/>
-          <ownedCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.ctx:CapabilityInvolvement"
-              id="bcdce95f-3a68-46fa-a2f4-61886aea48e3" involved="#f57d6ffb-72a2-4486-ad15-682e1a9eb97e"/>
-          <ownedCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.ctx:CapabilityInvolvement"
-              id="9ad1e565-96a9-4194-bd80-72310f4b3fb5" involved="#c88acec8-687d-4648-992c-4f3ef307e8a0"/>
-        </ownedCapabilities>
-        <ownedCapabilities xsi:type="org.polarsys.capella.core.data.ctx:Capability"
             id="5b58b807-9f85-44dc-b165-db08eb6c0e90" name="Communiquer avec la supervision "
             summary="Recevoir des ordres, envoyer des images" description="&lt;p>Ici est compris le logiciel/app pour d&amp;eacute;finir le chemin et retransmettre les images et flux vid&amp;eacute;o&lt;/p>&#xA;">
+          <includes xsi:type="org.polarsys.capella.core.data.interaction:AbstractCapabilityInclude"
+              id="5bf0e671-bdad-4878-8aa0-f5662a89b092" included="#f2a7f567-bf0f-458d-ab96-227fab43855f"/>
           <ownedCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.ctx:CapabilityInvolvement"
               id="ad649291-3682-46d2-b534-3a812eeeba31" involved="#c9954e88-423f-4442-9dcd-8c6cdd7711db"/>
           <ownedCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.ctx:CapabilityInvolvement"
               id="1f2ae0f2-2eef-43bc-a5da-7bd79561e10d" involved="#c88acec8-687d-4648-992c-4f3ef307e8a0"/>
-          <ownedCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.ctx:CapabilityInvolvement"
-              id="0780cc64-b954-4b25-b57f-c87395fa3a39" involved="#f57d6ffb-72a2-4486-ad15-682e1a9eb97e"/>
-          <ownedCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.ctx:CapabilityInvolvement"
-              id="04fb8e87-b932-4da3-a25b-5ac69cf67f54" involved="#61f0ec69-5266-4b74-a8a7-e05a3f2feaba"/>
-          <ownedCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.ctx:CapabilityInvolvement"
-              id="86f5e942-0db8-45ee-8866-0562a1354475" involved="#df3b9eaa-7909-4b7e-8a00-a9f1b09d83da"/>
-          <ownedCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.ctx:CapabilityInvolvement"
-              id="d63e2ecb-e3c4-48c3-bf04-8847478ff3b9" involved="#57c00f5f-0a15-4c36-aca1-dead8c5705b1"/>
         </ownedCapabilities>
         <ownedCapabilities xsi:type="org.polarsys.capella.core.data.ctx:Capability"
             id="aadcce05-b47a-4ddd-a8c0-77782d068f5e" name="Gérer l'autonomie énergétique"
@@ -914,13 +765,67 @@
           <ownedCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.ctx:CapabilityInvolvement"
               id="66674123-d16d-49af-a5ec-d8a00e6efc70" involved="#c9954e88-423f-4442-9dcd-8c6cdd7711db"/>
           <ownedCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.ctx:CapabilityInvolvement"
-              id="8338cf87-34dd-4f97-a2a5-b09003abed37" involved="#84830790-a05b-4eec-a9ba-14de87f1550d"/>
-          <ownedCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.ctx:CapabilityInvolvement"
-              id="ee05379f-a81a-4912-976d-42d8064c97e5" involved="#f57d6ffb-72a2-4486-ad15-682e1a9eb97e"/>
-          <ownedCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.ctx:CapabilityInvolvement"
               id="3bc1c512-4e48-4d3e-8e2d-2e2e861e46f5" involved="#2029eaf2-3774-40e2-b42f-7a6991bc0e21"/>
           <ownedCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.ctx:CapabilityInvolvement"
               id="2f5668c1-854d-4126-a728-35c17ff05320" involved="#c88acec8-687d-4648-992c-4f3ef307e8a0"/>
+          <ownedCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.ctx:CapabilityInvolvement"
+              id="76278abc-6443-44fc-a087-72f69b1e2a18" involved="#84830790-a05b-4eec-a9ba-14de87f1550d"/>
+        </ownedCapabilities>
+        <ownedCapabilities xsi:type="org.polarsys.capella.core.data.ctx:Capability"
+            id="bd69ccc1-a93c-43bb-813f-f0d7be9bf5ed" name="Parcourir le tracé en évitant les obstacles">
+          <includes xsi:type="org.polarsys.capella.core.data.interaction:AbstractCapabilityInclude"
+              id="74febf23-1225-4881-acbb-27517bc23885" included="#f2a7f567-bf0f-458d-ab96-227fab43855f"/>
+          <includes xsi:type="org.polarsys.capella.core.data.interaction:AbstractCapabilityInclude"
+              id="7bf5aae9-2f62-488b-8894-80808ae85c4e" included="#2f401f09-5496-4dc5-9e23-d0b66aabb3b2"/>
+          <ownedCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.ctx:CapabilityInvolvement"
+              id="9957ce85-96f3-43ec-bd9c-47314d71d642" involved="#c9954e88-423f-4442-9dcd-8c6cdd7711db"/>
+        </ownedCapabilities>
+        <ownedCapabilities xsi:type="org.polarsys.capella.core.data.ctx:Capability"
+            id="bbbce171-9f5b-49b3-bb72-72fe5c068c15" name="Inspecter la présence d'objets sur le parcours">
+          <includes xsi:type="org.polarsys.capella.core.data.interaction:AbstractCapabilityInclude"
+              id="cb7bf63e-8c70-463c-a392-2d7d0afd27e7" included="#5b58b807-9f85-44dc-b165-db08eb6c0e90"/>
+          <includes xsi:type="org.polarsys.capella.core.data.interaction:AbstractCapabilityInclude"
+              id="a1b3cbf9-7dd0-40f3-9855-34e9f3c9002d" included="#f2a7f567-bf0f-458d-ab96-227fab43855f"/>
+          <ownedCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.ctx:CapabilityInvolvement"
+              id="dda63707-98ce-4276-af9c-8f38a96aaade" involved="#c9954e88-423f-4442-9dcd-8c6cdd7711db"/>
+        </ownedCapabilities>
+        <ownedCapabilities xsi:type="org.polarsys.capella.core.data.ctx:Capability"
+            id="f2a7f567-bf0f-458d-ab96-227fab43855f" name="Détecter les objets et obstacles">
+          <ownedConstraints xsi:type="org.polarsys.capella.core.data.capellacore:Constraint"
+              id="d4b51b52-34eb-4b4b-8e4d-94b9805887de" name="Détecter et éviter les obstacles statiques et en mouvement (1m/s max)"
+              constrainedElements="#f2a7f567-bf0f-458d-ab96-227fab43855f">
+            <ownedSpecification xsi:type="org.polarsys.capella.core.data.information.datavalue:OpaqueExpression"
+                id="e43c25b3-2622-4706-bfba-7b7620ef7572">
+              <bodies></bodies>
+              <languages>capella:linkedText</languages>
+            </ownedSpecification>
+          </ownedConstraints>
+          <ownedCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.ctx:CapabilityInvolvement"
+              id="a75ecb4f-c0f0-4f51-871e-feda308f32b7" involved="#c9954e88-423f-4442-9dcd-8c6cdd7711db"/>
+          <ownedCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.ctx:CapabilityInvolvement"
+              id="eb6025b2-0de3-41bc-8c8d-2b169e8cb252" involved="#df3b9eaa-7909-4b7e-8a00-a9f1b09d83da"/>
+          <ownedCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.ctx:CapabilityInvolvement"
+              id="5e6a6611-53d2-4efe-a30f-50b904f466fe" involved="#57c00f5f-0a15-4c36-aca1-dead8c5705b1"/>
+          <ownedCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.ctx:CapabilityInvolvement"
+              id="4ea64ee3-14ce-4b25-a517-7bc1bd60ab34" involved="#2029eaf2-3774-40e2-b42f-7a6991bc0e21"/>
+        </ownedCapabilities>
+        <ownedCapabilities xsi:type="org.polarsys.capella.core.data.ctx:Capability"
+            id="2f401f09-5496-4dc5-9e23-d0b66aabb3b2" name="Suivre un parcours de manière optimale">
+          <ownedConstraints xsi:type="org.polarsys.capella.core.data.capellacore:Constraint"
+              id="5711dadf-495a-4b69-bdf1-b02a2ce9e08e" name="Capable de se déplacer sur toutes les surfaces du Campus de l’X"
+              constrainedElements="#2f401f09-5496-4dc5-9e23-d0b66aabb3b2">
+            <ownedSpecification xsi:type="org.polarsys.capella.core.data.information.datavalue:OpaqueExpression"
+                id="2ed56051-0013-48c1-b176-5c5d0c0a4070">
+              <bodies></bodies>
+              <languages>capella:linkedText</languages>
+            </ownedSpecification>
+          </ownedConstraints>
+          <includes xsi:type="org.polarsys.capella.core.data.interaction:AbstractCapabilityInclude"
+              id="411450b7-e855-4cd7-a9b7-a9efd5fc8b65" included="#f2a7f567-bf0f-458d-ab96-227fab43855f"/>
+          <ownedCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.ctx:CapabilityInvolvement"
+              id="53f41418-2db8-4869-84da-5efd76bcdda3" involved="#c9954e88-423f-4442-9dcd-8c6cdd7711db"/>
+          <ownedCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.ctx:CapabilityInvolvement"
+              id="9145c54a-8549-4418-b8c9-b0a16f69a8ad" involved="#2029eaf2-3774-40e2-b42f-7a6991bc0e21"/>
         </ownedCapabilities>
       </ownedAbstractCapabilityPkg>
       <ownedInterfacePkg xsi:type="org.polarsys.capella.core.data.cs:InterfacePkg"
@@ -1162,6 +1067,9 @@
           <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
               id="c629b0b7-9818-4c5b-af11-d716c01cdebe" targetElement="#231dc72b-9120-48df-8795-9322ff75e85c"
               sourceElement="#df3b9eaa-7909-4b7e-8a00-a9f1b09d83da"/>
+          <ownedGeneralizations xsi:type="org.polarsys.capella.core.data.capellacore:Generalization"
+              id="353b76fe-a927-4b2e-b493-b3a5bb9c9995" super="#61f0ec69-5266-4b74-a8a7-e05a3f2feaba"
+              sub="#df3b9eaa-7909-4b7e-8a00-a9f1b09d83da"/>
         </ownedSystemComponents>
         <ownedSystemComponents xsi:type="org.polarsys.capella.core.data.ctx:SystemComponent"
             id="57c00f5f-0a15-4c36-aca1-dead8c5705b1" name="Obstacles (mobiles et statiques)"
@@ -1170,6 +1078,9 @@
           <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
               id="462d4daf-0ffe-4b76-9837-12fb53e9b65d" targetElement="#e2249a22-7869-4aeb-9544-715a111e6883"
               sourceElement="#57c00f5f-0a15-4c36-aca1-dead8c5705b1"/>
+          <ownedGeneralizations xsi:type="org.polarsys.capella.core.data.capellacore:Generalization"
+              id="bd4b9146-38c5-4fa0-b5d7-6546f8165c8b" super="#61f0ec69-5266-4b74-a8a7-e05a3f2feaba"
+              sub="#57c00f5f-0a15-4c36-aca1-dead8c5705b1"/>
         </ownedSystemComponents>
         <ownedSystemComponents xsi:type="org.polarsys.capella.core.data.ctx:SystemComponent"
             id="2029eaf2-3774-40e2-b42f-7a6991bc0e21" name="Météo" summary="Impact direct sur les capacités du système"
@@ -1219,6 +1130,9 @@
           <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
               id="aed9e6b2-5af9-48d3-871a-16f6742635f9" targetElement="#74970362-c7b4-4baa-a281-45f9d305116d"
               sourceElement="#c88acec8-687d-4648-992c-4f3ef307e8a0"/>
+          <ownedGeneralizations xsi:type="org.polarsys.capella.core.data.capellacore:Generalization"
+              id="d11cee7b-aecb-422c-a97f-b7e633574a27" super="#f57d6ffb-72a2-4486-ad15-682e1a9eb97e"
+              sub="#c88acec8-687d-4648-992c-4f3ef307e8a0"/>
         </ownedSystemComponents>
         <ownedSystemComponents xsi:type="org.polarsys.capella.core.data.ctx:SystemComponent"
             id="8ddff415-f10b-4557-adc7-7df425a1ace9" name="SA 9" actor="true"/>
@@ -1226,17 +1140,33 @@
       <ownedMissionPkg xsi:type="org.polarsys.capella.core.data.ctx:MissionPkg" id="0594801f-beba-4740-bf83-a87047180a9f"
           name="Missions">
         <ownedMissions xsi:type="org.polarsys.capella.core.data.ctx:Mission" id="e2b5d8d4-448d-4ca8-b2f8-c1379ce5da0e"
-            name="Sécuriser le campus de manière autonome">
+            name="Inspecter la présence d’objets sur le parcours prédéfini">
+          <ownedConstraints xsi:type="org.polarsys.capella.core.data.capellacore:Constraint"
+              id="3ed7eb81-6bbb-4965-9591-9266e0299b2f" name="Fonctionner tout les jours de l'année"
+              summary="1 inspection par jour 365 jours par an" constrainedElements="#e2b5d8d4-448d-4ca8-b2f8-c1379ce5da0e #aadcce05-b47a-4ddd-a8c0-77782d068f5e">
+            <ownedSpecification xsi:type="org.polarsys.capella.core.data.information.datavalue:OpaqueExpression"
+                id="c207eed7-b57b-4e01-80fe-da8e7ba61b91">
+              <bodies></bodies>
+              <languages>capella:linkedText</languages>
+            </ownedSpecification>
+          </ownedConstraints>
+          <ownedConstraints xsi:type="org.polarsys.capella.core.data.capellacore:Constraint"
+              id="c53494dd-72f9-4d5f-9534-98f8584e94a5" name="Fonctionner sous les conditions météorologiques nominales de Palaiseau"
+              constrainedElements="#e2b5d8d4-448d-4ca8-b2f8-c1379ce5da0e">
+            <ownedSpecification xsi:type="org.polarsys.capella.core.data.information.datavalue:OpaqueExpression"
+                id="a660286a-0017-4d60-a81e-084d85653a83">
+              <bodies></bodies>
+              <languages>capella:linkedText</languages>
+            </ownedSpecification>
+          </ownedConstraints>
           <ownedMissionInvolvements xsi:type="org.polarsys.capella.core.data.ctx:MissionInvolvement"
               id="8e083d31-2212-41ce-b7a8-87fc776ba422" involved="#c9954e88-423f-4442-9dcd-8c6cdd7711db"/>
           <ownedCapabilityExploitations xsi:type="org.polarsys.capella.core.data.ctx:CapabilityExploitation"
-              id="d9c509e2-6a2b-40b3-be65-d12388d9185f" capability="#1245de6d-83d1-44af-8a41-53bd45c80a45"/>
+              id="6ddc1f97-497b-4ae8-82ff-70670e537778" capability="#bd69ccc1-a93c-43bb-813f-f0d7be9bf5ed"/>
           <ownedCapabilityExploitations xsi:type="org.polarsys.capella.core.data.ctx:CapabilityExploitation"
-              id="13980f4a-0f99-42a1-a892-d10663be90f0" capability="#ac6b9b17-4d82-4db1-bd2b-9a0536021417"/>
+              id="e5c760ae-5411-4c80-9bd3-94992aaced9b" capability="#bbbce171-9f5b-49b3-bb72-72fe5c068c15"/>
           <ownedCapabilityExploitations xsi:type="org.polarsys.capella.core.data.ctx:CapabilityExploitation"
-              id="3ec567ad-2fcd-4c9a-8320-a3c46f2a25ca" capability="#5b58b807-9f85-44dc-b165-db08eb6c0e90"/>
-          <ownedCapabilityExploitations xsi:type="org.polarsys.capella.core.data.ctx:CapabilityExploitation"
-              id="b87dabd0-f105-4e08-b481-78ce2897a811" capability="#aadcce05-b47a-4ddd-a8c0-77782d068f5e"/>
+              id="cb68c79d-8e89-4832-994c-b251c6078f75" capability="#aadcce05-b47a-4ddd-a8c0-77782d068f5e"/>
         </ownedMissions>
       </ownedMissionPkg>
       <ownedOperationalAnalysisRealizations xsi:type="org.polarsys.capella.core.data.ctx:OperationalAnalysisRealization"

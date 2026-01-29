@@ -525,7 +525,7 @@
                 id="c8aa82bf-36f8-423a-ba40-2fed19963d5e" name="FOP 1"/>
           </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.ctx:SystemFunction"
-              id="d0b4fc0f-0b47-43fb-b964-c5a613b1a3e7" name="Définir la trajectoire"
+              id="d0b4fc0f-0b47-43fb-b964-c5a613b1a3e7" name="Calculer la trajectoire optimale"
               availableInStates="#5dd2b8b5-d9ab-435a-a5b3-8f67d9e99c2e #e988b4de-acb1-4db8-8967-7fc28ad7e1b5">
             <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
                 id="e6708919-b26e-49d7-871f-f58a97e05610" name="FIP 1"/>
@@ -535,7 +535,7 @@
                 id="9a0315f0-3f3d-40d9-a914-de7b90c4c038" name="FOP 1"/>
           </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.ctx:SystemFunction"
-              id="da4cb0e5-9612-49e1-89d6-b7096dc377af" name="Identifier les anomalies"
+              id="da4cb0e5-9612-49e1-89d6-b7096dc377af" name="Détecter les objets d'interêt"
               availableInStates="#5dd2b8b5-d9ab-435a-a5b3-8f67d9e99c2e #e988b4de-acb1-4db8-8967-7fc28ad7e1b5">
             <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
                 id="814e48a5-cc61-4980-b9b5-5e4db62caac6" name="FIP 1"/>
@@ -571,7 +571,8 @@
                 id="d08ad03a-ad51-47bb-92b9-5ad4c697ae3b" name="FOP 2"/>
           </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.ctx:SystemFunction"
-              id="6669082c-db93-495b-9dbf-42f7ae204d84" name="Se déplacer" availableInStates="#5dd2b8b5-d9ab-435a-a5b3-8f67d9e99c2e #e988b4de-acb1-4db8-8967-7fc28ad7e1b5 #bb9c7e36-38d0-4c3b-9be0-511c2c0f929a">
+              id="6669082c-db93-495b-9dbf-42f7ae204d84" name="Suivre la trajectoire calculée"
+              availableInStates="#5dd2b8b5-d9ab-435a-a5b3-8f67d9e99c2e #e988b4de-acb1-4db8-8967-7fc28ad7e1b5 #bb9c7e36-38d0-4c3b-9be0-511c2c0f929a">
             <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
                 id="35c9d053-fefd-40cf-94d5-121d2cb87062" name="FIP 1"/>
           </ownedFunctions>
@@ -1277,11 +1278,225 @@
           id="413c183a-a662-4741-9f0d-6439a39ff204" name="Structure">
         <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="960f1f30-76f5-4778-b7c1-e032b8a7d030"
             name="Logical System" abstractType="#94bdce01-b774-4118-bd84-b528352e39ef"/>
+        <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="29ea820a-3cde-468f-92da-2e625969c495"
+            name="Réseau électrique" abstractType="#39803a66-eb7f-4839-8172-a0efa4c43b3b"/>
+        <ownedComponentExchanges xsi:type="org.polarsys.capella.core.data.fa:ComponentExchange"
+            id="6989cdb9-683f-4311-bd65-49e0bfdb5cb8" name="C 1" source="#40e0e416-ba58-40eb-98f8-ca9c4de55f62"
+            target="#f0cb1f53-b274-4e7f-8bf1-51680d296949" kind="FLOW"/>
         <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
             id="94bdce01-b774-4118-bd84-b528352e39ef" name="Logical System">
+          <ownedComponentExchanges xsi:type="org.polarsys.capella.core.data.fa:ComponentExchange"
+              id="b1fff08d-6e96-4ada-a5c1-27a8695110e0" name="C 1" source="#b812ca8a-10a6-4c68-a5a5-9639b3fc42a4"
+              target="#0d72a8b6-accd-48ab-a5c0-1ec73155a385" kind="FLOW"/>
+          <ownedComponentExchanges xsi:type="org.polarsys.capella.core.data.fa:ComponentExchange"
+              id="37c7623b-dab6-46b5-8739-1ddf751add4a" name="Visuel temps réel" source="#9044c452-10f2-4d44-81a4-68549e85901b"
+              target="#2e3818c4-76f4-44e1-84ad-e6868fa5dc67" kind="FLOW"/>
+          <ownedComponentExchanges xsi:type="org.polarsys.capella.core.data.fa:ComponentExchange"
+              id="bfdfafd5-42c9-40cf-96f0-a2fbfdefde26" name="Info état robot (log et erreurs)"
+              source="#26e579fa-85b4-4ce0-8a09-3a8bf0c35cd6" target="#022aa405-9d8b-4ccb-931f-06c9954d71d1"
+              kind="FLOW"/>
+          <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="f2f4fc33-9365-4870-935c-8c78280c8977"
+              name="Robot" abstractType="#caaacd7d-c69d-4931-ad7f-0709881a7c89"/>
+          <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="b715ce4b-1a92-49bc-aed6-b13dfa01db7b"
+              name="Base de recharge" abstractType="#b23691c2-9b43-417c-b163-017bdea1249e"/>
+          <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="8f0744a4-b11c-47ca-afc2-fc8487435d83"
+              name="Application de supervision" abstractType="#ac70fdf1-a29a-48c6-a5af-e460fd1fbba5"/>
           <ownedComponentRealizations xsi:type="org.polarsys.capella.core.data.cs:ComponentRealization"
               id="716b9954-8946-4ed2-a98e-1a877351c917" targetElement="#c9954e88-423f-4442-9dcd-8c6cdd7711db"
               sourceElement="#94bdce01-b774-4118-bd84-b528352e39ef"/>
+          <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
+              id="caaacd7d-c69d-4931-ad7f-0709881a7c89" name="Robot">
+            <ownedComponentExchanges xsi:type="org.polarsys.capella.core.data.fa:ComponentExchange"
+                id="ab221cc9-f89b-44b5-8880-480a6c50167a" name="C 1" source="#a0be736b-a115-4e78-9935-55be50d16a2e"
+                target="#6127fe40-81d6-42c1-9564-e0d905f86e95" kind="FLOW"/>
+            <ownedComponentExchanges xsi:type="org.polarsys.capella.core.data.fa:ComponentExchange"
+                id="467c34e5-9525-4340-b35d-fe590af93c3f" name="C 2" source="#f70f5034-aa38-4d9e-bfbb-6cec0fa38e2c"
+                target="#82527985-cb9f-4279-baf1-f21c42deb497" kind="FLOW"/>
+            <ownedComponentExchanges xsi:type="org.polarsys.capella.core.data.fa:ComponentExchange"
+                id="fa41c29a-499d-45a7-8733-d4efb864e7b7" name="C 4" source="#d0b8259f-7240-42ff-9c86-19f90276e1ce"
+                target="#d3747080-390a-446f-a3ec-5eec490fcf29" kind="FLOW"/>
+            <ownedComponentExchanges xsi:type="org.polarsys.capella.core.data.fa:ComponentExchange"
+                id="e747214b-7949-4745-aa77-b6f48fcd5337" name="Position relative objet"
+                source="#7a59a6d4-84b2-459a-9737-3946a40844f1" target="#7fb984e4-4bc0-47da-b14a-8aa101431193"
+                kind="FLOW"/>
+            <ownedComponentExchanges xsi:type="org.polarsys.capella.core.data.fa:ComponentExchange"
+                id="835bb6fe-28e1-43ea-ac95-2f055a3243f5" name="Visuel temps réel"
+                source="#8a9b1a78-0465-4b96-a768-1c449789a3f6" target="#e35ba8fd-ed38-4603-996f-391c263122ba"
+                kind="FLOW"/>
+            <ownedComponentExchanges xsi:type="org.polarsys.capella.core.data.fa:ComponentExchange"
+                id="7cb01474-46b3-43f2-b6b1-185d7f973a34" name="Problème" source="#280766f7-118a-4d2a-9a49-0ebe87c5304e"
+                target="#3b0f5f00-b4c9-4d8a-9e75-17a75d79fd62" kind="FLOW"/>
+            <ownedComponentExchanges xsi:type="org.polarsys.capella.core.data.fa:ComponentExchange"
+                id="64893929-03b2-4a71-9301-313ee48b274d" name="Etat baterie" source="#475c630f-50ba-4390-ba95-e865349734d1"
+                target="#39978b4d-36c5-4be4-9e3e-b46a12f5795e" kind="FLOW"/>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="141b532d-a5ad-45b7-a38d-0bd257243ee7"
+                name="Detection objets d'interêt" abstractType="#a7c7cb19-fdbc-455d-9fe8-be4d76ed9ac9"/>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="884d2137-d2a7-4a67-a091-7ff588aa7c19"
+                name="Détection obstacles" abstractType="#b3bdaea4-e5c2-42b4-8c22-523273c36d0a"/>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="79a7e33e-44fd-484c-b550-a0ef1a008ce0"
+                name="Localisation" abstractType="#7045b1fb-9337-4f7a-8b3d-d9c1c91f5932"/>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="41ce7763-02f4-4aae-a7d0-79c290913250"
+                name="Calcul trajectoire" abstractType="#9ceeec49-e9a8-41a5-8654-51673bee4700"/>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="4d046dc5-eeb5-46f9-903d-b04dc185617f"
+                name="Module de déplacement" abstractType="#1d30c245-f79b-48a6-afd8-7cd80e37e5ab"/>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="8a40ca8a-9dd1-47c2-bc4f-2e7a3540c951"
+                name="Communication visuel temps réel" abstractType="#a99876c6-412e-4cbc-ad0c-e933f64c0db9"/>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="e26ccf17-6d82-4856-9a12-4c02d13b716e"
+                name="Gestion energie" abstractType="#02de03aa-f133-47b7-9f62-736b1cbda0c8"/>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="4e29764c-f053-4d47-b0a8-caceae9b6b26"
+                name="Récuperer visuel temps réel" abstractType="#a2f21bca-e6e1-40d7-9bab-d4e60e2848d8"/>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="62b082df-36cc-409c-a1b8-c362554adcc7"
+                name="Communication information" abstractType="#396dc396-1f43-459b-b28b-68ecef3d2748"/>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="8c98dc62-190f-43c2-9d1a-f31b007b753f"
+                name="Detection des problèmes" abstractType="#8e3474af-c6a2-4f6d-96e7-e8cd49068297"/>
+            <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
+                id="a7c7cb19-fdbc-455d-9fe8-be4d76ed9ac9" name="Detection objets d'interêt">
+              <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
+                  id="7a59a6d4-84b2-459a-9737-3946a40844f1" name="CP 2" orientation="OUT"
+                  kind="FLOW"/>
+            </ownedLogicalComponents>
+            <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
+                id="b3bdaea4-e5c2-42b4-8c22-523273c36d0a" name="Détection obstacles">
+              <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
+                  id="a0be736b-a115-4e78-9935-55be50d16a2e" name="CP 1" orientation="OUT"
+                  kind="FLOW"/>
+            </ownedLogicalComponents>
+            <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
+                id="7045b1fb-9337-4f7a-8b3d-d9c1c91f5932" name="Localisation">
+              <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
+                  id="f70f5034-aa38-4d9e-bfbb-6cec0fa38e2c" name="CP 1" orientation="OUT"
+                  kind="FLOW"/>
+            </ownedLogicalComponents>
+            <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
+                id="9ceeec49-e9a8-41a5-8654-51673bee4700" name="Calcul trajectoire">
+              <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
+                  id="6127fe40-81d6-42c1-9564-e0d905f86e95" name="CP 1" orientation="IN"
+                  kind="FLOW"/>
+              <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
+                  id="82527985-cb9f-4279-baf1-f21c42deb497" name="CP 2" orientation="IN"
+                  kind="FLOW"/>
+              <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
+                  id="d0b8259f-7240-42ff-9c86-19f90276e1ce" name="CP 3" orientation="OUT"
+                  kind="FLOW"/>
+            </ownedLogicalComponents>
+            <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
+                id="1d30c245-f79b-48a6-afd8-7cd80e37e5ab" name="Module de déplacement">
+              <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
+                  id="d3747080-390a-446f-a3ec-5eec490fcf29" name="CP 1" orientation="IN"
+                  kind="FLOW"/>
+            </ownedLogicalComponents>
+            <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
+                id="a99876c6-412e-4cbc-ad0c-e933f64c0db9" name="Communication visuel temps réel">
+              <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
+                  id="9044c452-10f2-4d44-81a4-68549e85901b" name="CP 1" orientation="OUT"
+                  kind="FLOW"/>
+              <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
+                  id="e35ba8fd-ed38-4603-996f-391c263122ba" name="CP 2" orientation="IN"
+                  kind="FLOW"/>
+            </ownedLogicalComponents>
+            <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
+                id="02de03aa-f133-47b7-9f62-736b1cbda0c8" name="Gestion energie">
+              <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
+                  id="0d72a8b6-accd-48ab-a5c0-1ec73155a385" name="CP 1" orientation="IN"
+                  kind="FLOW"/>
+              <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
+                  id="475c630f-50ba-4390-ba95-e865349734d1" name="CP 2" orientation="OUT"
+                  kind="FLOW"/>
+            </ownedLogicalComponents>
+            <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
+                id="a2f21bca-e6e1-40d7-9bab-d4e60e2848d8" name="Récuperer visuel temps réel"
+                summary="Caméra 360 ?">
+              <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
+                  id="7fb984e4-4bc0-47da-b14a-8aa101431193" name="CP 1" orientation="IN"
+                  kind="FLOW"/>
+              <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
+                  id="8a9b1a78-0465-4b96-a768-1c449789a3f6" name="CP 2" orientation="OUT"
+                  kind="FLOW"/>
+            </ownedLogicalComponents>
+            <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
+                id="396dc396-1f43-459b-b28b-68ecef3d2748" name="Communication information">
+              <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
+                  id="26e579fa-85b4-4ce0-8a09-3a8bf0c35cd6" name="CP 1" orientation="OUT"
+                  kind="FLOW"/>
+              <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
+                  id="3b0f5f00-b4c9-4d8a-9e75-17a75d79fd62" name="CP 2" orientation="IN"
+                  kind="FLOW"/>
+              <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
+                  id="39978b4d-36c5-4be4-9e3e-b46a12f5795e" name="CP 3" orientation="IN"
+                  kind="FLOW"/>
+            </ownedLogicalComponents>
+            <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
+                id="8e3474af-c6a2-4f6d-96e7-e8cd49068297" name="Detection des problèmes">
+              <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
+                  id="280766f7-118a-4d2a-9a49-0ebe87c5304e" name="CP 1" orientation="OUT"
+                  kind="FLOW"/>
+            </ownedLogicalComponents>
+          </ownedLogicalComponents>
+          <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
+              id="b23691c2-9b43-417c-b163-017bdea1249e" name="Base de recharge">
+            <ownedComponentExchanges xsi:type="org.polarsys.capella.core.data.fa:ComponentExchange"
+                id="e258ee1c-33fa-434d-9c88-12988012fe47" name="C 1" source="#8475fe70-9ea5-49a6-ad15-efda6a09929c"
+                target="#028422d5-4a15-4676-9ed8-98f966bbdb82" kind="FLOW"/>
+            <ownedComponentExchanges xsi:type="org.polarsys.capella.core.data.fa:ComponentExchange"
+                id="b3064189-324e-4f65-b5d1-d7e1aeeda668" name="C 2" source="#f8d4b1ea-b0e7-4422-bd43-8d35ec20be24"
+                target="#80fe743f-dc81-4a68-a590-7778c89e4da0" kind="FLOW"/>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="60d274a1-e4e7-4531-a779-1260a37fe606"
+                name="Interface robot" abstractType="#eba7fab6-193d-42ba-b7d1-5e41d9668595"/>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="04d631a0-a0f4-41d0-ad83-627ecff38b81"
+                name="Gestion électrique" abstractType="#b1c15b47-c0f1-4b84-92dc-ad98342441f0"/>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="359df0bf-2161-4f24-a9e6-1e0dc2f4972c"
+                name="Interface réseau électrique" abstractType="#19e3c0e1-c9e0-4349-86dc-ab69d97da66b"/>
+            <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
+                id="eba7fab6-193d-42ba-b7d1-5e41d9668595" name="Interface robot">
+              <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
+                  id="b812ca8a-10a6-4c68-a5a5-9639b3fc42a4" name="CP 1" orientation="OUT"
+                  kind="FLOW"/>
+              <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
+                  id="80fe743f-dc81-4a68-a590-7778c89e4da0" name="CP 2" orientation="IN"
+                  kind="FLOW"/>
+            </ownedLogicalComponents>
+            <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
+                id="b1c15b47-c0f1-4b84-92dc-ad98342441f0" name="Gestion électrique">
+              <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
+                  id="028422d5-4a15-4676-9ed8-98f966bbdb82" name="CP 1" orientation="IN"
+                  kind="FLOW"/>
+              <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
+                  id="f8d4b1ea-b0e7-4422-bd43-8d35ec20be24" name="CP 2" orientation="OUT"
+                  kind="FLOW"/>
+            </ownedLogicalComponents>
+            <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
+                id="19e3c0e1-c9e0-4349-86dc-ab69d97da66b" name="Interface réseau électrique">
+              <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
+                  id="f0cb1f53-b274-4e7f-8bf1-51680d296949" name="CP 1" orientation="IN"
+                  kind="FLOW"/>
+              <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
+                  id="8475fe70-9ea5-49a6-ad15-efda6a09929c" name="CP 2" orientation="OUT"
+                  kind="FLOW"/>
+            </ownedLogicalComponents>
+          </ownedLogicalComponents>
+          <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
+              id="ac70fdf1-a29a-48c6-a5af-e460fd1fbba5" name="Application de supervision">
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
+                id="2e3818c4-76f4-44e1-84ad-e6868fa5dc67" name="CP 1" orientation="IN"
+                kind="FLOW"/>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="8c20ccb7-9446-45f3-8a08-909a1a4574e7"
+                name="LC 1" abstractType="#3c43b7d4-45c9-4666-b522-838cd90b41a7"/>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="b665681a-2200-4ef2-bdaf-2459e1d66391"
+                name="Interface utilisateur" abstractType="#9a4bea49-865d-4afe-bf04-5a56b75844ac"/>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
+                id="022aa405-9d8b-4ccb-931f-06c9954d71d1" name="CP 4" orientation="IN"
+                kind="FLOW"/>
+            <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
+                id="3c43b7d4-45c9-4666-b522-838cd90b41a7" name="LC 1"/>
+            <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
+                id="9a4bea49-865d-4afe-bf04-5a56b75844ac" name="Interface utilisateur"/>
+          </ownedLogicalComponents>
+        </ownedLogicalComponents>
+        <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
+            id="39803a66-eb7f-4839-8172-a0efa4c43b3b" name="Réseau électrique" actor="true">
+          <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
+              id="40e0e416-ba58-40eb-98f8-ca9c4de55f62" name="CP 1" orientation="OUT"
+              kind="FLOW"/>
         </ownedLogicalComponents>
       </ownedLogicalComponentPkg>
       <ownedSystemAnalysisRealizations xsi:type="org.polarsys.capella.core.data.la:SystemAnalysisRealization"

@@ -1286,11 +1286,15 @@
           </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
               id="90398176-71e4-469b-9c60-090e2caf1fdc" name="Détecter les obstacles">
+            <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
+                id="536f84b9-7de0-4211-b214-deb897dc1598" name="FIP 1"/>
             <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
                 id="a7963542-edaa-4232-a9d7-f969d5e9f391" name="FOP 1"/>
           </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
               id="6f67c346-d549-4dd1-ad2f-f881e301e86e" name="Se localiser">
+            <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
+                id="03abadff-6d90-463c-8aee-2dfd121f915a" name="FIP 1"/>
             <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
                 id="dcdfb6e3-f8fc-44dc-a1e0-6e035699f63d" name="FOP 1"/>
           </ownedFunctions>
@@ -1304,6 +1308,8 @@
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
               id="db19b37c-335b-4a9c-8c65-d42f7738277c" name="Détecter les objets d'interêt"
               availableInStates="#31ca9dc9-0227-4ce2-bb35-c471f6d00fbc">
+            <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
+                id="4d3efb48-acb9-4758-9ae7-b63c16b9d67d" name="FIP 1"/>
             <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
                 id="f451076c-8931-4a5f-8484-c30f2cf1e3cb" name="FOP 1"/>
           </ownedFunctions>
@@ -1468,6 +1474,8 @@
           </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
               id="985c27fb-9d92-452b-b4cd-d328408df6a9" name="Detecter la météo">
+            <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
+                id="afeabb40-ad64-412e-8f89-2b52c2cd602c" name="FIP 1"/>
             <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
                 id="587867f6-60f0-4674-a6bc-a8d6faaf9ef8" name="FOP 1"/>
           </ownedFunctions>
@@ -1490,6 +1498,26 @@
             <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
                 id="e091f060-5fe7-4da9-972a-7c9a08751a69" name="FOP 1"/>
           </ownedFunctions>
+          <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
+              id="d58bf09a-40f4-4b94-92e3-412d68735b69" name="Occuper l'espace (Intêret)">
+            <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
+                id="df2d4c89-41a4-4bc8-854c-923596bdaa40" name="FOP 1"/>
+          </ownedFunctions>
+          <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
+              id="69e7cf5f-51a0-44dc-ab55-8fc4319347d1" name="Occuper l'espace (Obstacle)">
+            <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
+                id="36ab1ad8-cedb-46a1-badb-e007162fff6d" name="FOP 1"/>
+          </ownedFunctions>
+          <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
+              id="3d73b0c9-e100-4fff-b792-55161b8b1cb3" name="Gérer conditions Météo">
+            <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
+                id="c08eaaf5-ce4b-4fee-ab07-076b07c57fdf" name="FOP 1"/>
+          </ownedFunctions>
+          <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
+              id="930773c6-1796-4023-9e49-8154ae89c4e5" name="Renvoyer la lumière">
+            <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
+                id="2fb870e1-4131-418b-8832-5956d01ce616" name="FOP 1"/>
+          </ownedFunctions>
           <ownedFunctionRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionRealization"
               id="0ac81317-ad8b-42d1-be87-a61dc2806790" targetElement="#33a8439b-ceee-481c-9651-1b1a43e91ecb"
               sourceElement="#94c7b55c-644f-46bd-a640-75bd4f1a4295"/>
@@ -1500,11 +1528,11 @@
               id="a7e78213-6948-4ba8-ab33-b86233a26937" name="Electricité" target="#1bede245-7d73-4fd6-bc23-668dbd42fa1e"
               source="#50dc9af2-92b1-4832-8706-bea45f096fd8"/>
           <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
-              id="9af8f91e-1ee7-4849-a161-e8bf1932f0a0" name="FunctionalExchange 5"
+              id="9af8f91e-1ee7-4849-a161-e8bf1932f0a0" name="Commande executées"
               target="#7a31a012-44f6-44a8-8d25-929eb4f12262" source="#100de5cb-dbcd-4628-8acd-e0c96eef33ee"/>
           <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
-              id="395d0d52-f07a-410f-bbac-f5f6b56d8da7" name="FunctionalExchange 7"
-              target="#b79ee766-3280-4332-84ad-08835821ccbc" source="#0a0600e0-b4f7-4669-8847-11a4e88dcb39"/>
+              id="395d0d52-f07a-410f-bbac-f5f6b56d8da7" name="Niveau batterie" target="#b79ee766-3280-4332-84ad-08835821ccbc"
+              source="#0a0600e0-b4f7-4669-8847-11a4e88dcb39"/>
           <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
               id="674669a1-5c6f-4ea9-aef7-de6502df5aee" name="Problème" target="#67d190d3-3b45-4c80-856b-931bbcbf0407"
               source="#ac5318ee-4b65-4f34-bc73-8ba3de459b5d"/>
@@ -1548,23 +1576,23 @@
               id="b6d92c79-67bf-4344-8d22-ae211838ae9b" name="Parcours" target="#257b98b4-670d-4b2c-b6df-e0bba1b72203"
               source="#a2f1a53f-af2a-49e0-b60c-e6426483a255"/>
           <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
-              id="a7532838-339b-45c5-8d34-6d899b3bc7b3" name="FunctionalExchange 23"
-              target="#187a18de-0fc4-4e57-8d61-ed91a3e3c1c2" source="#50ab8444-7d10-4da0-891e-7664b16c336e"/>
+              id="a7532838-339b-45c5-8d34-6d899b3bc7b3" name="Point d'intêret" target="#187a18de-0fc4-4e57-8d61-ed91a3e3c1c2"
+              source="#50ab8444-7d10-4da0-891e-7664b16c336e"/>
           <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
-              id="bd11faef-6d83-4546-a6de-214cd9b56372" name="FunctionalExchange 24"
-              target="#26216d94-1177-44e4-9c29-c585e7855e12" source="#d80b2c7a-5d68-4c45-931c-485a83eb5477"/>
+              id="bd11faef-6d83-4546-a6de-214cd9b56372" name="Etat robot" target="#26216d94-1177-44e4-9c29-c585e7855e12"
+              source="#d80b2c7a-5d68-4c45-931c-485a83eb5477"/>
           <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
               id="2e52d71b-8e5a-4f82-8eea-cffe9d4b729a" name="Commande" target="#b7d5b9a5-0349-4d08-a9a2-d1a26014a1aa"
               source="#d62a2d3a-8b93-473a-a6b6-ac4a6fe4fcf3"/>
           <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
-              id="5e3f92f1-786b-4150-bf36-8fe7db1b9c54" name="FunctionalExchange 26"
+              id="5e3f92f1-786b-4150-bf36-8fe7db1b9c54" name="Données quantitatives"
               target="#f12d5dc6-93f5-4ece-bbcd-907d1290b736" source="#8df3090d-cd92-497a-8389-0dcebd5de669"/>
           <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
-              id="a8ff7a65-55a3-49c5-b436-a9fba448b11d" name="FunctionalExchange 27"
-              target="#c4f47ea0-c9b4-4636-8611-398a0633adb3" source="#6a64bb7f-b2b3-4e1d-8e2c-93aae90f1ae0"/>
+              id="a8ff7a65-55a3-49c5-b436-a9fba448b11d" name="Image" target="#c4f47ea0-c9b4-4636-8611-398a0633adb3"
+              source="#6a64bb7f-b2b3-4e1d-8e2c-93aae90f1ae0"/>
           <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
-              id="7d75718b-54ad-4193-9f53-6ea85da1a3c2" name="FunctionalExchange 28"
-              target="#ccbca095-a56c-41fa-bed2-ea21d0710849" source="#d2621688-fabd-4f40-a307-051b57ef7c27"/>
+              id="7d75718b-54ad-4193-9f53-6ea85da1a3c2" name="Image" target="#ccbca095-a56c-41fa-bed2-ea21d0710849"
+              source="#d2621688-fabd-4f40-a307-051b57ef7c27"/>
           <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
               id="7bfd62fa-3375-4eca-8a51-80de19548168" name="Etat choisi" target="#c4ed6506-a9e8-401b-ba63-1cbcadf023df"
               source="#3fd53cc0-6bad-4938-a0ad-67097d4576a7"/>
@@ -1583,6 +1611,18 @@
           <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
               id="58c000e4-6551-45a2-a251-c979df0e941b" name="Electricité" target="#f3a655f5-11fb-4195-b9a7-4eef26ce6279"
               source="#e091f060-5fe7-4da9-972a-7c9a08751a69"/>
+          <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
+              id="606e64b0-35bb-4557-bb58-80e06c0f937b" name="Signature visuelle"
+              target="#4d3efb48-acb9-4758-9ae7-b63c16b9d67d" source="#df2d4c89-41a4-4bc8-854c-923596bdaa40"/>
+          <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
+              id="9748e17a-6dda-431d-85b5-43c85117976c" name="Signature visuelle"
+              target="#536f84b9-7de0-4211-b214-deb897dc1598" source="#36ab1ad8-cedb-46a1-badb-e007162fff6d"/>
+          <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
+              id="90e988e4-05ea-4dd7-b2eb-30b385228837" name="Pluie/Vent/Luminosité"
+              target="#afeabb40-ad64-412e-8f89-2b52c2cd602c" source="#c08eaaf5-ce4b-4fee-ab07-076b07c57fdf"/>
+          <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
+              id="3096ef39-bcc2-477a-b00d-df487ca4eaf5" name="Retour visuelle de la scène"
+              target="#03abadff-6d90-463c-8aee-2dfd121f915a" source="#2fb870e1-4131-418b-8832-5956d01ce616"/>
         </ownedLogicalFunctions>
       </ownedFunctionPkg>
       <ownedAbstractCapabilityPkg xsi:type="org.polarsys.capella.core.data.la:CapabilityRealizationPkg"
@@ -1604,6 +1644,14 @@
             name="Réseau électrique" abstractType="#39803a66-eb7f-4839-8172-a0efa4c43b3b"/>
         <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="ceef4b8a-a1ec-417a-8015-9f73adc8a357"
             name="Autorités ENSTA" abstractType="#29b7c8db-e328-49ba-9355-b4045e197830"/>
+        <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="03c03ff8-4c50-49c8-8a8e-2d2ea0340acc"
+            name="Objet d'intêret" abstractType="#24767707-e248-450d-8a37-c96a2f0aed07"/>
+        <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="7e9abfb5-d11a-4dd2-83a8-b6dacc8d32d8"
+            name="Obstacles (mobiles et statiques)" abstractType="#9533a856-5400-4cc7-b210-e262dd47bb49"/>
+        <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="e46fd15c-05ad-4c28-be3a-3c0d3098a3bb"
+            name="Météo" abstractType="#829f2915-d968-41a7-be9b-968cfefdf988"/>
+        <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="0508d395-fd27-463d-aeda-6156664dbcfb"
+            name="Campus" abstractType="#04538351-9df6-4b6c-9e26-b36f47c1b9cb"/>
         <ownedComponentExchanges xsi:type="org.polarsys.capella.core.data.fa:ComponentExchange"
             id="6989cdb9-683f-4311-bd65-49e0bfdb5cb8" name="C 1" source="#40e0e416-ba58-40eb-98f8-ca9c4de55f62"
             target="#f0cb1f53-b274-4e7f-8bf1-51680d296949" kind="FLOW"/>
@@ -1909,6 +1957,31 @@
           <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
               id="5907abad-b146-4f48-b7a8-e2adc7051fa1" targetElement="#2a0b693a-afaa-4182-a698-9af4929e6aa2"
               sourceElement="#29b7c8db-e328-49ba-9355-b4045e197830"/>
+        </ownedLogicalComponents>
+        <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
+            id="24767707-e248-450d-8a37-c96a2f0aed07" name="Objet d'intêret" actor="true">
+          <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+              id="0e51e141-8cae-451f-8e71-62d3e21342eb" targetElement="#d58bf09a-40f4-4b94-92e3-412d68735b69"
+              sourceElement="#24767707-e248-450d-8a37-c96a2f0aed07"/>
+        </ownedLogicalComponents>
+        <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
+            id="9533a856-5400-4cc7-b210-e262dd47bb49" name="Obstacles (mobiles et statiques)"
+            actor="true">
+          <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+              id="aabc9f2d-2e72-406d-81dc-d9a63761756a" targetElement="#69e7cf5f-51a0-44dc-ab55-8fc4319347d1"
+              sourceElement="#9533a856-5400-4cc7-b210-e262dd47bb49"/>
+        </ownedLogicalComponents>
+        <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
+            id="829f2915-d968-41a7-be9b-968cfefdf988" name="Météo" actor="true">
+          <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+              id="3b2e17de-7954-469c-a0af-ea152541d9f2" targetElement="#3d73b0c9-e100-4fff-b792-55161b8b1cb3"
+              sourceElement="#829f2915-d968-41a7-be9b-968cfefdf988"/>
+        </ownedLogicalComponents>
+        <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
+            id="04538351-9df6-4b6c-9e26-b36f47c1b9cb" name="Campus" actor="true">
+          <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+              id="e37ff1ec-5314-4d1d-8095-61dbdc79a03e" targetElement="#930773c6-1796-4023-9e49-8154ae89c4e5"
+              sourceElement="#04538351-9df6-4b6c-9e26-b36f47c1b9cb"/>
         </ownedLogicalComponents>
       </ownedLogicalComponentPkg>
       <ownedSystemAnalysisRealizations xsi:type="org.polarsys.capella.core.data.la:SystemAnalysisRealization"

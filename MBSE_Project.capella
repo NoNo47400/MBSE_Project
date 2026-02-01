@@ -1476,6 +1476,8 @@
               id="985c27fb-9d92-452b-b4cd-d328408df6a9" name="Detecter la météo">
             <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
                 id="afeabb40-ad64-412e-8f89-2b52c2cd602c" name="FIP 1"/>
+            <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
+                id="b64c3111-aa1b-431f-b600-7b20e64823dc" name="FIP 2"/>
             <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
                 id="587867f6-60f0-4674-a6bc-a8d6faaf9ef8" name="FOP 1"/>
           </ownedFunctions>
@@ -1512,6 +1514,8 @@
               id="3d73b0c9-e100-4fff-b792-55161b8b1cb3" name="Gérer conditions Météo">
             <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
                 id="c08eaaf5-ce4b-4fee-ab07-076b07c57fdf" name="FOP 1"/>
+            <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
+                id="b2660adf-6696-4e17-a234-4e2bbd3feb1c" name="FOP 2"/>
           </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
               id="930773c6-1796-4023-9e49-8154ae89c4e5" name="Renvoyer la lumière">
@@ -1623,6 +1627,9 @@
           <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
               id="3096ef39-bcc2-477a-b00d-df487ca4eaf5" name="Retour visuelle de la scène"
               target="#03abadff-6d90-463c-8aee-2dfd121f915a" source="#2fb870e1-4131-418b-8832-5956d01ce616"/>
+          <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
+              id="7febd005-f72d-4f29-8db4-bc4cb2d8ef89" name="Température" target="#b64c3111-aa1b-431f-b600-7b20e64823dc"
+              source="#b2660adf-6696-4e17-a234-4e2bbd3feb1c"/>
         </ownedLogicalFunctions>
       </ownedFunctionPkg>
       <ownedAbstractCapabilityPkg xsi:type="org.polarsys.capella.core.data.la:CapabilityRealizationPkg"

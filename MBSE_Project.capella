@@ -1302,7 +1302,8 @@
                 id="1ac174f5-46e0-4b3e-bc87-f9bab11e4bcf" name="FOP 1"/>
           </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
-              id="db19b37c-335b-4a9c-8c65-d42f7738277c" name="Détecter les objets d'interêt">
+              id="db19b37c-335b-4a9c-8c65-d42f7738277c" name="Détecter les objets d'interêt"
+              availableInStates="#31ca9dc9-0227-4ce2-bb35-c471f6d00fbc">
             <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
                 id="f451076c-8931-4a5f-8484-c30f2cf1e3cb" name="FOP 1"/>
           </ownedFunctions>
@@ -1316,7 +1317,7 @@
                 id="bbbf6fe6-8b93-4c23-a351-21d6c0227c05" name="FOP 1"/>
           </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
-              id="45299a6b-eb64-4470-9bca-a37acaed7cd3" name="Avancer dans la directoire souhaitée">
+              id="45299a6b-eb64-4470-9bca-a37acaed7cd3" name="Avancer dans la directoire souhaitée (module controle)">
             <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
                 id="aa96fe40-cabf-4c79-9d62-0d8fc68e8141" name="FIP 1"/>
             <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
@@ -1496,8 +1497,8 @@
               id="ea807b7c-6db0-428b-be54-88dad30b8653" name="Info robot (log et erreurs)"
               target="#51008cbb-d36e-4a67-8f72-a29533bbdc65" source="#bbbf6fe6-8b93-4c23-a351-21d6c0227c05"/>
           <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
-              id="a7e78213-6948-4ba8-ab33-b86233a26937" name="FunctionalExchange 4"
-              target="#1bede245-7d73-4fd6-bc23-668dbd42fa1e" source="#50dc9af2-92b1-4832-8706-bea45f096fd8"/>
+              id="a7e78213-6948-4ba8-ab33-b86233a26937" name="Electricité" target="#1bede245-7d73-4fd6-bc23-668dbd42fa1e"
+              source="#50dc9af2-92b1-4832-8706-bea45f096fd8"/>
           <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
               id="9af8f91e-1ee7-4849-a161-e8bf1932f0a0" name="FunctionalExchange 5"
               target="#7a31a012-44f6-44a8-8d25-929eb4f12262" source="#100de5cb-dbcd-4628-8acd-e0c96eef33ee"/>

@@ -1786,7 +1786,7 @@
             <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="c4e99f91-3069-49c5-ae00-47a8c9423fe8"
                 name="Visualisation objet d'interêt" abstractType="#50f7938e-4d27-40b1-8bcf-27af53744140"/>
             <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="b87ac3ab-9d50-4b25-9d86-65e8f46b2061"
-                name="Detetion météo" abstractType="#9d8f9733-7d4e-403c-8910-d317534eca01"/>
+                name="Detection météo" abstractType="#9d8f9733-7d4e-403c-8910-d317534eca01"/>
             <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="6740260b-aaed-4685-9be2-ab8a44d28179"
                 name="Communication app" abstractType="#fe802836-fcb1-4380-a227-9972bb9f5a05"/>
             <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
@@ -1866,7 +1866,7 @@
                   sourceElement="#50f7938e-4d27-40b1-8bcf-27af53744140"/>
             </ownedLogicalComponents>
             <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
-                id="9d8f9733-7d4e-403c-8910-d317534eca01" name="Detetion météo">
+                id="9d8f9733-7d4e-403c-8910-d317534eca01" name="Detection météo">
               <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
                   id="488f79d2-c6c6-4ffc-b2a5-a8904741c461" targetElement="#985c27fb-9d92-452b-b4cd-d328408df6a9"
                   sourceElement="#9d8f9733-7d4e-403c-8910-d317534eca01"/>

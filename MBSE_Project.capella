@@ -1354,7 +1354,7 @@
                 id="4c319cd5-99bc-4e94-9fc0-f5d6bfd4f4d7" involved="#cf93e04e-30d3-4c2c-981b-1e882edfeff9"/>
           </ownedFunctionalChains>
           <ownedFunctionalChains xsi:type="org.polarsys.capella.core.data.fa:FunctionalChain"
-              id="2c4f67ee-76b1-47c1-a15c-a68b45e69b68" name="Détecter un filmer un object d'intéret">
+              id="2c4f67ee-76b1-47c1-a15c-a68b45e69b68" name="Détecter et filmer un object d'intéret">
             <ownedFunctionalChainInvolvements xsi:type="org.polarsys.capella.core.data.fa:FunctionalChainInvolvementLink"
                 id="efdd73dc-7b80-407c-b4b3-6ae345dc1a22" involved="#606e64b0-35bb-4557-bb58-80e06c0f937b"
                 source="#f212c8c3-9665-4045-a439-417d1e99e326" target="#ab634f51-46ae-4d07-ae76-f508e79ca93e"/>

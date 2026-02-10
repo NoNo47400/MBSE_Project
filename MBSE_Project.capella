@@ -64,6 +64,16 @@
                 source="#12fa1835-7437-471a-9126-1d1de635685b" target="#d227fd51-5012-43ef-b7e4-562133b358e1"/>
             <ownedFunctionalChainInvolvements xsi:type="org.polarsys.capella.core.data.fa:FunctionalChainInvolvementFunction"
                 id="12fa1835-7437-471a-9126-1d1de635685b" involved="#bb3ff8af-7d40-4021-b98b-2fcc76c27bb2"/>
+            <ownedFunctionalChainInvolvements xsi:type="org.polarsys.capella.core.data.fa:FunctionalChainInvolvementFunction"
+                id="099e7c29-26ae-4ae8-80d7-4e8754928468" involved="#e6ca8b94-e0cb-4fc9-b7e8-3c76c26e8a9d"/>
+            <ownedFunctionalChainInvolvements xsi:type="org.polarsys.capella.core.data.fa:FunctionalChainInvolvementLink"
+                id="2f2c0b13-f1a0-4546-891a-37577b13285c" involved="#eee6a7c6-067e-4922-bd05-2cb9d0330307"
+                source="#099e7c29-26ae-4ae8-80d7-4e8754928468" target="#d227fd51-5012-43ef-b7e4-562133b358e1"/>
+            <ownedFunctionalChainInvolvements xsi:type="org.polarsys.capella.core.data.fa:FunctionalChainInvolvementFunction"
+                id="466147ee-f2aa-4494-85ae-d69ea0255814" involved="#595bbc6a-aa4e-49e5-b575-b733b126f3d6"/>
+            <ownedFunctionalChainInvolvements xsi:type="org.polarsys.capella.core.data.fa:FunctionalChainInvolvementLink"
+                id="bbe9d577-d87b-417e-9cc8-0988f4f28ba4" involved="#236070c6-aa41-4f7c-995a-e2cb72453e05"
+                source="#466147ee-f2aa-4494-85ae-d69ea0255814" target="#d227fd51-5012-43ef-b7e4-562133b358e1"/>
           </ownedFunctionalChains>
           <ownedFunctionalChains xsi:type="org.polarsys.capella.core.data.oa:OperationalProcess"
               id="2a30365a-2a06-4e36-b193-9f53055262cc" name="Se déplacer intelligemment le long d'un chemin quelconque">
@@ -96,26 +106,42 @@
                 id="9aea6d20-8deb-484a-9bd2-b1136440dfa2" involved="#bb3ff8af-7d40-4021-b98b-2fcc76c27bb2"/>
           </ownedFunctionalChains>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.oa:OperationalActivity"
-              id="e2cfe51b-29e5-402e-8348-5d3d18b7d092" name="Définir le parcours d'inspection"/>
+              id="e2cfe51b-29e5-402e-8348-5d3d18b7d092" name="Définir le parcours d'inspection"
+              summary="Définit un itinéraire spécifique avec des points de passages obligatoires"
+              description="&lt;p>Activit&amp;eacute; de planification strat&amp;eacute;gique visant &amp;agrave; &amp;eacute;tablir les itin&amp;eacute;raires, les points de passage obligatoires et les horaires des rondes de s&amp;eacute;curit&amp;eacute;. Cette d&amp;eacute;finition prend en compte la topologie du campus et les zones identifi&amp;eacute;es comme critiques ou vuln&amp;eacute;rables.&lt;/p>&#xA;"/>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.oa:OperationalActivity"
               id="3a09f48c-ed64-48c6-9d46-a6605f458cfc" name="Superviser la zone"
-              summary="Analyser les visuels"/>
+              summary="Analyser les visuels dans le but de détecter une anomalie"
+              description="&lt;p>Activit&amp;eacute; cognitive de surveillance consistant &amp;agrave; observer l&amp;#39;environnement (directement ou indirectement) pour d&amp;eacute;tecter tout &amp;eacute;v&amp;eacute;nement suspect, intrusion ou situation anormale. C&amp;#39;est l&amp;#39;activit&amp;eacute; finale de validation de la s&amp;eacute;curit&amp;eacute; qui n&amp;eacute;cessite une information visuelle claire et fiable pour la prise de d&amp;eacute;cision.&lt;/p>&#xA;"/>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.oa:OperationalActivity"
-              id="bb3ff8af-7d40-4021-b98b-2fcc76c27bb2" name="Déclencher l'inspection"/>
+              id="bb3ff8af-7d40-4021-b98b-2fcc76c27bb2" name="Déclencher l'inspection"
+              summary="Commande une inspection de manière programmé" description="&lt;p>Acte de commandement qui initie l&amp;#39;ex&amp;eacute;cution op&amp;eacute;rationnelle d&amp;#39;une ronde de surveillance. Ce d&amp;eacute;clenchement peut &amp;ecirc;tre programm&amp;eacute; selon un planning r&amp;eacute;gulier.&lt;/p>&#xA;"/>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.oa:OperationalActivity"
               id="48e84c42-12d6-4105-9af2-06f87fb177f7" name="Fournir l'état du chemin"
-              summary="Il définit le sol"/>
+              summary="Définit les surfaces et les différentes variables physiques comme l'adhérence"
+              description="&lt;p>R&amp;ocirc;le passif de l&amp;#39;infrastructure physique qui offre une surface de sustentation et de roulement. Cette activit&amp;eacute; englobe les contraintes topologiques (pentes, devers, nature du sol : bitume, terre, gravier) et l&amp;#39;adh&amp;eacute;rence variable qui impactent la capacit&amp;eacute; de mouvement des entit&amp;eacute;s mobiles.&lt;/p>&#xA;"/>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.oa:OperationalActivity"
               id="0473a58d-43c2-4a77-b1fa-30524e5dc6a2" name="Fournir une signature visuelle"
-              summary="Renvoie visuellement les élements de l'environnement (bâtiments, arbres, etc.)"/>
+              summary="Renvoie visuellement les élements de l'environnement (bâtiments, arbres, etc.)"
+              description="&lt;p>Propri&amp;eacute;t&amp;eacute; physique de l&amp;#39;environnement statique (b&amp;acirc;timents, v&amp;eacute;g&amp;eacute;tation, routes) de refl&amp;eacute;ter la lumi&amp;egrave;re ambiante. Cela constitue le &amp;quot;fond de sc&amp;egrave;ne&amp;quot; visuel de r&amp;eacute;f&amp;eacute;rence par rapport auquel les mouvements ou anomalies (intrus) doivent &amp;ecirc;tre discrimin&amp;eacute;s.&lt;/p>&#xA;"/>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.oa:OperationalActivity"
-              id="595bbc6a-aa4e-49e5-b575-b733b126f3d6" name="Se déplacer sur le campus"/>
+              id="595bbc6a-aa4e-49e5-b575-b733b126f3d6" name="Se déplacer sur le campus"
+              summary="Evoluer physiquement dans l'environnement" description="&lt;p>Activit&amp;eacute; de mobilit&amp;eacute; l&amp;eacute;gitime des personnes ou v&amp;eacute;hicules autoris&amp;eacute;s (&amp;eacute;tudiants, personnel) au sein de l&amp;#39;enceinte. Ils g&amp;eacute;n&amp;egrave;rent des flux dynamiques impr&amp;eacute;visibles que la surveillance doit d&amp;eacute;tecter pour &amp;eacute;viter les collisions, sans pour autant les classer comme menaces.&lt;/p>&#xA;"/>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.oa:OperationalActivity"
-              id="e6ca8b94-e0cb-4fc9-b7e8-3c76c26e8a9d" name="Occuper le chemin"/>
+              id="e6ca8b94-e0cb-4fc9-b7e8-3c76c26e8a9d" name="Occuper le chemin" summary="Occuper physiquement l'environnement"
+              description="&lt;p>Action passive de pr&amp;eacute;sence physique sur une voie de circulation (poubelle, banc, v&amp;eacute;hicule en stationnement), cr&amp;eacute;ant une obstruction temporaire ou permanente qui contraint la trajectoire et oblige &amp;agrave; une man&amp;oelig;uvre d&amp;#39;&amp;eacute;vitement.&lt;/p>&#xA;">
+            <ownedTraces xsi:type="org.polarsys.capella.core.data.capellacommon:GenericTrace"
+                id="ea0117f7-8bf8-473e-8778-df14d2ff15b1" targetElement="#a49a023b-ae89-4c08-8dab-7307e5e309c4"
+                sourceElement="#e6ca8b94-e0cb-4fc9-b7e8-3c76c26e8a9d"/>
+          </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.oa:OperationalActivity"
-              id="58e30b86-e34b-4521-9e85-cb3e62d8211e" name="Génerer les conditions météorologiques"/>
+              id="58e30b86-e34b-4521-9e85-cb3e62d8211e" name="Génerer les conditions météorologiques"
+              summary="Phénomène naturel produisant différents paramètres environnementaux"
+              description="&lt;p>Ph&amp;eacute;nom&amp;egrave;ne naturel dynamique produisant des param&amp;egrave;tres environnementaux variables (pr&amp;eacute;cipitations, vent, luminosit&amp;eacute;, temp&amp;eacute;rature). Ces conditions modifient en temps r&amp;eacute;el la praticabilit&amp;eacute; des chemins (boue, glissance) et la qualit&amp;eacute; de l&amp;#39;information visuelle (brouillard, nuit, contre-jour).&lt;/p>&#xA;"/>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.oa:OperationalActivity"
-              id="2bfa7746-932f-41e3-abee-3d4a5ca4fad3" name="Présenter une anomalie"/>
+              id="2bfa7746-932f-41e3-abee-3d4a5ca4fad3" name="Présenter une anomalie"
+              summary="Présenter un comportement qui génère une signature visuelle distincte"
+              description="&lt;p>Comportement ou &amp;eacute;tat d&amp;#39;un objet (intrus en mouvement, fum&amp;eacute;e, fen&amp;ecirc;tre ouverte, colis abandonn&amp;eacute;) qui g&amp;eacute;n&amp;egrave;re une signature visuelle distincte de la &amp;quot;normale&amp;quot;. C&amp;#39;est cette diff&amp;eacute;rence visuelle qui caract&amp;eacute;rise l&amp;#39;information de s&amp;eacute;curit&amp;eacute; critique &amp;agrave; capter.&lt;/p>&#xA;"/>
           <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
               id="134ff492-873b-4d07-ad8b-94dd020f8879" name="Modification de la scène"
               summary="Modifie la topologie de la scène suivant la météo" target="#48e84c42-12d6-4105-9af2-06f87fb177f7"
@@ -147,27 +173,39 @@
               id="eee6a7c6-067e-4922-bd05-2cb9d0330307" name="Information visuelle"
               summary="Information visuelle sur l'objet à détecter" target="#3a09f48c-ed64-48c6-9d46-a6605f458cfc"
               source="#e6ca8b94-e0cb-4fc9-b7e8-3c76c26e8a9d"/>
+          <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
+              id="236070c6-aa41-4f7c-995a-e2cb72453e05" name="Information visuelle"
+              target="#3a09f48c-ed64-48c6-9d46-a6605f458cfc" source="#595bbc6a-aa4e-49e5-b575-b733b126f3d6"/>
         </ownedOperationalActivities>
       </ownedFunctionPkg>
       <ownedAbstractCapabilityPkg xsi:type="org.polarsys.capella.core.data.oa:OperationalCapabilityPkg"
           id="16fe45c3-d525-4aa1-a1a4-5265bb901317" name="Operational Capabilities">
         <ownedOperationalCapabilities xsi:type="org.polarsys.capella.core.data.oa:OperationalCapability"
             id="5262f95d-4748-4498-8e65-020312248486" name="Visualiser en temps réel"
-            summary="Capacité à récupérer des images des objets détectés pendant l’inspection en temps réel">
+            summary="Capacité à récupérer des visuel immédiat" description="&lt;p>Capacit&amp;eacute; pour les autorit&amp;eacute;s d&amp;#39;obtenir un retour visuel imm&amp;eacute;diat de la situation sur le terrain afin de lever le doute ou de suivre une action en cours.&lt;/p>&#xA;">
           <ownedEntityOperationalCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.oa:EntityOperationalCapabilityInvolvement"
               id="edaaa761-50fe-492a-b767-6985421feb65" involved="#9c51e97c-c488-4cfe-b84c-e3b0cd92ab17"/>
+          <ownedEntityOperationalCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.oa:EntityOperationalCapabilityInvolvement"
+              id="7aa5434c-93f3-4c8d-94c0-9fc31c53204e" involved="#70680554-988f-4f9d-b3f7-4b670feca712"/>
+          <ownedEntityOperationalCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.oa:EntityOperationalCapabilityInvolvement"
+              id="d9b2566a-ef7f-4480-a956-4e8fe087a479" involved="#9d1e719a-68c0-4c7c-9155-9506d4de8ffb"/>
+          <ownedEntityOperationalCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.oa:EntityOperationalCapabilityInvolvement"
+              id="41099c0b-7ee6-4dda-9e3c-6a59c908e4b7" involved="#16a0dd7d-24b7-4d12-8545-5b06c86efb0a"/>
         </ownedOperationalCapabilities>
         <ownedOperationalCapabilities xsi:type="org.polarsys.capella.core.data.oa:OperationalCapability"
-            id="6c5fd6ce-ae42-4d01-96fa-8ab1c6e0aa78" name="Inspecter la présence d’objets"
-            summary="Capacité d’inspecter la présence d’objets sur son parcours">
+            id="6c5fd6ce-ae42-4d01-96fa-8ab1c6e0aa78" name="Inspecter la présence d’objets d'intêret"
+            summary="Capacité d’inspecter la présence d’objets d'intêret sur son parcours"
+            description="&lt;p>Capacit&amp;eacute; &amp;agrave; v&amp;eacute;rifier syst&amp;eacute;matiquement des zones d&amp;eacute;finies du campus pour confirmer l&amp;#39;absence ou d&amp;eacute;tecter la pr&amp;eacute;sence d&amp;#39;&amp;eacute;l&amp;eacute;ments inhabituels (intrusions ou d&amp;eacute;gradations).&lt;/p>&#xA;">
           <ownedEntityOperationalCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.oa:EntityOperationalCapabilityInvolvement"
               id="a63e8527-620f-4cb7-94b6-2793461dae31" involved="#9c51e97c-c488-4cfe-b84c-e3b0cd92ab17"/>
           <ownedEntityOperationalCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.oa:EntityOperationalCapabilityInvolvement"
               id="898f2932-ce58-4328-a686-f354545de5f8" involved="#70680554-988f-4f9d-b3f7-4b670feca712"/>
+          <ownedEntityOperationalCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.oa:EntityOperationalCapabilityInvolvement"
+              id="7ce1de46-a3c6-47c3-9936-50914cdb2970" involved="#9d1e719a-68c0-4c7c-9155-9506d4de8ffb"/>
         </ownedOperationalCapabilities>
         <ownedOperationalCapabilities xsi:type="org.polarsys.capella.core.data.oa:OperationalCapability"
             id="8aa83faa-deab-4cbc-9a3e-6c1d62fcd567" name="Suivre le chemin prédéfinis"
-            summary="Capacité à suivre le chemin prédéfinies quel que soit les conditions météorologiques">
+            summary="Capacité à suivre le chemin prédéfinies" description="&lt;p>Capacit&amp;eacute; de respecter un itin&amp;eacute;raire de ronde quel que soit les conditions m&amp;eacute;t&amp;eacute;orologiques ou les &amp;eacute;l&amp;eacute;ments pr&amp;eacute;sents sur le trajet.&lt;/p>&#xA;">
           <ownedEntityOperationalCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.oa:EntityOperationalCapabilityInvolvement"
               id="48947c4f-b178-46d4-8da2-86437fbfa9fd" involved="#11eeabc0-5219-4408-be29-8e5838f5e8ed"/>
           <ownedEntityOperationalCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.oa:EntityOperationalCapabilityInvolvement"
@@ -176,10 +214,15 @@
               id="54cc8b9b-fd47-400d-8c2f-4644b37b2fde" involved="#16a0dd7d-24b7-4d12-8545-5b06c86efb0a"/>
           <ownedEntityOperationalCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.oa:EntityOperationalCapabilityInvolvement"
               id="957e5860-8163-4163-832d-c5bb3cffd1d6" involved="#fa0e825b-0e88-4574-88ce-61a3434c6f25"/>
+          <ownedEntityOperationalCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.oa:EntityOperationalCapabilityInvolvement"
+              id="255c65e3-7960-481e-b9e9-df3a7553a707" involved="#70680554-988f-4f9d-b3f7-4b670feca712"/>
+          <ownedEntityOperationalCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.oa:EntityOperationalCapabilityInvolvement"
+              id="7aa40219-e0d2-474e-be3f-4b4b760538bf" involved="#9c51e97c-c488-4cfe-b84c-e3b0cd92ab17"/>
         </ownedOperationalCapabilities>
         <ownedOperationalCapabilities xsi:type="org.polarsys.capella.core.data.oa:OperationalCapability"
             id="a81154e7-ea61-4af4-8710-0b44d5c6f7bf" name="Fonctionner toute l’année"
-            summary="Être robuste et tenir en autonomie tout au long de l’inspection">
+            summary="Capacité à être robuste et tenir en autonomie tout au long de l’inspection"
+            description="&lt;p>Capacit&amp;eacute; op&amp;eacute;rationnelle garantissant la continuit&amp;eacute; du service de surveillance quelles que soient les conditions saisonni&amp;egrave;res (jour/nuit, &amp;eacute;t&amp;eacute;/hiver, pluie/neige) et l&amp;#39;&amp;eacute;tat du syst&amp;egrave;me (autonomie).&lt;/p>&#xA;">
           <ownedEntityOperationalCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.oa:EntityOperationalCapabilityInvolvement"
               id="81b69b31-022f-44fb-9e39-95dd5d302f5a" involved="#fa0e825b-0e88-4574-88ce-61a3434c6f25"/>
           <ownedEntityOperationalCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.oa:EntityOperationalCapabilityInvolvement"
@@ -187,13 +230,14 @@
         </ownedOperationalCapabilities>
         <ownedOperationalCapabilities xsi:type="org.polarsys.capella.core.data.oa:OperationalCapability"
             id="61cecc01-fbea-4298-9100-b70af85fa265" name="Démarrer une nouvelle inspection"
-            summary="Toutes les heures, le système démarre une nouvelle inspection">
+            summary="Capacité de lancer une mission de surveillance" description="&lt;p>Capacit&amp;eacute; de lancer une mission de surveillance de mani&amp;egrave;re programm&amp;eacute;e (une inspection par heure).&lt;/p>&#xA;">
           <ownedEntityOperationalCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.oa:EntityOperationalCapabilityInvolvement"
               id="2443e517-d032-45d7-8b36-577bb25e1f6c" involved="#9c51e97c-c488-4cfe-b84c-e3b0cd92ab17"/>
         </ownedOperationalCapabilities>
         <ownedOperationalCapabilities xsi:type="org.polarsys.capella.core.data.oa:OperationalCapability"
             id="7e925b8f-8f3a-45b8-98e4-e937d22a40fb" name="Définir les objets à detecter"
-            summary="Capacité à récupérer des images des objets détectés pendant l’inspection en temps réel">
+            summary="Capacité de spécifier les éléments qui constituent un intêret"
+            description="&lt;p>Capacit&amp;eacute; de sp&amp;eacute;cifier quels types d&amp;#39;&amp;eacute;l&amp;eacute;ments constituent une alerte (distinction entre un &amp;eacute;tudiant normal et un intrus, ou entre une fen&amp;ecirc;tre ferm&amp;eacute;e et ouverte).&lt;/p>&#xA;">
           <ownedEntityOperationalCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.oa:EntityOperationalCapabilityInvolvement"
               id="69cb02d8-2074-4eeb-9b94-788f2299c321" involved="#9c51e97c-c488-4cfe-b84c-e3b0cd92ab17"/>
         </ownedOperationalCapabilities>
@@ -219,13 +263,13 @@
         <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="09ad9004-2d16-4bfb-adfd-b870e6d1a1cd"
             name="Objet d'intêret " abstractType="#70680554-988f-4f9d-b3f7-4b670feca712"/>
         <ownedEntities xsi:type="org.polarsys.capella.core.data.oa:Entity" id="fa0e825b-0e88-4574-88ce-61a3434c6f25"
-            name="Météo" summary="Définit les conditions météorologiques " description="&lt;p>Il&amp;nbsp;est responsable de :&lt;/p>&#xA;&#xA;&lt;ul>&#xA;&#x9;&lt;li>Modifier l&amp;#39;environnement&lt;/li>&#xA;&#x9;&lt;li>Modifier les capacit&amp;eacute;s du robot&lt;/li>&#xA;&lt;/ul>&#xA;">
+            name="Météo" summary="Définit les conditions météorologiques " description="&lt;p>Entit&amp;eacute; environnementale non contr&amp;ocirc;lable g&amp;eacute;n&amp;eacute;rant les conditions atmosph&amp;eacute;riques (pluie, vent, brouillard, luminosit&amp;eacute;, temp&amp;eacute;rature). Elle impacte la visibilit&amp;eacute; (pour la d&amp;eacute;tection) et la praticabilit&amp;eacute; des chemins (pour le d&amp;eacute;placement).&lt;/p>&#xA;">
           <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
               id="e4399c2e-31ca-4857-be8f-72bc2b2f558f" targetElement="#58e30b86-e34b-4521-9e85-cb3e62d8211e"
               sourceElement="#fa0e825b-0e88-4574-88ce-61a3434c6f25"/>
         </ownedEntities>
         <ownedEntities xsi:type="org.polarsys.capella.core.data.oa:Entity" id="9d1e719a-68c0-4c7c-9155-9506d4de8ffb"
-            name="Campus" summary="Environnement dans lequel évolue le robot" description="&lt;p>Il d&amp;eacute;finit :&lt;/p>&#xA;&#xA;&lt;ul>&#xA;&#x9;&lt;li>L&amp;#39;&amp;eacute;tat du chemin&lt;/li>&#xA;&#x9;&lt;li>Les b&amp;acirc;timents&lt;/li>&#xA;&lt;/ul>&#xA;">
+            name="Campus" summary="Environnement dans lequel évolue le robot" description="&lt;p>Entit&amp;eacute; repr&amp;eacute;sentant l&amp;#39;environnement physique et g&amp;eacute;ographique de l&amp;#39;&amp;eacute;cole. Il fournit le support physique (sol, routes, chemins) pour le d&amp;eacute;placement et constitue l&amp;#39;environnement visuel de r&amp;eacute;f&amp;eacute;rence (b&amp;acirc;timents, v&amp;eacute;g&amp;eacute;tation) dans lequel les objets d&amp;#39;int&amp;ecirc;ret doivent &amp;ecirc;tre d&amp;eacute;tect&amp;eacute;es.&lt;/p>&#xA;">
           <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
               id="e5cf903c-cb3c-40a1-86d8-c8141ddaa743" targetElement="#48e84c42-12d6-4105-9af2-06f87fb177f7"
               sourceElement="#9d1e719a-68c0-4c7c-9155-9506d4de8ffb"/>
@@ -235,22 +279,22 @@
         </ownedEntities>
         <ownedEntities xsi:type="org.polarsys.capella.core.data.oa:Entity" id="11eeabc0-5219-4408-be29-8e5838f5e8ed"
             name="Autres usagers " summary="Piétons/Véhicules évoluant dans l'environnement"
-            description="&lt;p>Il est&amp;nbsp;:&lt;/p>&#xA;&#xA;&lt;ul>&#xA;&#x9;&lt;li>sur le chemin du robot&lt;/li>&#xA;&lt;/ul>&#xA;"
+            description="&lt;p>Personnes pr&amp;eacute;sentes l&amp;eacute;gitimement sur le campus (&amp;eacute;tudiants, professeurs, personnel) qui se d&amp;eacute;placent de mani&amp;egrave;re al&amp;eacute;atoire. Ils repr&amp;eacute;sentent des obstacles dynamiques &amp;agrave; ne pas percuter et ne doivent pas &amp;ecirc;tre confondus avec des menaces.&lt;/p>&#xA;"
             actor="true" human="true">
           <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
               id="527c5329-29cf-4c8c-b7cc-dd86b40baeec" targetElement="#595bbc6a-aa4e-49e5-b575-b733b126f3d6"
               sourceElement="#11eeabc0-5219-4408-be29-8e5838f5e8ed"/>
         </ownedEntities>
         <ownedEntities xsi:type="org.polarsys.capella.core.data.oa:Entity" id="16a0dd7d-24b7-4d12-8545-5b06c86efb0a"
-            name="Objet à éviter" summary="Ce que le robot doit éviter sur son chemin"
-            description="&lt;p>Il est :&lt;/p>&#xA;&#xA;&lt;ul>&#xA;&#x9;&lt;li>sur le chemin du robot&lt;/li>&#xA;&lt;/ul>&#xA;">
+            name="Objet à éviter" summary="Ce que l'on cherche à ne pas collisionner"
+            description="&lt;p>Obstacles statiques ou temporaires pr&amp;eacute;sents sur les chemins (poubelles, bancs, v&amp;eacute;hicules gar&amp;eacute;s, travaux) qui contraignent la circulation sur le campus.&lt;/p>&#xA;">
           <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
               id="fb997cf8-f69e-49b2-af50-5a65196b1fa1" targetElement="#e6ca8b94-e0cb-4fc9-b7e8-3c76c26e8a9d"
               sourceElement="#16a0dd7d-24b7-4d12-8545-5b06c86efb0a"/>
         </ownedEntities>
         <ownedEntities xsi:type="org.polarsys.capella.core.data.oa:Entity" id="9c51e97c-c488-4cfe-b84c-e3b0cd92ab17"
             name="Autorités de l'ENSTA" summary="Responsable de la sécurité supervisant les rondes du robot"
-            description="&lt;p>Il a la responsabilit&amp;eacute; de :&lt;/p>&#xA;&#xA;&lt;ul>&#xA;&#x9;&lt;li>D&amp;eacute;finir les zones &amp;agrave; surveiller via l&amp;#39;interface de contr&amp;ocirc;le&lt;/li>&#xA;&#x9;&lt;li>Recevoir les alertes en temps r&amp;eacute;el&lt;/li>&#xA;&#x9;&lt;li>Maintient le robot op&amp;eacute;rationnel&lt;/li>&#xA;&lt;/ul>&#xA;"
+            description="&lt;p>Entit&amp;eacute; humaine responsable de la s&amp;eacute;curit&amp;eacute; et de la surveillance du campus. Ce sont les d&amp;eacute;cideurs qui d&amp;eacute;finissent les r&amp;egrave;glements dans et autour du campus ainsi que les&amp;nbsp;zones &amp;agrave; surveiller, planifient les rondes et valident les alertes. Ils sont les b&amp;eacute;n&amp;eacute;ficiaires finaux des informations remont&amp;eacute;es par la surveillance et sont aussi les acteurs qui interviennent en cas de probl&amp;egrave;me.&lt;/p>&#xA;&#xA;&lt;p>&amp;nbsp;&lt;/p>&#xA;&#xA;&lt;p>&amp;nbsp;&lt;/p>&#xA;&#xA;&lt;p>&amp;nbsp;&lt;/p>&#xA;"
             actor="true" human="true">
           <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
               id="f9fb5067-7911-4527-88f5-6208f286b6f1" targetElement="#e2cfe51b-29e5-402e-8348-5d3d18b7d092"
@@ -263,7 +307,7 @@
               sourceElement="#9c51e97c-c488-4cfe-b84c-e3b0cd92ab17"/>
         </ownedEntities>
         <ownedEntities xsi:type="org.polarsys.capella.core.data.oa:Entity" id="70680554-988f-4f9d-b3f7-4b670feca712"
-            name="Objet d'intêret " summary="Objet que le robot doit détecter" description="&lt;p>Il est :&lt;/p>&#xA;&#xA;&lt;ul>&#xA;&#x9;&lt;li>l&amp;#39;objet &amp;agrave; trouv&amp;eacute; pendant la surveillance&lt;/li>&#xA;&lt;/ul>&#xA;">
+            name="Objet d'intêret " summary="Objet que l'on cherche à détecter" description="&lt;p>&amp;Eacute;l&amp;eacute;ment mat&amp;eacute;riel ou humain dont la pr&amp;eacute;sence ou l&amp;#39;&amp;eacute;tat constitue une anomalie de s&amp;eacute;curit&amp;eacute; (ex : intrus, fen&amp;ecirc;tre ouverte, colis suspect, d&amp;eacute;part de feu). C&amp;#39;est la cible que la surveillance doit identifier.&lt;/p>&#xA;">
           <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
               id="2a28d787-e226-4e9a-870d-c0e774b729f8" targetElement="#2bfa7746-932f-41e3-abee-3d4a5ca4fad3"
               sourceElement="#70680554-988f-4f9d-b3f7-4b670feca712"/>

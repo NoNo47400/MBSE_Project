@@ -1060,6 +1060,10 @@
             id="d8d7569a-b80c-49a1-8f43-310299d83523" name="Batterie pleine"/>
         <ownedStateEvents xsi:type="org.polarsys.capella.core.data.capellacommon:ChangeEvent"
             id="de8dc7c9-a5d3-4421-a64b-da2dc850fa72" name="Bouton controle manuel"/>
+        <ownedStateEvents xsi:type="org.polarsys.capella.core.data.capellacommon:ChangeEvent"
+            id="c15312c7-03e7-4206-bdfa-7886b3fc628c" name="Signal d'arrêt"/>
+        <ownedStateEvents xsi:type="org.polarsys.capella.core.data.capellacommon:ChangeEvent"
+            id="1ef1e48a-938c-4a5e-9642-13cfef168dcb" name="Erreur ou Problème"/>
       </ownedDataPkg>
       <ownedSystemComponentPkg xsi:type="org.polarsys.capella.core.data.ctx:SystemComponentPkg"
           id="9a1ecd79-1ec9-473c-9fdd-044999850b13" name="Structure">
@@ -1116,40 +1120,44 @@
           <ownedStateMachines xsi:type="org.polarsys.capella.core.data.capellacommon:StateMachine"
               id="f0ca34b8-b8c3-44c0-b86e-c98ac05267f6" name="System State Machine">
             <ownedRegions xsi:type="org.polarsys.capella.core.data.capellacommon:Region"
-                id="8fcd798f-a175-4797-a821-38e21d58aedb" name="Default Region" involvedStates="#5dd2b8b5-d9ab-435a-a5b3-8f67d9e99c2e #b0e9d19f-6c9f-4c68-a501-7c4c2ec9ae7a #bb9c7e36-38d0-4c3b-9be0-511c2c0f929a #e988b4de-acb1-4db8-8967-7fc28ad7e1b5 #938c2acb-07c8-494c-bbfa-d0fa1b73bfb6 #0bb71c9e-4519-40a6-aa55-7b75a34a5194 #5602c5c1-42eb-4af0-b235-a13a26b0563f">
+                id="8fcd798f-a175-4797-a821-38e21d58aedb" name="Default Region" involvedStates="#5dd2b8b5-d9ab-435a-a5b3-8f67d9e99c2e #b0e9d19f-6c9f-4c68-a501-7c4c2ec9ae7a #bb9c7e36-38d0-4c3b-9be0-511c2c0f929a #e988b4de-acb1-4db8-8967-7fc28ad7e1b5 #938c2acb-07c8-494c-bbfa-d0fa1b73bfb6 #0bb71c9e-4519-40a6-aa55-7b75a34a5194 #5602c5c1-42eb-4af0-b235-a13a26b0563f #1281523c-b0d6-4d10-9b40-e29f8e0dbaef">
               <ownedStates xsi:type="org.polarsys.capella.core.data.capellacommon:Mode"
-                  id="5dd2b8b5-d9ab-435a-a5b3-8f67d9e99c2e" name="Mode Inspection">
+                  id="5dd2b8b5-d9ab-435a-a5b3-8f67d9e99c2e" name="Mode Inspection"
+                  entry="#193539a9-129b-4e46-9ee9-0252bcf3068f" doActivity="#9056aebb-89b7-407a-be69-0d4c06158675 #193539a9-129b-4e46-9ee9-0252bcf3068f #700aab1f-b778-4637-b5bd-df638f9467c2 #d0b4fc0f-0b47-43fb-b964-c5a613b1a3e7 #da4cb0e5-9612-49e1-89d6-b7096dc377af #91a883c3-612e-4183-a0d7-91941b3ef2a0 #af30a23f-1e64-466a-81b5-ef37e1cf1efb #6669082c-db93-495b-9dbf-42f7ae204d84 #e91353ce-5b4d-40f6-8d01-26a4b90d0ae9 #8487aaf9-6dd2-4edb-8b7f-4155abd2d794">
                 <ownedRegions xsi:type="org.polarsys.capella.core.data.capellacommon:Region"
                     id="ca4e2fbd-1300-473e-a3c8-5f1c0c60909f" name="Campus"/>
               </ownedStates>
               <ownedStates xsi:type="org.polarsys.capella.core.data.capellacommon:Mode"
-                  id="b0e9d19f-6c9f-4c68-a501-7c4c2ec9ae7a" name="Mode Charge">
+                  id="b0e9d19f-6c9f-4c68-a501-7c4c2ec9ae7a" name="Mode Charge" doActivity="#91a883c3-612e-4183-a0d7-91941b3ef2a0">
                 <ownedRegions xsi:type="org.polarsys.capella.core.data.capellacommon:Region"
                     id="61c52991-bc58-465e-9a59-3097ab3afd4e" name="Base" visibleInDoc="false"
                     visibleInLM="false"/>
               </ownedStates>
               <ownedStates xsi:type="org.polarsys.capella.core.data.capellacommon:Mode"
-                  id="bb9c7e36-38d0-4c3b-9be0-511c2c0f929a" name="Mode Manuel">
+                  id="bb9c7e36-38d0-4c3b-9be0-511c2c0f929a" name="Mode Manuel" doActivity="#700aab1f-b778-4637-b5bd-df638f9467c2 #da4cb0e5-9612-49e1-89d6-b7096dc377af #8487aaf9-6dd2-4edb-8b7f-4155abd2d794 #e91353ce-5b4d-40f6-8d01-26a4b90d0ae9 #9056aebb-89b7-407a-be69-0d4c06158675 #91a883c3-612e-4183-a0d7-91941b3ef2a0 #af30a23f-1e64-466a-81b5-ef37e1cf1efb">
                 <ownedRegions xsi:type="org.polarsys.capella.core.data.capellacommon:Region"
                     id="6d2ce3ef-95bb-494d-b3be-0517e01bf03d" name="Partout"/>
               </ownedStates>
               <ownedStates xsi:type="org.polarsys.capella.core.data.capellacommon:Mode"
-                  id="e988b4de-acb1-4db8-8967-7fc28ad7e1b5" name="Mode Economie d'énergie">
+                  id="e988b4de-acb1-4db8-8967-7fc28ad7e1b5" name="Mode Economie d'énergie"
+                  doActivity="#193539a9-129b-4e46-9ee9-0252bcf3068f #d0b4fc0f-0b47-43fb-b964-c5a613b1a3e7 #91a883c3-612e-4183-a0d7-91941b3ef2a0 #af30a23f-1e64-466a-81b5-ef37e1cf1efb #6669082c-db93-495b-9dbf-42f7ae204d84 #8487aaf9-6dd2-4edb-8b7f-4155abd2d794">
                 <ownedRegions xsi:type="org.polarsys.capella.core.data.capellacommon:Region"
                     id="433544c1-5dd3-42d1-8c27-343d12fd8d65" name="Campus"/>
               </ownedStates>
               <ownedStates xsi:type="org.polarsys.capella.core.data.capellacommon:Mode"
-                  id="938c2acb-07c8-494c-bbfa-d0fa1b73bfb6" name="Mode Idle">
+                  id="938c2acb-07c8-494c-bbfa-d0fa1b73bfb6" name="Mode Idle" doActivity="#91a883c3-612e-4183-a0d7-91941b3ef2a0">
                 <ownedRegions xsi:type="org.polarsys.capella.core.data.capellacommon:Region"
                     id="b5d14ce7-c1e6-4d71-8466-cbc4406c3a96" name="Base"/>
               </ownedStates>
               <ownedStates xsi:type="org.polarsys.capella.core.data.capellacommon:InitialPseudoState"
                   id="0bb71c9e-4519-40a6-aa55-7b75a34a5194" name="Démarage"/>
               <ownedStates xsi:type="org.polarsys.capella.core.data.capellacommon:Mode"
-                  id="5602c5c1-42eb-4af0-b235-a13a26b0563f" name="Mode dégradé">
+                  id="5602c5c1-42eb-4af0-b235-a13a26b0563f" name="Mode dégradé" doActivity="#91a883c3-612e-4183-a0d7-91941b3ef2a0 #8487aaf9-6dd2-4edb-8b7f-4155abd2d794 #e91353ce-5b4d-40f6-8d01-26a4b90d0ae9">
                 <ownedRegions xsi:type="org.polarsys.capella.core.data.capellacommon:Region"
-                    id="d850b94e-a6f1-4a12-b2b2-e6063623fee3" name="region"/>
+                    id="d850b94e-a6f1-4a12-b2b2-e6063623fee3" name="Partout"/>
               </ownedStates>
+              <ownedStates xsi:type="org.polarsys.capella.core.data.capellacommon:FinalState"
+                  id="1281523c-b0d6-4d10-9b40-e29f8e0dbaef" name="Final  8"/>
               <ownedTransitions xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransition"
                   id="a3804e8a-4ab7-42a9-833f-26328fbec489" name="Energie faible"
                   triggerDescription="" source="#5dd2b8b5-d9ab-435a-a5b3-8f67d9e99c2e"
@@ -1196,6 +1204,50 @@
               <ownedTransitions xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransition"
                   id="70986ffa-db05-4ca3-a4c2-52461c501e2b" triggerDescription=""
                   source="#0bb71c9e-4519-40a6-aa55-7b75a34a5194" target="#5dd2b8b5-d9ab-435a-a5b3-8f67d9e99c2e"/>
+              <ownedTransitions xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransition"
+                  id="363fddab-1498-4232-b827-8ca3876cb317" triggerDescription=""
+                  source="#bb9c7e36-38d0-4c3b-9be0-511c2c0f929a" target="#1281523c-b0d6-4d10-9b40-e29f8e0dbaef"
+                  triggers="#c15312c7-03e7-4206-bdfa-7886b3fc628c"/>
+              <ownedTransitions xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransition"
+                  id="222e2efc-b113-468e-85d0-226a9e5cb5da" triggerDescription=""
+                  source="#5602c5c1-42eb-4af0-b235-a13a26b0563f" target="#1281523c-b0d6-4d10-9b40-e29f8e0dbaef"
+                  triggers="#c15312c7-03e7-4206-bdfa-7886b3fc628c"/>
+              <ownedTransitions xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransition"
+                  id="1f69ce5f-3bd8-4e97-aa15-220401bb42be" triggerDescription=""
+                  source="#e988b4de-acb1-4db8-8967-7fc28ad7e1b5" target="#1281523c-b0d6-4d10-9b40-e29f8e0dbaef"
+                  triggers="#c15312c7-03e7-4206-bdfa-7886b3fc628c"/>
+              <ownedTransitions xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransition"
+                  id="8c7330a2-8886-4ff6-a861-3233902d3b47" triggerDescription=""
+                  source="#b0e9d19f-6c9f-4c68-a501-7c4c2ec9ae7a" target="#1281523c-b0d6-4d10-9b40-e29f8e0dbaef"
+                  triggers="#c15312c7-03e7-4206-bdfa-7886b3fc628c"/>
+              <ownedTransitions xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransition"
+                  id="a1ddbffa-07ba-4dc6-b0b0-e1ab35670341" triggerDescription=""
+                  source="#5dd2b8b5-d9ab-435a-a5b3-8f67d9e99c2e" target="#1281523c-b0d6-4d10-9b40-e29f8e0dbaef"
+                  triggers="#c15312c7-03e7-4206-bdfa-7886b3fc628c"/>
+              <ownedTransitions xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransition"
+                  id="1266efd6-f1a3-4568-aa61-ee19758d578c" triggerDescription=""
+                  source="#938c2acb-07c8-494c-bbfa-d0fa1b73bfb6" target="#1281523c-b0d6-4d10-9b40-e29f8e0dbaef"
+                  triggers="#c15312c7-03e7-4206-bdfa-7886b3fc628c"/>
+              <ownedTransitions xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransition"
+                  id="963115bf-1f76-46b0-b663-ccabd079a5d0" triggerDescription=""
+                  source="#bb9c7e36-38d0-4c3b-9be0-511c2c0f929a" target="#5602c5c1-42eb-4af0-b235-a13a26b0563f"
+                  triggers="#1ef1e48a-938c-4a5e-9642-13cfef168dcb"/>
+              <ownedTransitions xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransition"
+                  id="d0add564-726a-4c53-984d-c5fcc9acad68" triggerDescription=""
+                  source="#938c2acb-07c8-494c-bbfa-d0fa1b73bfb6" target="#5602c5c1-42eb-4af0-b235-a13a26b0563f"
+                  triggers="#1ef1e48a-938c-4a5e-9642-13cfef168dcb"/>
+              <ownedTransitions xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransition"
+                  id="3ff4bd22-4574-4c62-a79e-6be0025d0f51" triggerDescription=""
+                  source="#b0e9d19f-6c9f-4c68-a501-7c4c2ec9ae7a" target="#5602c5c1-42eb-4af0-b235-a13a26b0563f"
+                  triggers="#1ef1e48a-938c-4a5e-9642-13cfef168dcb"/>
+              <ownedTransitions xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransition"
+                  id="a750a784-73b4-4b36-82f0-8aae54bd7650" triggerDescription=""
+                  source="#e988b4de-acb1-4db8-8967-7fc28ad7e1b5" target="#5602c5c1-42eb-4af0-b235-a13a26b0563f"
+                  triggers="#1ef1e48a-938c-4a5e-9642-13cfef168dcb"/>
+              <ownedTransitions xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransition"
+                  id="4614fa46-ae8b-4a91-a5a2-e656a332a7e9" triggerDescription=""
+                  source="#5dd2b8b5-d9ab-435a-a5b3-8f67d9e99c2e" target="#5602c5c1-42eb-4af0-b235-a13a26b0563f"
+                  triggers="#1ef1e48a-938c-4a5e-9642-13cfef168dcb"/>
             </ownedRegions>
           </ownedStateMachines>
         </ownedSystemComponents>

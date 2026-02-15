@@ -373,6 +373,11 @@
                 source="#60329d8e-4be5-4a64-bd51-28f77a2188ce" target="#27c30d85-0131-4b83-8a77-f6141e2ea825"/>
             <ownedFunctionalChainInvolvements xsi:type="org.polarsys.capella.core.data.fa:FunctionalChainInvolvementFunction"
                 id="27c30d85-0131-4b83-8a77-f6141e2ea825" involved="#4b4a8f80-8790-4422-9870-307b17130d66"/>
+            <ownedFunctionalChainInvolvements xsi:type="org.polarsys.capella.core.data.fa:FunctionalChainInvolvementFunction"
+                id="68cadd93-fabf-48ca-b065-8d6a04ee240a" involved="#37addd0e-c88f-4b30-9176-12618cb879e1"/>
+            <ownedFunctionalChainInvolvements xsi:type="org.polarsys.capella.core.data.fa:FunctionalChainInvolvementLink"
+                id="cdb47119-a8ad-4649-b33e-85df51c1f047" involved="#46090db2-0708-4953-ae10-aa34bc9d0697"
+                source="#68cadd93-fabf-48ca-b065-8d6a04ee240a" target="#d7dd2aac-170c-4566-bd62-e35f06cf1ccd"/>
           </ownedFunctionalChains>
           <ownedFunctionalChains xsi:type="org.polarsys.capella.core.data.fa:FunctionalChain"
               id="7eb601c9-69de-4e54-9d3d-1b1106427b22" name="Informer l'utilisateur de l'état de la batterie">
@@ -549,6 +554,7 @@
           </ownedFunctionalChains>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.ctx:SystemFunction"
               id="9056aebb-89b7-407a-be69-0d4c06158675" name="Acquérir l'environnement"
+              description="&lt;p>Formatage de l&amp;#39;ensemble des donn&amp;eacute;es des capteurs.&lt;/p>&#xA;"
               availableInStates="#5dd2b8b5-d9ab-435a-a5b3-8f67d9e99c2e #e988b4de-acb1-4db8-8967-7fc28ad7e1b5">
             <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
                 id="265eb1e2-d66a-4e5a-8ad8-9d37596be464" name="FIP 1"/>
@@ -563,6 +569,7 @@
           </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.ctx:SystemFunction"
               id="193539a9-129b-4e46-9ee9-0252bcf3068f" name="Recevoir les ordres de mission"
+              description="&lt;p>Notement les objets &amp;agrave; d&amp;eacute;tecter et le chemin de mani&amp;egrave;re compr&amp;eacute;hensible par le syst&amp;egrave;me.&lt;/p>&#xA;"
               availableInStates="#5dd2b8b5-d9ab-435a-a5b3-8f67d9e99c2e #e988b4de-acb1-4db8-8967-7fc28ad7e1b5">
             <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
                 id="636d4150-b0eb-412b-b9b2-5e2a63b2de92" name="FIP 1"/>
@@ -571,6 +578,7 @@
           </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.ctx:SystemFunction"
               id="700aab1f-b778-4637-b5bd-df638f9467c2" name="Détecter les conditions météo"
+              description="&lt;p>Via des capteurs qui utilisent les propri&amp;eacute;t&amp;eacute;s physiques de la m&amp;eacute;t&amp;eacute;o (temp&amp;eacute;rature, pression ect..)&lt;/p>&#xA;"
               availableInStates="#5dd2b8b5-d9ab-435a-a5b3-8f67d9e99c2e #e988b4de-acb1-4db8-8967-7fc28ad7e1b5">
             <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
                 id="98e939e5-bf2b-4fbe-8a37-bc1536dd58fd" name="FIP 1"/>
@@ -579,6 +587,7 @@
           </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.ctx:SystemFunction"
               id="d0b4fc0f-0b47-43fb-b964-c5a613b1a3e7" name="Calculer la trajectoire optimale"
+              description="&lt;p>Il faut aussi prendre en comptes les obstacles dans ce calcul.&lt;/p>&#xA;"
               availableInStates="#5dd2b8b5-d9ab-435a-a5b3-8f67d9e99c2e #e988b4de-acb1-4db8-8967-7fc28ad7e1b5">
             <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
                 id="e6708919-b26e-49d7-871f-f58a97e05610" name="FIP 1"/>
@@ -589,6 +598,7 @@
           </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.ctx:SystemFunction"
               id="da4cb0e5-9612-49e1-89d6-b7096dc377af" name="Détecter les objets d'interêt"
+              description="&lt;p>Via des capteurs qui utilisent les propri&amp;eacute;t&amp;eacute;s physiques des objets d&amp;#39;int&amp;eacute;r&amp;ecirc;t.&lt;/p>&#xA;"
               availableInStates="#5dd2b8b5-d9ab-435a-a5b3-8f67d9e99c2e #e988b4de-acb1-4db8-8967-7fc28ad7e1b5">
             <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
                 id="814e48a5-cc61-4980-b9b5-5e4db62caac6" name="FIP 1"/>
@@ -598,19 +608,8 @@
                 id="4c3b87fc-57b5-4b6a-868b-8dc5e62b4942" name="FOP 2"/>
           </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.ctx:SystemFunction"
-              id="91a883c3-612e-4183-a0d7-91941b3ef2a0" name="Gérer l'état de la batterie"
-              availableInStates="#b0e9d19f-6c9f-4c68-a501-7c4c2ec9ae7a #5dd2b8b5-d9ab-435a-a5b3-8f67d9e99c2e #e988b4de-acb1-4db8-8967-7fc28ad7e1b5 #bb9c7e36-38d0-4c3b-9be0-511c2c0f929a">
-            <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
-                id="61df208e-8dac-4cec-936f-acf43c4cc7a2" name="FIP 1"/>
-            <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
-                id="eb2cb985-eb6d-40d2-96c3-656c4d4c09af" name="FIP 3"/>
-            <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
-                id="92aedecc-2fd8-495a-b6ad-a25e9204f8e2" name="FOP 1"/>
-            <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
-                id="85d1cf4c-3f85-4ccf-bd32-4e1d2d39ede9" name="FOP 2"/>
-          </ownedFunctions>
-          <ownedFunctions xsi:type="org.polarsys.capella.core.data.ctx:SystemFunction"
               id="af30a23f-1e64-466a-81b5-ef37e1cf1efb" name="Organiser les tâches"
+              description="&lt;p>Ordonnancement des t&amp;acirc;ches.&lt;/p>&#xA;"
               availableInStates="#5dd2b8b5-d9ab-435a-a5b3-8f67d9e99c2e #e988b4de-acb1-4db8-8967-7fc28ad7e1b5">
             <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
                 id="c4ce12fd-abf3-47c6-abd2-b4e5a07c455e" name="FIP 1"/>
@@ -622,25 +621,32 @@
                 id="1cd0669f-33a3-4f9d-ba74-0f317ef957bf" name="FOP 1"/>
             <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
                 id="d08ad03a-ad51-47bb-92b9-5ad4c697ae3b" name="FOP 2"/>
+            <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
+                id="7ad36eca-5baa-4e78-ae6e-80cc6efcfa45" name="FOP 3"/>
           </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.ctx:SystemFunction"
               id="6669082c-db93-495b-9dbf-42f7ae204d84" name="Suivre la trajectoire calculée"
+              description="&lt;p>Un path tracking mais aussi des actionneurs (roues, h&amp;eacute;lices ect..)&lt;/p>&#xA;"
               availableInStates="#5dd2b8b5-d9ab-435a-a5b3-8f67d9e99c2e #e988b4de-acb1-4db8-8967-7fc28ad7e1b5 #bb9c7e36-38d0-4c3b-9be0-511c2c0f929a">
             <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
                 id="35c9d053-fefd-40cf-94d5-121d2cb87062" name="FIP 1"/>
           </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.ctx:SystemFunction"
               id="e91353ce-5b4d-40f6-8d01-26a4b90d0ae9" name="Transmettre le flux d'informations"
-              summary="Image ou Vidéo suivant le niveau de la batterie" availableInStates="#5dd2b8b5-d9ab-435a-a5b3-8f67d9e99c2e #e988b4de-acb1-4db8-8967-7fc28ad7e1b5 #bb9c7e36-38d0-4c3b-9be0-511c2c0f929a">
+              summary="Image ou Vidéo suivant le niveau de la batterie" description="&lt;p>Image ou Vid&amp;eacute;o suivant le niveau de la batterie&lt;/p>&#xA;"
+              availableInStates="#5dd2b8b5-d9ab-435a-a5b3-8f67d9e99c2e #e988b4de-acb1-4db8-8967-7fc28ad7e1b5 #bb9c7e36-38d0-4c3b-9be0-511c2c0f929a">
             <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
                 id="12f123fb-c1ab-4d11-8412-4b252f2601be" name="FIP 1"/>
             <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
                 id="9161917f-3d5a-412c-8083-e80667037d4d" name="FIP 2"/>
+            <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
+                id="d51ad69a-d910-4f7e-b2d0-1f81e485e9d7" name="FIP 3"/>
             <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
                 id="7eff5432-fd95-4286-bf5b-25d1ce8927df" name="FOP 1"/>
           </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.ctx:SystemFunction"
               id="8487aaf9-6dd2-4edb-8b7f-4155abd2d794" name="Prévenir la supervision"
+              description="&lt;p>Lancer une alerte via l&amp;#39;IHM&lt;/p>&#xA;"
               availableInStates="#5dd2b8b5-d9ab-435a-a5b3-8f67d9e99c2e #e988b4de-acb1-4db8-8967-7fc28ad7e1b5 #bb9c7e36-38d0-4c3b-9be0-511c2c0f929a">
             <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
                 id="85bca39d-5a1d-4d76-9689-c393789e9903" name="FIP 1"/>
@@ -652,42 +658,45 @@
                 id="4737cc0d-9751-48b3-9e1a-b00f93811608" name="FOP 2"/>
           </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.ctx:SystemFunction"
-              id="2fc29ef3-8068-4790-bb0d-e9f3673afa33" name="Gérer conditions Météo">
+              id="2fc29ef3-8068-4790-bb0d-e9f3673afa33" name="Gérer conditions Météo"
+              description="&lt;p>L&amp;#39;ensemble des conditions m&amp;eacute;t&amp;eacute;os qui peuvent &amp;ecirc;tre capt&amp;eacute;es par le syst&amp;egrave;me.&lt;/p>&#xA;">
             <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
                 id="84f0d331-a50e-4c8d-80bc-657ff7ccefbe" name="FOP 1"/>
             <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
                 id="08590f64-6501-4c7f-8459-4e8b68cdb5f2" name="FOP 2"/>
           </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.ctx:SystemFunction"
-              id="6cb93a3b-b3aa-4702-9941-bba00b001715" name="Renvoyer la lumière">
+              id="6cb93a3b-b3aa-4702-9941-bba00b001715" name="Renvoyer la lumière"
+              description="&lt;p>Propri&amp;eacute;t&amp;eacute;s Physique du sol pour pouvoir avancer correctement.&lt;/p>&#xA;">
             <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
                 id="3de4de86-904a-4ed3-ad81-6cadbb4d456f" name="FOP 1"/>
           </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.ctx:SystemFunction"
               id="e2249a22-7869-4aeb-9544-715a111e6883" name="Occuper l'espace (Obstacle)"
-              summary="">
+              summary="" description="&lt;p>Propri&amp;eacute;t&amp;eacute;s physiques des obstacles.&lt;/p>&#xA;">
             <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
                 id="a276f975-dd13-4266-8406-433015e142ca" name="FOP 1"/>
           </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.ctx:SystemFunction"
-              id="b9a47087-d0a4-47e4-89b2-52848def4e65" name="Fournir énergie secteur">
+              id="b9a47087-d0a4-47e4-89b2-52848def4e65" name="Fournir énergie secteur"
+              description="&lt;p>Suppos&amp;eacute; 230V, 50hz Fran&amp;ccedil;ais&lt;/p>&#xA;">
             <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
                 id="5fe344f6-fa4e-4279-80fd-511994cd7915" name="FOP 1"/>
           </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.ctx:SystemFunction"
-              id="74970362-c7b4-4baa-a281-45f9d305116d" name="Capter saisie">
+              id="74970362-c7b4-4baa-a281-45f9d305116d" name="Capter saisie" description="&lt;p>Convertir le trac&amp;eacute; de l&amp;#39;&amp;eacute;cran en donn&amp;eacute;es compr&amp;eacute;hensible par le syst&amp;egrave;me.&lt;/p>&#xA;">
             <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
                 id="9b1e867b-c7f7-44eb-afe9-ffca7baec91b" name="FIP 1"/>
             <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
                 id="584cda0a-d1c4-4c4c-b20a-9f51e0577392" name="FOP 1"/>
           </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.ctx:SystemFunction"
-              id="e33fa878-36ef-4ea7-9172-36822a75024b" name="Définir chemin">
+              id="e33fa878-36ef-4ea7-9172-36822a75024b" name="Définir chemin" description="&lt;p>Le trac&amp;eacute; du chemin de base&lt;/p>&#xA;">
             <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
                 id="27ccf9c2-113f-4acb-8fb9-71590e04d80a" name="FOP 1"/>
           </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.ctx:SystemFunction"
-              id="b81774a3-69a4-404d-a127-03449051861b" name="Afficher l'IHM">
+              id="b81774a3-69a4-404d-a127-03449051861b" name="Afficher l'IHM" description="&lt;p>Mettre en place une interface pour la visualisation.&lt;/p>&#xA;">
             <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
                 id="bac62ea9-0f4e-414d-b464-ec516ed5fae6" name="FIP 1"/>
             <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
@@ -702,24 +711,48 @@
                 id="7513d7a4-61c3-4b07-8bb1-8eae235b8c92" name="FOP 3"/>
           </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.ctx:SystemFunction"
-              id="90b80ba0-ac74-4a0b-b3bb-38e31adae48e" name="Analyser l'alerte">
+              id="90b80ba0-ac74-4a0b-b3bb-38e31adae48e" name="Analyser l'alerte" description="&lt;p>Attire l&amp;#39;attention de la supervision&lt;/p>&#xA;">
             <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
                 id="57b50bc2-a42a-4109-9475-55d2d87491cf" name="FIP 1"/>
           </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.ctx:SystemFunction"
-              id="231dc72b-9120-48df-8795-9322ff75e85c" name="Occuper l'espace (Intêret)">
+              id="231dc72b-9120-48df-8795-9322ff75e85c" name="Occuper l'espace (Intêret)"
+              description="&lt;p>Propri&amp;eacute;t&amp;eacute; physique de l&amp;#39;objet d&amp;#39;int&amp;eacute;r&amp;ecirc;t.&lt;/p>&#xA;">
             <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
                 id="1426e905-cdf4-4631-92f9-520ad3f16140" name="FOP 2"/>
           </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.ctx:SystemFunction"
-              id="4b4a8f80-8790-4422-9870-307b17130d66" name="Analyser les images">
+              id="4b4a8f80-8790-4422-9870-307b17130d66" name="Analyser les images"
+              description="&lt;p>La supervision peut v&amp;eacute;rifier si le syst&amp;egrave;me a bien rep&amp;eacute;r&amp;eacute; un objet d&amp;#39;int&amp;eacute;r&amp;ecirc;t.&lt;/p>&#xA;">
             <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
                 id="91c98725-e1ec-4a78-af4a-a018599aff1e" name="FIP 2"/>
           </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.ctx:SystemFunction"
-              id="6e751b35-5def-4d73-ab6c-b60af454301e" name="Visualiser l'écran">
+              id="6e751b35-5def-4d73-ab6c-b60af454301e" name="Visualiser l'écran"
+              description="&lt;p>L&amp;#39;&amp;eacute;cran affichera des informations utiles pour la supervision (notament le niveau de batterie)&lt;/p>&#xA;">
             <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
                 id="181f7079-c7d4-46fa-ac7e-f7aa676ccad3" name="FIP 1"/>
+          </ownedFunctions>
+          <ownedFunctions xsi:type="org.polarsys.capella.core.data.ctx:SystemFunction"
+              id="91a883c3-612e-4183-a0d7-91941b3ef2a0" name="Gérer l'état de la batterie"
+              description="&lt;p>Le syst&amp;egrave;me doit pouvoir stocker de l&amp;#39;&amp;eacute;nergie et la solution d&amp;#39;utiliser une batterie a &amp;eacute;t&amp;eacute; accept&amp;eacute;e.&lt;/p>&#xA;&#xA;&lt;p>Il doit pouvoir recharger sa batterie de mani&amp;egrave;re s&amp;ucirc;re et prendre des d&amp;eacute;cisions selon l&amp;#39;&amp;eacute;tat de charge.&lt;/p>&#xA;"
+              availableInStates="#b0e9d19f-6c9f-4c68-a501-7c4c2ec9ae7a #5dd2b8b5-d9ab-435a-a5b3-8f67d9e99c2e #e988b4de-acb1-4db8-8967-7fc28ad7e1b5 #bb9c7e36-38d0-4c3b-9be0-511c2c0f929a">
+            <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
+                id="61df208e-8dac-4cec-936f-acf43c4cc7a2" name="FIP 1"/>
+            <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
+                id="eb2cb985-eb6d-40d2-96c3-656c4d4c09af" name="FIP 3"/>
+            <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
+                id="92aedecc-2fd8-495a-b6ad-a25e9204f8e2" name="FOP 1"/>
+            <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
+                id="85d1cf4c-3f85-4ccf-bd32-4e1d2d39ede9" name="FOP 2"/>
+          </ownedFunctions>
+          <ownedFunctions xsi:type="org.polarsys.capella.core.data.ctx:SystemFunction"
+              id="37addd0e-c88f-4b30-9176-12618cb879e1" name="Gérer les états d'erreur"
+              description="&lt;p>Le but est ici d&amp;#39;adopter une r&amp;eacute;action appropri&amp;eacute;e &amp;agrave; l&amp;#39;arriv&amp;eacute;e d&amp;#39;une erreur ou d&amp;#39;un dysfonctionnement d&amp;#39;un capteur ou d&amp;#39;un actionneur.&lt;/p>&#xA;">
+            <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
+                id="4b26ceca-6cbf-4e22-bb5d-43c8a90c83ef" name="FIP 1"/>
+            <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
+                id="b50773a7-0b6c-41c4-9ebb-8679f9380185" name="FOP 1"/>
           </ownedFunctions>
           <ownedFunctionRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionRealization"
               id="45a51d05-e40d-45de-b651-b56c8314f52e" targetElement="#a5f46d92-34cd-493b-ac9e-9f79391cc92f"
@@ -799,6 +832,12 @@
           <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
               id="6cef7b42-1ae9-4b67-9e94-85631486e722" name="Alerte" target="#57b50bc2-a42a-4109-9475-55d2d87491cf"
               source="#7513d7a4-61c3-4b07-8bb1-8eae235b8c92"/>
+          <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
+              id="87ca6ccc-b6b4-4db1-81c3-b5eae1c07329" name="Numéro de l'erreur"
+              target="#4b26ceca-6cbf-4e22-bb5d-43c8a90c83ef" source="#7ad36eca-5baa-4e78-ae6e-80cc6efcfa45"/>
+          <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
+              id="46090db2-0708-4953-ae10-aa34bc9d0697" name="Rapport d'erreur" target="#d51ad69a-d910-4f7e-b2d0-1f81e485e9d7"
+              source="#b50773a7-0b6c-41c4-9ebb-8679f9380185"/>
         </ownedSystemFunctions>
       </ownedFunctionPkg>
       <ownedAbstractCapabilityPkg xsi:type="org.polarsys.capella.core.data.ctx:CapabilityPkg"
@@ -881,7 +920,7 @@
             <ownedInteractionFragments xsi:type="org.polarsys.capella.core.data.interaction:FragmentEnd"
                 id="3ed84d46-f6d4-46ac-ae2a-9f5eb44669fb" name="start" coveredInstanceRoles="#666d5fa4-d893-40e7-9ed9-750893254fd0 #d8d6af28-b01d-47b7-961a-3110dfd67b7a #71dc020c-2fff-45f1-b374-323374ee693a #cc1b3067-96d1-4d6e-be72-abbdd6215fe2"/>
             <ownedInteractionFragments xsi:type="org.polarsys.capella.core.data.interaction:InteractionOperand"
-                id="af3982f7-2c0b-41c7-af06-3b4fe56496ba" name="" coveredInstanceRoles="#666d5fa4-d893-40e7-9ed9-750893254fd0 #d8d6af28-b01d-47b7-961a-3110dfd67b7a #71dc020c-2fff-45f1-b374-323374ee693a #cc1b3067-96d1-4d6e-be72-abbdd6215fe2"
+                id="af3982f7-2c0b-41c7-af06-3b4fe56496ba" name="" summary="" coveredInstanceRoles="#666d5fa4-d893-40e7-9ed9-750893254fd0 #d8d6af28-b01d-47b7-961a-3110dfd67b7a #71dc020c-2fff-45f1-b374-323374ee693a #cc1b3067-96d1-4d6e-be72-abbdd6215fe2"
                 guard="#118c2d21-fe32-452c-af01-d0a6eb94e188">
               <ownedConstraints xsi:type="org.polarsys.capella.core.data.capellacore:Constraint"
                   id="118c2d21-fe32-452c-af01-d0a6eb94e188" name="">
@@ -896,11 +935,11 @@
                 id="c0bce17c-1626-47aa-b4d3-4f9b302d60d2" name="Occuper l'espace (Intêret)"
                 coveredInstanceRoles="#d8d6af28-b01d-47b7-961a-3110dfd67b7a" relatedAbstractFunction="#231dc72b-9120-48df-8795-9322ff75e85c"/>
             <ownedInteractionFragments xsi:type="org.polarsys.capella.core.data.interaction:InteractionState"
-                id="a404d1ea-9f09-49c5-adde-231c94e9602b" name="Gérer conditions Météo"
-                coveredInstanceRoles="#71dc020c-2fff-45f1-b374-323374ee693a" relatedAbstractFunction="#2fc29ef3-8068-4790-bb0d-e9f3673afa33"/>
-            <ownedInteractionFragments xsi:type="org.polarsys.capella.core.data.interaction:InteractionState"
                 id="c778be0d-bf82-403c-9d9f-9eaf3c0dce79" name="Occuper l'espace (Intêret)"
                 coveredInstanceRoles="#d8d6af28-b01d-47b7-961a-3110dfd67b7a" relatedAbstractFunction="#231dc72b-9120-48df-8795-9322ff75e85c"/>
+            <ownedInteractionFragments xsi:type="org.polarsys.capella.core.data.interaction:InteractionState"
+                id="a404d1ea-9f09-49c5-adde-231c94e9602b" name="Gérer conditions Météo"
+                coveredInstanceRoles="#71dc020c-2fff-45f1-b374-323374ee693a" relatedAbstractFunction="#2fc29ef3-8068-4790-bb0d-e9f3673afa33"/>
             <ownedInteractionFragments xsi:type="org.polarsys.capella.core.data.interaction:InteractionState"
                 id="762d9c9f-a721-447a-8617-e63899ade433" name="Gérer conditions Météo"
                 coveredInstanceRoles="#71dc020c-2fff-45f1-b374-323374ee693a" relatedAbstractFunction="#2fc29ef3-8068-4790-bb0d-e9f3673afa33"/>
@@ -947,17 +986,17 @@
                 id="22bd4829-894b-4ae7-a406-2472d54f89a1" name="Receive Call Message Call"
                 coveredInstanceRoles="#cc1b3067-96d1-4d6e-be72-abbdd6215fe2" event="#f6dfd23f-e2cf-44e2-8550-52705305737f"/>
             <ownedInteractionFragments xsi:type="org.polarsys.capella.core.data.interaction:InteractionState"
-                id="db23cfaf-bc5d-4bc8-a90b-dec5ba1cd38b" name="Afficher l'IHM" coveredInstanceRoles="#cc1b3067-96d1-4d6e-be72-abbdd6215fe2"
-                relatedAbstractFunction="#b81774a3-69a4-404d-a127-03449051861b"/>
-            <ownedInteractionFragments xsi:type="org.polarsys.capella.core.data.interaction:InteractionState"
                 id="ac79e2a1-e353-48fb-bdb2-ca503f239567" name="Prévenir la supervision"
                 coveredInstanceRoles="#666d5fa4-d893-40e7-9ed9-750893254fd0" relatedAbstractFunction="#8487aaf9-6dd2-4edb-8b7f-4155abd2d794"/>
             <ownedInteractionFragments xsi:type="org.polarsys.capella.core.data.interaction:InteractionState"
-                id="b6190e7e-be2d-414e-a5f6-178e96342287" name="Afficher l'IHM" coveredInstanceRoles="#cc1b3067-96d1-4d6e-be72-abbdd6215fe2"
+                id="db23cfaf-bc5d-4bc8-a90b-dec5ba1cd38b" name="Afficher l'IHM" coveredInstanceRoles="#cc1b3067-96d1-4d6e-be72-abbdd6215fe2"
                 relatedAbstractFunction="#b81774a3-69a4-404d-a127-03449051861b"/>
             <ownedInteractionFragments xsi:type="org.polarsys.capella.core.data.interaction:InteractionState"
                 id="258e230d-805e-4355-a3b6-380300d636b2" name="Prévenir la supervision"
                 coveredInstanceRoles="#666d5fa4-d893-40e7-9ed9-750893254fd0" relatedAbstractFunction="#8487aaf9-6dd2-4edb-8b7f-4155abd2d794"/>
+            <ownedInteractionFragments xsi:type="org.polarsys.capella.core.data.interaction:InteractionState"
+                id="b6190e7e-be2d-414e-a5f6-178e96342287" name="Afficher l'IHM" coveredInstanceRoles="#cc1b3067-96d1-4d6e-be72-abbdd6215fe2"
+                relatedAbstractFunction="#b81774a3-69a4-404d-a127-03449051861b"/>
             <ownedInteractionFragments xsi:type="org.polarsys.capella.core.data.interaction:ExecutionEnd"
                 id="41280b15-1ac7-4b8d-9766-234829cf5b9f" name="endExec" coveredInstanceRoles="#cc1b3067-96d1-4d6e-be72-abbdd6215fe2"
                 event="#2ed60484-9cdd-4a86-9ebd-555553c3a4d5"/>
@@ -1213,8 +1252,6 @@
             description="&lt;p>Un bouton qui sert &amp;agrave; changer le mode de pilotage.&lt;/p>&#xA;"/>
         <ownedStateEvents xsi:type="org.polarsys.capella.core.data.capellacommon:ChangeEvent"
             id="c15312c7-03e7-4206-bdfa-7886b3fc628c" name="Signal d'arrêt" description="&lt;p>Peut &amp;ecirc;tre d&amp;ucirc; &amp;agrave; l&amp;#39;appui d&amp;#39;un bouton ou d&amp;#39;une commande d&amp;#39;un op&amp;eacute;rateur par exemple.&lt;/p>&#xA;"/>
-        <ownedStateEvents xsi:type="org.polarsys.capella.core.data.capellacommon:ChangeEvent"
-            id="1ef1e48a-938c-4a5e-9642-13cfef168dcb" name="Erreur ou Problème" description="&lt;p>test&lt;/p>&#xA;"/>
       </ownedDataPkg>
       <ownedSystemComponentPkg xsi:type="org.polarsys.capella.core.data.ctx:SystemComponentPkg"
           id="9a1ecd79-1ec9-473c-9fdd-044999850b13" name="Structure">
@@ -1266,6 +1303,9 @@
           <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
               id="95235545-9e64-499c-af49-3caf25453d58" targetElement="#8487aaf9-6dd2-4edb-8b7f-4155abd2d794"
               sourceElement="#c9954e88-423f-4442-9dcd-8c6cdd7711db"/>
+          <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+              id="844fad2d-6d41-4734-b197-b6d129b46bfc" targetElement="#37addd0e-c88f-4b30-9176-12618cb879e1"
+              sourceElement="#c9954e88-423f-4442-9dcd-8c6cdd7711db"/>
           <ownedStateMachines xsi:type="org.polarsys.capella.core.data.capellacommon:StateMachine"
               id="f0ca34b8-b8c3-44c0-b86e-c98ac05267f6" name="System State Machine">
             <ownedRegions xsi:type="org.polarsys.capella.core.data.capellacommon:Region"
@@ -1307,7 +1347,7 @@
                   id="0bb71c9e-4519-40a6-aa55-7b75a34a5194" name="Démarage"/>
               <ownedStates xsi:type="org.polarsys.capella.core.data.capellacommon:Mode"
                   id="5602c5c1-42eb-4af0-b235-a13a26b0563f" name="Mode dégradé" description="&lt;p>Le mode de secours qui prend en compte toutes les autres situations et qui est explicitement activ&amp;eacute; en cas d&amp;#39;erreur.&lt;/p>&#xA;"
-                  doActivity="#91a883c3-612e-4183-a0d7-91941b3ef2a0 #8487aaf9-6dd2-4edb-8b7f-4155abd2d794 #e91353ce-5b4d-40f6-8d01-26a4b90d0ae9">
+                  doActivity="#8487aaf9-6dd2-4edb-8b7f-4155abd2d794 #e91353ce-5b4d-40f6-8d01-26a4b90d0ae9 #37addd0e-c88f-4b30-9176-12618cb879e1">
                 <ownedRegions xsi:type="org.polarsys.capella.core.data.capellacommon:Region"
                     id="d850b94e-a6f1-4a12-b2b2-e6063623fee3" name="Partout"/>
               </ownedStates>
@@ -1386,23 +1426,23 @@
               <ownedTransitions xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransition"
                   id="963115bf-1f76-46b0-b663-ccabd079a5d0" triggerDescription=""
                   source="#bb9c7e36-38d0-4c3b-9be0-511c2c0f929a" target="#5602c5c1-42eb-4af0-b235-a13a26b0563f"
-                  triggers="#1ef1e48a-938c-4a5e-9642-13cfef168dcb"/>
+                  triggers="#87ca6ccc-b6b4-4db1-81c3-b5eae1c07329"/>
               <ownedTransitions xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransition"
                   id="d0add564-726a-4c53-984d-c5fcc9acad68" triggerDescription=""
                   source="#938c2acb-07c8-494c-bbfa-d0fa1b73bfb6" target="#5602c5c1-42eb-4af0-b235-a13a26b0563f"
-                  triggers="#1ef1e48a-938c-4a5e-9642-13cfef168dcb"/>
+                  triggers="#87ca6ccc-b6b4-4db1-81c3-b5eae1c07329"/>
               <ownedTransitions xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransition"
                   id="3ff4bd22-4574-4c62-a79e-6be0025d0f51" triggerDescription=""
                   source="#b0e9d19f-6c9f-4c68-a501-7c4c2ec9ae7a" target="#5602c5c1-42eb-4af0-b235-a13a26b0563f"
-                  triggers="#1ef1e48a-938c-4a5e-9642-13cfef168dcb"/>
+                  triggers="#87ca6ccc-b6b4-4db1-81c3-b5eae1c07329"/>
               <ownedTransitions xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransition"
                   id="a750a784-73b4-4b36-82f0-8aae54bd7650" triggerDescription=""
                   source="#e988b4de-acb1-4db8-8967-7fc28ad7e1b5" target="#5602c5c1-42eb-4af0-b235-a13a26b0563f"
-                  triggers="#1ef1e48a-938c-4a5e-9642-13cfef168dcb"/>
+                  triggers="#87ca6ccc-b6b4-4db1-81c3-b5eae1c07329"/>
               <ownedTransitions xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransition"
                   id="4614fa46-ae8b-4a91-a5a2-e656a332a7e9" triggerDescription=""
                   source="#5dd2b8b5-d9ab-435a-a5b3-8f67d9e99c2e" target="#5602c5c1-42eb-4af0-b235-a13a26b0563f"
-                  triggers="#1ef1e48a-938c-4a5e-9642-13cfef168dcb"/>
+                  triggers="#87ca6ccc-b6b4-4db1-81c3-b5eae1c07329"/>
             </ownedRegions>
           </ownedStateMachines>
         </ownedSystemComponents>

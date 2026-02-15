@@ -1814,7 +1814,7 @@
                 id="b6d94982-f410-4a00-86d1-f81ef89d8bcf" involved="#2a0b693a-afaa-4182-a698-9af4929e6aa2"/>
           </ownedFunctionalChains>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
-              id="e0b94136-874b-40d4-a15a-55b384407188" name="Calculer la trajectoire optimale">
+              id="e0b94136-874b-40d4-a15a-55b384407188" name="SF Calculer la trajectoire optimale">
             <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
                 id="026c9f41-97b7-41ad-a4b2-f6413d4516e0" name="FIP 1"/>
             <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
@@ -1998,7 +1998,7 @@
                 id="6a64bb7f-b2b3-4e1d-8e2c-93aae90f1ae0" name="FOP 1"/>
           </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
-              id="985c27fb-9d92-452b-b4cd-d328408df6a9" name="Detecter la météo">
+              id="985c27fb-9d92-452b-b4cd-d328408df6a9" name="SF Détecter les conditions météo">
             <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
                 id="afeabb40-ad64-412e-8f89-2b52c2cd602c" name="FIP 1"/>
             <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
@@ -2052,12 +2052,6 @@
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
               id="45eeb68a-e6a1-46be-a5f2-016a98f92a7f" name="SF Recevoir les ordres de mission"/>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
-              id="50314048-858f-4170-80b1-be0880d89e06" name="SF Détecter les conditions météo"/>
-          <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
-              id="3ea5b036-95a8-48e7-b0cd-c3f521f0463e" name="SF Calculer la trajectoire optimale"/>
-          <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
-              id="fadd1b2e-7dab-461a-a710-a274c99130e0" name="SF Détecter les objets d'interêt"/>
-          <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
               id="a0b17baf-17dc-4938-a778-8611c92db3e0" name="SF Gérer l'état de la batterie"/>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
               id="36af8229-3066-442a-b503-c4bf2e768958" name="SF Organiser les tâches"/>
@@ -2068,7 +2062,7 @@
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
               id="33b8228b-9685-4acb-9d2a-fd7a2ccbfc2f" name="SF Prévenir la supervision"/>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
-              id="db19b37c-335b-4a9c-8c65-d42f7738277c" name="Détecter les objets d'interêt"
+              id="db19b37c-335b-4a9c-8c65-d42f7738277c" name="SF Détecter les objets d'interêt"
               availableInStates="#31ca9dc9-0227-4ce2-bb35-c471f6d00fbc">
             <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
                 id="4d3efb48-acb9-4758-9ae7-b63c16b9d67d" name="FIP 1"/>
@@ -2372,9 +2366,6 @@
               <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
                   id="2e6ffb1b-1c02-445f-9f96-edf94444c5e7" targetElement="#d83442d0-dd82-4099-8b6c-030dac49bc58"
                   sourceElement="#9ceeec49-e9a8-41a5-8654-51673bee4700"/>
-              <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
-                  id="979f83c7-3127-4eac-b7bb-3fe508493f1e" targetElement="#3ea5b036-95a8-48e7-b0cd-c3f521f0463e"
-                  sourceElement="#9ceeec49-e9a8-41a5-8654-51673bee4700"/>
             </ownedLogicalComponents>
             <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
                 id="1d30c245-f79b-48a6-afd8-7cd80e37e5ab" name="Module de déplacement">
@@ -2439,17 +2430,11 @@
               <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
                   id="352b6010-f372-4f4f-8c54-75b3fa7439ed" targetElement="#3babe0f2-8409-4c24-a437-89f1a65269ab"
                   sourceElement="#50f7938e-4d27-40b1-8bcf-27af53744140"/>
-              <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
-                  id="c9bb5218-2f91-4e78-beec-6e1ee2fd3155" targetElement="#fadd1b2e-7dab-461a-a710-a274c99130e0"
-                  sourceElement="#50f7938e-4d27-40b1-8bcf-27af53744140"/>
             </ownedLogicalComponents>
             <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
                 id="9d8f9733-7d4e-403c-8910-d317534eca01" name="Detection météo">
               <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
                   id="488f79d2-c6c6-4ffc-b2a5-a8904741c461" targetElement="#985c27fb-9d92-452b-b4cd-d328408df6a9"
-                  sourceElement="#9d8f9733-7d4e-403c-8910-d317534eca01"/>
-              <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
-                  id="1637082b-b862-44c5-af96-0ba0f9d4fc92" targetElement="#50314048-858f-4170-80b1-be0880d89e06"
                   sourceElement="#9d8f9733-7d4e-403c-8910-d317534eca01"/>
             </ownedLogicalComponents>
             <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"

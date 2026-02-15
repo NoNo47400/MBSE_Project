@@ -1823,43 +1823,49 @@
                 id="257b98b4-670d-4b2c-b6df-e0bba1b72203" name="FIP 3"/>
             <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
                 id="1defcdce-3705-47b5-bd02-d1e1164163ff" name="FOP 1"/>
-          </ownedFunctions>
-          <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
-              id="90398176-71e4-469b-9c60-090e2caf1fdc" name="Détecter les obstacles">
-            <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
-                id="536f84b9-7de0-4211-b214-deb897dc1598" name="FIP 1"/>
-            <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
-                id="a7963542-edaa-4232-a9d7-f969d5e9f391" name="FOP 1"/>
-          </ownedFunctions>
-          <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
-              id="6f67c346-d549-4dd1-ad2f-f881e301e86e" name="Se localiser">
-            <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
-                id="03abadff-6d90-463c-8aee-2dfd121f915a" name="FIP 1"/>
-            <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
-                id="dcdfb6e3-f8fc-44dc-a1e0-6e035699f63d" name="FOP 1"/>
-          </ownedFunctions>
-          <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
-              id="0e695034-8fed-4675-a2a7-938938c667aa" name="Envoyer les logs">
-            <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
-                id="7a4f0600-82fa-4b84-97a3-2e772205c579" name="FIP 1"/>
-            <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
-                id="c4ed6506-a9e8-401b-ba63-1cbcadf023df" name="FIP 2"/>
-            <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
-                id="bbbf6fe6-8b93-4c23-a351-21d6c0227c05" name="FOP 1"/>
-          </ownedFunctions>
-          <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
-              id="45299a6b-eb64-4470-9bca-a37acaed7cd3" name="Avancer dans la directoire souhaitée (module controle)">
-            <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
-                id="aa96fe40-cabf-4c79-9d62-0d8fc68e8141" name="FIP 1"/>
-            <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
-                id="f3368693-ebaa-4500-ba9f-a346b4b9a56c" name="FIP 2"/>
-            <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
-                id="7e2b2c6f-2a53-4dc6-b092-10df75078643" name="FOP 1"/>
+            <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
+                id="6f67c346-d549-4dd1-ad2f-f881e301e86e" name="Se localiser">
+              <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
+                  id="03abadff-6d90-463c-8aee-2dfd121f915a" name="FIP 1"/>
+              <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
+                  id="dcdfb6e3-f8fc-44dc-a1e0-6e035699f63d" name="FOP 1"/>
+            </ownedFunctions>
+            <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
+                id="782c8fd9-0953-48e2-9c27-54a8af77d326" name="Position" target="#026c9f41-97b7-41ad-a4b2-f6413d4516e0"
+                source="#dcdfb6e3-f8fc-44dc-a1e0-6e035699f63d"/>
           </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
               id="d108c7e4-34a7-4ba3-9fa2-297eed143f33" name="Détecter les problèmes">
             <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
                 id="ac5318ee-4b65-4f34-bc73-8ba3de459b5d" name="FOP 1"/>
+            <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
+                id="4bb20f75-ec41-423f-9fbc-184a4e811a94" name="Sauvegarder les logs">
+              <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
+                  id="b79ee766-3280-4332-84ad-08835821ccbc" name="FIP 1"/>
+              <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
+                  id="67d190d3-3b45-4c80-856b-931bbcbf0407" name="FIP 2"/>
+              <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
+                  id="5572bc98-7d6c-4a37-9063-36b515334363" name="FIP 3"/>
+              <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
+                  id="e77af7c4-cbcc-4669-b3db-fc1602038f37" name="FOP 1"/>
+              <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
+                  id="0316b9e8-606c-4e6e-ae41-5d4f6d90df30" name="FOP 2"/>
+            </ownedFunctions>
+            <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
+                id="0e695034-8fed-4675-a2a7-938938c667aa" name="Envoyer les logs">
+              <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
+                  id="7a4f0600-82fa-4b84-97a3-2e772205c579" name="FIP 1"/>
+              <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
+                  id="c4ed6506-a9e8-401b-ba63-1cbcadf023df" name="FIP 2"/>
+              <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
+                  id="bbbf6fe6-8b93-4c23-a351-21d6c0227c05" name="FOP 1"/>
+            </ownedFunctions>
+            <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
+                id="674669a1-5c6f-4ea9-aef7-de6502df5aee" name="Problème" target="#67d190d3-3b45-4c80-856b-931bbcbf0407"
+                source="#ac5318ee-4b65-4f34-bc73-8ba3de459b5d"/>
+            <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
+                id="57295aad-3cfc-4f7d-8cb9-84b8f375ca2d" name="logs" target="#7a4f0600-82fa-4b84-97a3-2e772205c579"
+                source="#e77af7c4-cbcc-4669-b3db-fc1602038f37"/>
           </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
               id="a606a3b5-e71a-4294-839b-69fac6303d55" name="Recevoir image">
@@ -1869,35 +1875,9 @@
                 id="d2621688-fabd-4f40-a307-051b57ef7c27" name="FOP 1"/>
           </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
-              id="02808014-28af-4b55-bb5f-58205d30053e" name="LogicalFunction 14"/>
-          <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
-              id="aa304945-8449-4d72-9104-4e25473c7ca0" name="Pouvoir se connecter au réseau électrique"/>
-          <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
               id="e79cd0f0-d0ce-40da-aba2-93b886f546de" name="Fournir électricité">
             <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
                 id="c6a1cf74-e1b9-4e46-a830-73c1ebf891b9" name="FOP 1"/>
-          </ownedFunctions>
-          <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
-              id="6c61c6a6-581d-47c3-af1f-3a6538945f42" name="Envoyer commande">
-            <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
-                id="63b6d4e4-2fb0-4fd0-b2d0-732b4a0ab01e" name="FIP 1"/>
-            <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
-                id="8e611f61-3ae2-40a8-b084-994235716316" name="FOP 1"/>
-            <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
-                id="5eaa5d26-4642-4d91-a5af-736f2e3c53a2" name="FOP 2"/>
-          </ownedFunctions>
-          <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
-              id="4bb20f75-ec41-423f-9fbc-184a4e811a94" name="Sauvegarder les logs">
-            <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
-                id="b79ee766-3280-4332-84ad-08835821ccbc" name="FIP 1"/>
-            <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
-                id="67d190d3-3b45-4c80-856b-931bbcbf0407" name="FIP 2"/>
-            <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
-                id="5572bc98-7d6c-4a37-9063-36b515334363" name="FIP 3"/>
-            <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
-                id="e77af7c4-cbcc-4669-b3db-fc1602038f37" name="FOP 1"/>
-            <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
-                id="0316b9e8-606c-4e6e-ae41-5d4f6d90df30" name="FOP 2"/>
           </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
               id="e2a4e9ee-f306-4727-b9f8-585913562093" name="Recevoir les logs">
@@ -1905,20 +1885,6 @@
                 id="51008cbb-d36e-4a67-8f72-a29533bbdc65" name="FIP 1"/>
             <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
                 id="d80b2c7a-5d68-4c45-931c-485a83eb5477" name="FOP 1"/>
-          </ownedFunctions>
-          <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
-              id="bdc5c747-d226-493d-b3f4-e57cc7ce75fb" name="Stocker l'électricité">
-            <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
-                id="f3a655f5-11fb-4195-b9a7-4eef26ce6279" name="FIP 1"/>
-            <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
-                id="50dc9af2-92b1-4832-8706-bea45f096fd8" name="FOP 1"/>
-          </ownedFunctions>
-          <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
-              id="e22378da-9fc0-40f5-9e01-36fd5954f0ff" name="Fournir l'état de la batterie">
-            <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
-                id="1bede245-7d73-4fd6-bc23-668dbd42fa1e" name="FIP 1"/>
-            <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
-                id="0a0600e0-b4f7-4669-8847-11a4e88dcb39" name="FOP 1"/>
           </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
               id="c6a8e8f4-489a-4788-bd9e-ba64fa74c195" name="Récuperer les commandes">
@@ -1935,32 +1901,11 @@
                 id="100de5cb-dbcd-4628-8acd-e0c96eef33ee" name="FOP 1"/>
           </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
-              id="39864b4d-0b91-41c4-bcae-df58c5dabac4" name="Gérer le mode du robot">
-            <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
-                id="17bbd4ab-0168-4243-987e-5323a6d38362" name="FIP 1"/>
-            <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
-                id="0f1bc637-444e-41cc-a9db-cf8477956401" name="FIP 2"/>
-            <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
-                id="3fd53cc0-6bad-4938-a0ad-67097d4576a7" name="FOP 1"/>
-          </ownedFunctions>
-          <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
-              id="85e03bcb-32c3-448a-8291-636ec34b8fe6" name="Envoyer l'image">
-            <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
-                id="3549d30b-84f0-4093-beb4-0f053ae54330" name="FIP 1"/>
-            <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
-                id="f5e45204-6548-4714-87aa-38b9a9ef8950" name="FOP 1"/>
-          </ownedFunctions>
-          <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
               id="2a0b693a-afaa-4182-a698-9af4929e6aa2" name="Superviser">
             <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
                 id="f12d5dc6-93f5-4ece-bbcd-907d1290b736" name="FIP 2"/>
             <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
                 id="c4f47ea0-c9b4-4636-8611-398a0633adb3" name="FIP 3"/>
-          </ownedFunctions>
-          <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
-              id="cf93e04e-30d3-4c2c-981b-1e882edfeff9" name="Permettre de se déplacer dans toute les directions (moteurs, roues)">
-            <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
-                id="1453bf92-3880-4b32-b7e5-6b97631e20bb" name="FIP 1"/>
           </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
               id="0968e85b-0d3e-4933-8880-6220a0cd17a6" name="Envoyer parcours">
@@ -2017,15 +1962,6 @@
                 id="92d2793c-6f06-4254-91c0-1db4c5a47821" name="FIP 1"/>
           </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
-              id="925e9326-c2f4-47c4-ba89-3db6832a2b7e" name="Envoyer des informations en temps réel"/>
-          <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
-              id="e1543e5f-50a8-4800-91fb-72bd7cdb970c" name="Fournir de l'électricité au robot">
-            <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
-                id="a524a7ec-2ee0-4b20-93bb-4f3bf540971b" name="FIP 1"/>
-            <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
-                id="e091f060-5fe7-4da9-972a-7c9a08751a69" name="FOP 1"/>
-          </ownedFunctions>
-          <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
               id="d58bf09a-40f4-4b94-92e3-412d68735b69" name="Occuper l'espace (Intêret)">
             <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
                 id="df2d4c89-41a4-4bc8-854c-923596bdaa40" name="FOP 1"/>
@@ -2052,15 +1988,100 @@
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
               id="45eeb68a-e6a1-46be-a5f2-016a98f92a7f" name="SF Recevoir les ordres de mission"/>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
-              id="a0b17baf-17dc-4938-a778-8611c92db3e0" name="SF Gérer l'état de la batterie"/>
+              id="a0b17baf-17dc-4938-a778-8611c92db3e0" name="SF Gérer l'état de la batterie">
+            <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
+                id="aa304945-8449-4d72-9104-4e25473c7ca0" name="Pouvoir se connecter au réseau électrique"/>
+            <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
+                id="e22378da-9fc0-40f5-9e01-36fd5954f0ff" name="Fournir l'état de la batterie">
+              <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
+                  id="1bede245-7d73-4fd6-bc23-668dbd42fa1e" name="FIP 1"/>
+              <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
+                  id="0a0600e0-b4f7-4669-8847-11a4e88dcb39" name="FOP 1"/>
+            </ownedFunctions>
+            <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
+                id="e1543e5f-50a8-4800-91fb-72bd7cdb970c" name="Fournir de l'électricité au robot">
+              <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
+                  id="a524a7ec-2ee0-4b20-93bb-4f3bf540971b" name="FIP 1"/>
+              <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
+                  id="e091f060-5fe7-4da9-972a-7c9a08751a69" name="FOP 1"/>
+              <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
+                  id="bdc5c747-d226-493d-b3f4-e57cc7ce75fb" name="Stocker l'électricité">
+                <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
+                    id="f3a655f5-11fb-4195-b9a7-4eef26ce6279" name="FIP 1"/>
+                <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
+                    id="50dc9af2-92b1-4832-8706-bea45f096fd8" name="FOP 1"/>
+              </ownedFunctions>
+              <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
+                  id="58c000e4-6551-45a2-a251-c979df0e941b" name="Electricité" target="#f3a655f5-11fb-4195-b9a7-4eef26ce6279"
+                  source="#e091f060-5fe7-4da9-972a-7c9a08751a69"/>
+            </ownedFunctions>
+            <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
+                id="a7e78213-6948-4ba8-ab33-b86233a26937" name="Electricité" target="#1bede245-7d73-4fd6-bc23-668dbd42fa1e"
+                source="#50dc9af2-92b1-4832-8706-bea45f096fd8"/>
+          </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
-              id="36af8229-3066-442a-b503-c4bf2e768958" name="SF Organiser les tâches"/>
+              id="36af8229-3066-442a-b503-c4bf2e768958" name="SF Organiser les tâches">
+            <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
+                id="39864b4d-0b91-41c4-bcae-df58c5dabac4" name="Gérer le mode du robot">
+              <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
+                  id="17bbd4ab-0168-4243-987e-5323a6d38362" name="FIP 1"/>
+              <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
+                  id="0f1bc637-444e-41cc-a9db-cf8477956401" name="FIP 2"/>
+              <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
+                  id="3fd53cc0-6bad-4938-a0ad-67097d4576a7" name="FOP 1"/>
+            </ownedFunctions>
+          </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
-              id="af59fda1-d2eb-4faa-a232-56778b5939ab" name="SF Suivre la trajectoire calculée"/>
+              id="af59fda1-d2eb-4faa-a232-56778b5939ab" name="SF Suivre la trajectoire calculée">
+            <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
+                id="45299a6b-eb64-4470-9bca-a37acaed7cd3" name="Avancer dans la directoire souhaitée (module controle)">
+              <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
+                  id="aa96fe40-cabf-4c79-9d62-0d8fc68e8141" name="FIP 1"/>
+              <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
+                  id="f3368693-ebaa-4500-ba9f-a346b4b9a56c" name="FIP 2"/>
+              <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
+                  id="7e2b2c6f-2a53-4dc6-b092-10df75078643" name="FOP 1"/>
+            </ownedFunctions>
+            <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
+                id="90398176-71e4-469b-9c60-090e2caf1fdc" name="Détecter les obstacles">
+              <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
+                  id="536f84b9-7de0-4211-b214-deb897dc1598" name="FIP 1"/>
+              <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
+                  id="a7963542-edaa-4232-a9d7-f969d5e9f391" name="FOP 1"/>
+            </ownedFunctions>
+            <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
+                id="cf93e04e-30d3-4c2c-981b-1e882edfeff9" name="Permettre de se déplacer dans toute les directions (moteurs, roues)">
+              <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
+                  id="1453bf92-3880-4b32-b7e5-6b97631e20bb" name="FIP 1"/>
+            </ownedFunctions>
+            <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
+                id="f3672731-cdca-4a4f-929d-10c5eb4acf10" name="Contrôle moteurs et direction"
+                target="#1453bf92-3880-4b32-b7e5-6b97631e20bb" source="#7e2b2c6f-2a53-4dc6-b092-10df75078643"/>
+          </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
-              id="699c6d74-30a6-428b-ba9c-46f277d9f63d" name="SF Transmettre le flux d'informations"/>
+              id="699c6d74-30a6-428b-ba9c-46f277d9f63d" name="SF Transmettre le flux d'informations">
+            <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
+                id="6c61c6a6-581d-47c3-af1f-3a6538945f42" name="Envoyer commande">
+              <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
+                  id="63b6d4e4-2fb0-4fd0-b2d0-732b4a0ab01e" name="FIP 1"/>
+              <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
+                  id="8e611f61-3ae2-40a8-b084-994235716316" name="FOP 1"/>
+              <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
+                  id="5eaa5d26-4642-4d91-a5af-736f2e3c53a2" name="FOP 2"/>
+            </ownedFunctions>
+          </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
-              id="33b8228b-9685-4acb-9d2a-fd7a2ccbfc2f" name="SF Prévenir la supervision"/>
+              id="33b8228b-9685-4acb-9d2a-fd7a2ccbfc2f" name="SF Prévenir la supervision">
+            <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
+                id="85e03bcb-32c3-448a-8291-636ec34b8fe6" name="Envoyer l'image">
+              <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
+                  id="3549d30b-84f0-4093-beb4-0f053ae54330" name="FIP 1"/>
+              <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
+                  id="f5e45204-6548-4714-87aa-38b9a9ef8950" name="FOP 1"/>
+            </ownedFunctions>
+            <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
+                id="925e9326-c2f4-47c4-ba89-3db6832a2b7e" name="Envoyer des informations en temps réel"/>
+          </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
               id="db19b37c-335b-4a9c-8c65-d42f7738277c" name="SF Détecter les objets d'interêt"
               availableInStates="#31ca9dc9-0227-4ce2-bb35-c471f6d00fbc">
@@ -2068,13 +2089,16 @@
                 id="4d3efb48-acb9-4758-9ae7-b63c16b9d67d" name="FIP 1"/>
             <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
                 id="f451076c-8931-4a5f-8484-c30f2cf1e3cb" name="FOP 1"/>
-          </ownedFunctions>
-          <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
-              id="3babe0f2-8409-4c24-a437-89f1a65269ab" name="Aquérir une image de l'objet">
-            <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
-                id="23e8f28c-cd7b-4977-8ab6-679bba93a3d3" name="FIP 1"/>
-            <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
-                id="1ac174f5-46e0-4b3e-bc87-f9bab11e4bcf" name="FOP 1"/>
+            <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
+                id="3babe0f2-8409-4c24-a437-89f1a65269ab" name="Aquérir une image de l'objet">
+              <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
+                  id="23e8f28c-cd7b-4977-8ab6-679bba93a3d3" name="FIP 1"/>
+              <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
+                  id="1ac174f5-46e0-4b3e-bc87-f9bab11e4bcf" name="FOP 1"/>
+            </ownedFunctions>
+            <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
+                id="f76c8009-dbab-4adb-9166-63dee697941f" name="Position relative objet"
+                target="#23e8f28c-cd7b-4977-8ab6-679bba93a3d3" source="#f451076c-8931-4a5f-8484-c30f2cf1e3cb"/>
           </ownedFunctions>
           <ownedFunctionRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionRealization"
               id="0ac81317-ad8b-42d1-be87-a61dc2806790" targetElement="#33a8439b-ceee-481c-9651-1b1a43e91ecb"
@@ -2083,20 +2107,11 @@
               id="ea807b7c-6db0-428b-be54-88dad30b8653" name="Info robot (log et erreurs)"
               target="#51008cbb-d36e-4a67-8f72-a29533bbdc65" source="#bbbf6fe6-8b93-4c23-a351-21d6c0227c05"/>
           <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
-              id="a7e78213-6948-4ba8-ab33-b86233a26937" name="Electricité" target="#1bede245-7d73-4fd6-bc23-668dbd42fa1e"
-              source="#50dc9af2-92b1-4832-8706-bea45f096fd8"/>
-          <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
               id="9af8f91e-1ee7-4849-a161-e8bf1932f0a0" name="Commande executées"
               target="#7a31a012-44f6-44a8-8d25-929eb4f12262" source="#100de5cb-dbcd-4628-8acd-e0c96eef33ee"/>
           <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
               id="395d0d52-f07a-410f-bbac-f5f6b56d8da7" name="Niveau batterie" target="#b79ee766-3280-4332-84ad-08835821ccbc"
               source="#0a0600e0-b4f7-4669-8847-11a4e88dcb39"/>
-          <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
-              id="674669a1-5c6f-4ea9-aef7-de6502df5aee" name="Problème" target="#67d190d3-3b45-4c80-856b-931bbcbf0407"
-              source="#ac5318ee-4b65-4f34-bc73-8ba3de459b5d"/>
-          <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
-              id="57295aad-3cfc-4f7d-8cb9-84b8f375ca2d" name="logs" target="#7a4f0600-82fa-4b84-97a3-2e772205c579"
-              source="#e77af7c4-cbcc-4669-b3db-fc1602038f37"/>
           <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
               id="fc544620-6907-4469-b648-f8f9f13b3629" name="Log" target="#17bbd4ab-0168-4243-987e-5323a6d38362"
               source="#0316b9e8-606c-4e6e-ae41-5d4f6d90df30"/>
@@ -2110,17 +2125,11 @@
               id="45b12ed2-961c-4971-bccf-959f5d76a426" name="Direction &amp; vitesse déplacement"
               target="#aa96fe40-cabf-4c79-9d62-0d8fc68e8141" source="#1defcdce-3705-47b5-bd02-d1e1164163ff"/>
           <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
-              id="f3672731-cdca-4a4f-929d-10c5eb4acf10" name="Contrôle moteurs et direction"
-              target="#1453bf92-3880-4b32-b7e5-6b97631e20bb" source="#7e2b2c6f-2a53-4dc6-b092-10df75078643"/>
-          <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
               id="36e226b4-7ec0-480e-bbab-acef11b997c4" name="Commande état forcé"
               target="#0f1bc637-444e-41cc-a9db-cf8477956401" source="#8e611f61-3ae2-40a8-b084-994235716316"/>
           <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
               id="378ca8c3-02eb-4a2a-b8d3-80eeda650f87" name="Commande direction (mode manuel)"
               target="#f3368693-ebaa-4500-ba9f-a346b4b9a56c" source="#5eaa5d26-4642-4d91-a5af-736f2e3c53a2"/>
-          <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
-              id="782c8fd9-0953-48e2-9c27-54a8af77d326" name="Position" target="#026c9f41-97b7-41ad-a4b2-f6413d4516e0"
-              source="#dcdfb6e3-f8fc-44dc-a1e0-6e035699f63d"/>
           <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
               id="cb8fafdf-5d14-4f7f-919f-a788570c178c" name="Position relative obstacle"
               target="#5242031f-2f0c-4bb7-a849-e53856a6e84f" source="#a7963542-edaa-4232-a9d7-f969d5e9f391"/>
@@ -2164,9 +2173,6 @@
               id="faf847de-c0f4-4881-9396-b3f21a67ecf0" name="Electricité" target="#a524a7ec-2ee0-4b20-93bb-4f3bf540971b"
               source="#c6a1cf74-e1b9-4e46-a830-73c1ebf891b9"/>
           <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
-              id="58c000e4-6551-45a2-a251-c979df0e941b" name="Electricité" target="#f3a655f5-11fb-4195-b9a7-4eef26ce6279"
-              source="#e091f060-5fe7-4da9-972a-7c9a08751a69"/>
-          <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
               id="606e64b0-35bb-4557-bb58-80e06c0f937b" name="Signature visuelle"
               target="#4d3efb48-acb9-4758-9ae7-b63c16b9d67d" source="#df2d4c89-41a4-4bc8-854c-923596bdaa40"/>
           <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
@@ -2181,9 +2187,6 @@
           <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
               id="7febd005-f72d-4f29-8db4-bc4cb2d8ef89" name="Température" target="#b64c3111-aa1b-431f-b600-7b20e64823dc"
               source="#b2660adf-6696-4e17-a234-4e2bbd3feb1c"/>
-          <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
-              id="f76c8009-dbab-4adb-9166-63dee697941f" name="Position relative objet"
-              target="#23e8f28c-cd7b-4977-8ab6-679bba93a3d3" source="#f451076c-8931-4a5f-8484-c30f2cf1e3cb"/>
         </ownedLogicalFunctions>
       </ownedFunctionPkg>
       <ownedAbstractCapabilityPkg xsi:type="org.polarsys.capella.core.data.la:CapabilityRealizationPkg"

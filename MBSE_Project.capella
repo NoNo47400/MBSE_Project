@@ -880,7 +880,7 @@
               id="dc4f8d19-f216-48a6-83f8-dca0f7fb543a" name="[ES] High Level - Inspecter la présence d'objets sur le parcours"
               kind="DATA_FLOW">
             <ownedInstanceRoles xsi:type="org.polarsys.capella.core.data.interaction:InstanceRole"
-                id="666d5fa4-d893-40e7-9ed9-750893254fd0" name="Robot" representedInstance="#323b23b4-2b26-40cd-8860-d5fb78ac11d6"/>
+                id="666d5fa4-d893-40e7-9ed9-750893254fd0" name="Système" representedInstance="#323b23b4-2b26-40cd-8860-d5fb78ac11d6"/>
             <ownedInstanceRoles xsi:type="org.polarsys.capella.core.data.interaction:InstanceRole"
                 id="d8d6af28-b01d-47b7-961a-3110dfd67b7a" name="Objet d'intêret "
                 representedInstance="#1ed2093f-3c80-47f5-b3ff-ea6e006ec560"/>
@@ -1256,7 +1256,7 @@
       <ownedSystemComponentPkg xsi:type="org.polarsys.capella.core.data.ctx:SystemComponentPkg"
           id="9a1ecd79-1ec9-473c-9fdd-044999850b13" name="Structure">
         <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="323b23b4-2b26-40cd-8860-d5fb78ac11d6"
-            name="Robot" abstractType="#c9954e88-423f-4442-9dcd-8c6cdd7711db"/>
+            name="Système" abstractType="#c9954e88-423f-4442-9dcd-8c6cdd7711db"/>
         <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="1ed2093f-3c80-47f5-b3ff-ea6e006ec560"
             name="Objet d'intêret " abstractType="#df3b9eaa-7909-4b7e-8a00-a9f1b09d83da"/>
         <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="2afa0bd7-ade2-4681-9e81-b0502209eeaf"
@@ -1272,7 +1272,7 @@
         <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="a5981672-78c7-43ea-9bfa-5b04739e0166"
             name="Interface supervision" abstractType="#c88acec8-687d-4648-992c-4f3ef307e8a0"/>
         <ownedSystemComponents xsi:type="org.polarsys.capella.core.data.ctx:SystemComponent"
-            id="c9954e88-423f-4442-9dcd-8c6cdd7711db" name="Robot">
+            id="c9954e88-423f-4442-9dcd-8c6cdd7711db" name="Système" description="&lt;p>Le syst&amp;egrave;me qui r&amp;eacute;pond au probl&amp;egrave;me&lt;/p>&#xA;">
           <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
               id="83526ca5-fa57-4ad8-835f-6816485cc6a5" targetElement="#9056aebb-89b7-407a-be69-0d4c06158675"
               sourceElement="#c9954e88-423f-4442-9dcd-8c6cdd7711db"/>

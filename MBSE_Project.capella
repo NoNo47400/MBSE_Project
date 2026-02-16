@@ -2140,6 +2140,14 @@
                 id="f76c8009-dbab-4adb-9166-63dee697941f" name="Position relative objet"
                 target="#23e8f28c-cd7b-4977-8ab6-679bba93a3d3" source="#f451076c-8931-4a5f-8484-c30f2cf1e3cb"/>
           </ownedFunctions>
+          <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
+              id="844d6294-36f7-4304-a25f-1a94cd474be1" name="SF Gérer les états d'erreur"/>
+          <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
+              id="8ddacfb6-6a85-4885-a017-cf980e2c8eb1" name="Recharge autonome de la batterie"/>
+          <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
+              id="76963756-c154-47e8-8144-12fcb2ff86ab" name="Recharge autonome de la batterie_1"/>
+          <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
+              id="90c1d826-057a-4ffe-bc66-d53ebafe97b4" name="Permettre de controler et superviser la zone"/>
           <ownedFunctionRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionRealization"
               id="0ac81317-ad8b-42d1-be87-a61dc2806790" targetElement="#33a8439b-ceee-481c-9651-1b1a43e91ecb"
               sourceElement="#94c7b55c-644f-46bd-a640-75bd4f1a4295"/>
@@ -2464,6 +2472,9 @@
               <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
                   id="1de6a613-9698-466b-b7f5-1adcfacab97a" targetElement="#d108c7e4-34a7-4ba3-9fa2-297eed143f33"
                   sourceElement="#8e3474af-c6a2-4f6d-96e7-e8cd49068297"/>
+              <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+                  id="b345758d-6c10-4da6-8737-6dd5063eeb89" targetElement="#844d6294-36f7-4304-a25f-1a94cd474be1"
+                  sourceElement="#8e3474af-c6a2-4f6d-96e7-e8cd49068297"/>
             </ownedLogicalComponents>
             <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
                 id="50f7938e-4d27-40b1-8bcf-27af53744140" name="Visualisation objet d'interêt">
@@ -2507,6 +2518,12 @@
             <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
                 id="1fccae54-af3a-4698-b9c3-4acd4e61954c" targetElement="#e1543e5f-50a8-4800-91fb-72bd7cdb970c"
                 sourceElement="#b23691c2-9b43-417c-b163-017bdea1249e"/>
+            <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+                id="5f9f9ca8-4a6e-4af6-9379-c03cfecae526" targetElement="#8ddacfb6-6a85-4885-a017-cf980e2c8eb1"
+                sourceElement="#b23691c2-9b43-417c-b163-017bdea1249e"/>
+            <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+                id="ccd3ba71-a6ef-4640-915d-284fe42f2725" targetElement="#76963756-c154-47e8-8144-12fcb2ff86ab"
+                sourceElement="#b23691c2-9b43-417c-b163-017bdea1249e"/>
             <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="60d274a1-e4e7-4531-a779-1260a37fe606"
                 name="Interface robot" abstractType="#eba7fab6-193d-42ba-b7d1-5e41d9668595"/>
             <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="359df0bf-2161-4f24-a9e6-1e0dc2f4972c"
@@ -2529,6 +2546,9 @@
           </ownedLogicalComponents>
           <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
               id="ac70fdf1-a29a-48c6-a5af-e460fd1fbba5" name="Application de supervision">
+            <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+                id="c8c0eac3-709b-40e1-8a71-cda1c4ebcf70" targetElement="#90c1d826-057a-4ffe-bc66-d53ebafe97b4"
+                sourceElement="#ac70fdf1-a29a-48c6-a5af-e460fd1fbba5"/>
             <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="8c20ccb7-9446-45f3-8a08-909a1a4574e7"
                 name="Communication" abstractType="#3c43b7d4-45c9-4666-b522-838cd90b41a7"/>
             <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="b665681a-2200-4ef2-bdaf-2459e1d66391"

@@ -1263,7 +1263,8 @@
                 sourceElement="#dfef30cb-09da-4451-9e5f-4c230c53f785"/>
           </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.pa:PhysicalFunction"
-              id="5a66c88c-a85e-421c-a279-b2466ce55c4a" name="Fournir de l'énergie au système">
+              id="5a66c88c-a85e-421c-a279-b2466ce55c4a" name="Fournir de l'énergie au système"
+              description="&lt;p>La batterie fourni de l&amp;#39;&amp;eacute;nergie au moteur est tout autre &amp;eacute;l&amp;eacute;ment du robot.&lt;br />&#xA;Une alimentation (modulation&amp;nbsp;de l&amp;#39;&amp;eacute;lectricit&amp;eacute;)&amp;nbsp;est possiblement necessaire ici.&lt;/p>&#xA;">
             <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
                 id="3e457f47-0ea7-452a-acc7-e5fa501c8e00" name="FOP 1">
               <ownedPortRealizations xsi:type="org.polarsys.capella.core.data.information:PortRealization"
@@ -1856,7 +1857,8 @@
           <ownedPhysicalLinks xsi:type="org.polarsys.capella.core.data.cs:PhysicalLink"
               id="ab91f8de-934a-4667-abcc-7f4249b6fe05" name="Essieux" linkEnds="#3bfdb604-11d8-480e-bac3-8b277f95cf81 #3ae70682-193b-4177-a33c-e0dcc854ec68"/>
           <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
-              id="5fc931f9-db82-40e5-a62f-9ed3ac3893d3" name="Roues" nature="NODE">
+              id="5fc931f9-db82-40e5-a62f-9ed3ac3893d3" description="&lt;p>Le dimentionnement est le choix des roues est aussi un &amp;eacute;l&amp;eacute;ment essentiel pour &amp;nbsp;permettre le d&amp;eacute;placement sur tout le campus.&lt;/p>&#xA;"
+              name="Roues" nature="NODE">
             <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
                 id="3ae70682-193b-4177-a33c-e0dcc854ec68" name="PP 1"/>
           </ownedPhysicalComponents>
@@ -1896,7 +1898,8 @@
                 sourceElement="#343731af-37e2-4947-a293-c0bdd05a0042"/>
           </ownedPhysicalComponents>
           <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
-              id="d7ba9930-1fba-4add-84ad-747c15adf0ea" name="Moteur Brushless 30 V avec controller intégré (type ArduPilot)"
+              id="d7ba9930-1fba-4add-84ad-747c15adf0ea" description="&lt;p>Ce type de moteur correspond bien aux besoins de notre syst&amp;egrave;me.&lt;br />&#xA;Le contr&amp;ocirc;leur et la solution &amp;eacute;vidente pour un contr&amp;ocirc;le precis et simple.&lt;/p>&#xA;"
+              name="Moteur Brushless 30 V avec controller intégré (type ArduPilot)"
               nature="NODE">
             <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
                 id="4ee120d0-1d3f-4d12-8316-114b50a79eaf" name="PP 1"/>
@@ -1916,8 +1919,8 @@
                 sourceElement="#3117c49e-5298-402f-adca-8da284bfc598"/>
           </ownedPhysicalComponents>
           <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
-              id="04e60296-87ff-4577-aa8a-41766ce4b6a0" name="Carte aduino avec carte de communication"
-              nature="NODE">
+              id="04e60296-87ff-4577-aa8a-41766ce4b6a0" description="&lt;p>Carte permettant de piloter&amp;nbsp;les moteurs, le controlle des moteurs &amp;eacute;tant int&amp;eacute;gr&amp;eacute; au bloc moteur.&lt;br />&#xA;Un carte Arduino Mega est une solution simple et peu chere.&lt;/p>&#xA;"
+              name="Carte aduino avec carte de communication" nature="NODE">
             <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
                 id="1a2f611e-de83-4f32-8df6-ab8e5056cd75" name="PP 1"/>
             <ownedInterfaceImplementations xsi:type="org.polarsys.capella.core.data.cs:InterfaceImplementation"

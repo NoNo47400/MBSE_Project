@@ -564,19 +564,31 @@
                 sourceElement="#25f7a696-1073-45b1-aa7c-4594c216344f"/>
           </ownedFunctionalChains>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
-              id="cbd6e814-72cb-4a9c-8101-7606ad18fcb3" name="Donner les informations de trajectoire à suivre">
+              id="cbd6e814-72cb-4a9c-8101-7606ad18fcb3" name="Donner les informations de trajectoire à suivre"
+              description="&lt;p>Sous forme de valeur de vitesse et de cap&lt;/p>&#xA;">
             <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
                 id="94ff19ab-9296-497e-8309-5a82ccc8ef75" name="FOP 1"/>
+            <ownedFunctionRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionRealization"
+                id="09237a6e-78d5-4700-98a1-55adf298e112" targetElement="#683da371-0d29-4ef8-91cf-ddfa6897361a"
+                sourceElement="#cbd6e814-72cb-4a9c-8101-7606ad18fcb3"/>
           </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
-              id="3ddd2fcd-8e50-461d-b94f-ef8bf81da78e" name="Donner les informations de trajectoire à suivre (mode manuel)">
+              id="3ddd2fcd-8e50-461d-b94f-ef8bf81da78e" name="Donner les informations de trajectoire à suivre (mode manuel)"
+              description="&lt;p>Sous forme de valeur de vitesse et de cap&lt;/p>&#xA;">
             <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
                 id="aa10a749-2102-4598-8d74-c8d6c961f88b" name="FOP 1"/>
+            <ownedFunctionRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionRealization"
+                id="4f03e0b9-7518-4645-a7ff-7783c56213cb" targetElement="#fe7129b9-696b-45c7-ad7b-6d0bcb52c560"
+                sourceElement="#3ddd2fcd-8e50-461d-b94f-ef8bf81da78e"/>
           </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
-              id="43d607c2-e567-434d-a181-34720872b652" name="Fournir de l'énergie au système">
+              id="43d607c2-e567-434d-a181-34720872b652" name="Fournir de l'énergie au système"
+              description="&lt;p>(Energie electrique)&lt;/p>&#xA;">
             <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
                 id="d0e37fb0-1f64-4aaf-b7b8-8ee5f75a2b8a" name="FOP 1"/>
+            <ownedFunctionRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionRealization"
+                id="43d3ac9f-47cf-44ce-8c3a-fad51129be94" targetElement="#ee22f88f-f123-4d6d-8479-75562fb5d612"
+                sourceElement="#43d607c2-e567-434d-a181-34720872b652"/>
           </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
               id="1732e934-7e0d-4e9b-b610-dd8bf75600ad" name="Fournir la commande de déplacement (mode manuel)">
@@ -587,7 +599,7 @@
                   sourceElement="#b77c146c-9dc0-4b8c-877f-496f974b5e7a"/>
             </outputs>
             <ownedFunctionRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionRealization"
-                id="f60208e5-5f5f-4195-a57e-1876cd51ac2b" targetElement="#fe7129b9-696b-45c7-ad7b-6d0bcb52c560"
+                id="08c0dfb5-7b5c-47c3-9ade-0acde7134166" targetElement="#fe7129b9-696b-45c7-ad7b-6d0bcb52c560"
                 sourceElement="#1732e934-7e0d-4e9b-b610-dd8bf75600ad"/>
           </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
@@ -747,32 +759,45 @@
                 sourceElement="#da1f641c-639a-46e6-a5e1-cd4acfdd901d"/>
           </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
-              id="b44a44f9-1d4e-47d1-977d-768023aa6cc9" name="Récuperer les informations utiles des autres modules">
+              id="b44a44f9-1d4e-47d1-977d-768023aa6cc9" name="Récuperer les informations utiles des autres modules"
+              description="&lt;p>Du formatage pour passer entre les 2 architectures. Peut &amp;ecirc;tre une &amp;eacute;tape inutile si le format est le m&amp;ecirc;me.&lt;/p>&#xA;">
             <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
                 id="e656a2fa-24b3-4016-901c-de4c28174f82" name="FIP 1"/>
             <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
                 id="83d041c3-35a4-43ae-b4b3-bf713cc0d87e" name="FIP 2"/>
             <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
                 id="c910b39f-f0c4-4e57-bb32-55c7bff6e644" name="FOP 1"/>
+            <ownedFunctionRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionRealization"
+                id="1dde7b04-ecdc-4dd8-8be8-fa4d22284061" targetElement="#41fee726-c32b-4a16-8c02-f8ab91252b31"
+                sourceElement="#b44a44f9-1d4e-47d1-977d-768023aa6cc9"/>
           </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
-              id="34ecd055-55a3-4854-9db6-a1c3292429b5" name="Arbitrer les différents signaux entrants">
+              id="34ecd055-55a3-4854-9db6-a1c3292429b5" name="Arbitrer les différents signaux entrants"
+              description="&lt;p>En g&amp;eacute;n&amp;eacute;ral, on va donner la priorit&amp;eacute; &amp;agrave; la commande manuelle.&lt;/p>&#xA;">
             <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
                 id="060b9a7c-6f16-47f0-913e-5efc5d38017d" name="FIP 1"/>
             <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
                 id="5331090f-5946-4e90-b19d-1066e311d015" name="FOP 1"/>
+            <ownedFunctionRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionRealization"
+                id="5b5574d8-c611-4bac-b837-0f9a321a9eaf" targetElement="#7e50352c-20eb-47c5-8f40-d97cc9823d71"
+                sourceElement="#34ecd055-55a3-4854-9db6-a1c3292429b5"/>
           </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
-              id="e097062b-efbe-43c4-b24c-c8ae2a748a41" name="Controller le moteur avec précision selon la commande">
+              id="e097062b-efbe-43c4-b24c-c8ae2a748a41" name="Controller le moteur avec précision selon la commande"
+              description="&lt;p>Il s&amp;#39;agit d&amp;#39;un&amp;nbsp;controlleur PID&amp;nbsp;par exemple. N&amp;eacute;cessite un feedback&lt;/p>&#xA;">
             <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
                 id="028ac137-fbae-4ffa-9261-630a813b0007" name="FIP 1"/>
             <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
                 id="b2242595-d7a9-44bd-8a88-25251f4499e3" name="FIP 2"/>
             <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
                 id="95e63917-9d8d-438f-b22c-32b918dbc360" name="FOP 1"/>
+            <ownedFunctionRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionRealization"
+                id="188e6135-f31b-493f-b9a1-26e9ef7cfb73" targetElement="#e1e3474a-d443-467c-9f86-b5454c557145"
+                sourceElement="#e097062b-efbe-43c4-b24c-c8ae2a748a41"/>
           </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
-              id="1be46c76-db65-422f-82eb-6ce2d46c641e" name="Faire tourner un axe selon la commande">
+              id="1be46c76-db65-422f-82eb-6ce2d46c641e" name="Faire tourner un axe selon la commande"
+              description="&lt;p>Le choix d&amp;#39;un moteur &amp;eacute;lectrique pour cette&amp;nbsp;semble d&amp;eacute;couler du choix d&amp;#39;utiliser une batterie pour le syst&amp;egrave;me.&lt;/p>&#xA;">
             <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
                 id="68cfce8e-6abe-44f9-acc7-20225e5cc9d6" name="FIP 1"/>
             <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
@@ -781,36 +806,52 @@
                 id="aebdf789-92fc-45ca-8b32-d4e1743858f5" name="FOP 1"/>
             <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
                 id="7fd35d52-5bab-4b40-a2ca-41e01e3f2cec" name="FOP 2"/>
+            <ownedFunctionRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionRealization"
+                id="b6164a86-477c-48df-a3b0-32609c38d356" targetElement="#797c6826-295b-4a75-9463-a29942a1013a"
+                sourceElement="#1be46c76-db65-422f-82eb-6ce2d46c641e"/>
           </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
-              id="680d8391-b60d-4a77-a272-51e703539a99" name="Moduler post moteur la vitesse et le couple">
+              id="680d8391-b60d-4a77-a272-51e703539a99" name="Moduler post moteur la vitesse et le couple"
+              description="&lt;p>Comme une bo&amp;icirc;te de vitesse par exemple. Nous faisons ici le choix de le mettre en dehors du champ de contr&amp;ocirc;le du controlleur mais il aurait pu &amp;ecirc;tre autrement.&lt;/p>&#xA;">
             <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
                 id="edefc1bc-a389-4270-ae21-3708d88dc61d" name="FIP 1"/>
             <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
                 id="d589ebd4-96df-4ac6-8ca5-5e55513dfb06" name="FOP 1"/>
+            <ownedFunctionRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionRealization"
+                id="02d2affd-d8d1-4764-b812-ba88fd7e9bf0" targetElement="#e1e3474a-d443-467c-9f86-b5454c557145"
+                sourceElement="#680d8391-b60d-4a77-a272-51e703539a99"/>
           </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
-              id="e91cd7fc-3082-40c7-8dcc-4e5056c0a790" name="Transmettre le mouvement à l'actionneur final">
+              id="e91cd7fc-3082-40c7-8dcc-4e5056c0a790" name="Transmettre le mouvement à l'actionneur final"
+              description="&lt;p>Non pr&amp;eacute;sent au niveau du dessus, cette fonction vise &amp;agrave; pr&amp;eacute;ciser le transfert de la force au cas o&amp;ugrave; on en aurait besoin.&lt;/p>&#xA;">
             <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
                 id="e4a7a428-1629-4a79-819b-4c71f6052cb3" name="FIP 1"/>
             <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
                 id="5761f715-9909-45dd-b755-d4032902016d" name="FOP 1"/>
           </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
-              id="ba0246c3-42f1-468a-aed8-6c99ca4d9c06" name="Convertir la force par rapport au sol en mouvement">
+              id="ba0246c3-42f1-468a-aed8-6c99ca4d9c06" name="Convertir la force par rapport au sol en mouvement"
+              description="&lt;p>Exemples: Roue / H&amp;eacute;lice&lt;/p>&#xA;">
             <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
                 id="65a4d6bd-548b-47dc-b259-75da68fbd961" name="FIP 1"/>
             <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
                 id="91620667-07e5-4c4e-890c-8c16e501871b" name="FIP 2"/>
             <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
                 id="fb048416-69fd-481f-a20a-ecb868223e0f" name="FOP 1"/>
+            <ownedFunctionRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionRealization"
+                id="884a9890-438a-466d-bf02-e9ab005b88a7" targetElement="#420f2fa9-4b56-41bd-8dd3-0c03b34a5d1f"
+                sourceElement="#ba0246c3-42f1-468a-aed8-6c99ca4d9c06"/>
           </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
-              id="9a803885-eb6b-4ba4-9504-f397a168a6cf" name="Résister au mouvement">
+              id="9a803885-eb6b-4ba4-9504-f397a168a6cf" name="Résister au mouvement"
+              description="&lt;p>Via les propri&amp;eacute;t&amp;eacute;s physiques du sol et la 3&amp;egrave;me loi de Newton&lt;/p>&#xA;">
             <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
                 id="7d34b676-adb8-46c0-8ed2-74de6c545c80" name="FIP 1"/>
             <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
                 id="fd943dd5-7dae-418f-93b4-d46fa9b127ba" name="FOP 1"/>
+            <ownedFunctionRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionRealization"
+                id="cb8067e9-67ca-4fb7-85d7-3f524a329b36" targetElement="#fc07debb-cf84-49b5-beeb-905440d25372"
+                sourceElement="#9a803885-eb6b-4ba4-9504-f397a168a6cf"/>
           </ownedFunctions>
           <ownedFunctionRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionRealization"
               id="65ea7b51-6079-400c-8cd6-13e6c94e0a2c" targetElement="#e850f5de-795f-4573-9ade-fc3388341c95"

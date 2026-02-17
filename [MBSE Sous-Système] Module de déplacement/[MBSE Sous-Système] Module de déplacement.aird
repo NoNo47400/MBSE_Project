@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:concern="http://www.eclipse.org/sirius/diagram/description/concern/1.1.0" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:filter="http://www.eclipse.org/sirius/diagram/description/filter/1.1.0" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:org.polarsys.capella.core.data.cs="http://www.polarsys.org/capella/core/cs/7.0.0" xmlns:org.polarsys.capella.core.data.ctx="http://www.polarsys.org/capella/core/ctx/7.0.0" xmlns:org.polarsys.capella.core.data.fa="http://www.polarsys.org/capella/core/fa/7.0.0" xmlns:org.polarsys.capella.core.data.la="http://www.polarsys.org/capella/core/la/7.0.0" xmlns:org.polarsys.capella.core.data.pa="http://www.polarsys.org/capella/core/pa/7.0.0" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/diagram/description/concern/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/concern http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/filter/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/filter http://www.eclipse.org/sirius/diagram/description/style/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/style">
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:concern="http://www.eclipse.org/sirius/diagram/description/concern/1.1.0" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:description_2="http://www.eclipse.org/sirius/table/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:filter="http://www.eclipse.org/sirius/diagram/description/filter/1.1.0" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:org.polarsys.capella.core.data.cs="http://www.polarsys.org/capella/core/cs/7.0.0" xmlns:org.polarsys.capella.core.data.ctx="http://www.polarsys.org/capella/core/ctx/7.0.0" xmlns:org.polarsys.capella.core.data.fa="http://www.polarsys.org/capella/core/fa/7.0.0" xmlns:org.polarsys.capella.core.data.la="http://www.polarsys.org/capella/core/la/7.0.0" xmlns:org.polarsys.capella.core.data.pa="http://www.polarsys.org/capella/core/pa/7.0.0" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:table="http://www.eclipse.org/sirius/table/1.1.0" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/diagram/description/concern/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/concern http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description http://www.eclipse.org/sirius/table/description/1.1.0 http://www.eclipse.org/sirius/table/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/filter/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/filter http://www.eclipse.org/sirius/diagram/description/style/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/style">
   <viewpoint:DAnalysis uid="_SwYF0AAiEfGRjOCy0jDVzw" selectedViews="_SxGekAAiEfGRjOCy0jDVzw _Sxx0AAAiEfGRjOCy0jDVzw _S2hKEAAiEfGRjOCy0jDVzw _S3cXIAAiEfGRjOCy0jDVzw _S6H3sAAiEfGRjOCy0jDVzw _S6ttkAAiEfGRjOCy0jDVzw _S67wAAAiEfGRjOCy0jDVzw" version="15.4.1.202403191723">
     <semanticResources>%5BMBSE%20Sous-Système%5D%20Module%20de%20déplacement.afm</semanticResources>
     <semanticResources>%5BMBSE%20Sous-Système%5D%20Module%20de%20déplacement.capella</semanticResources>
@@ -72,6 +72,10 @@
         </eAnnotations>
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/logical.odesign#//@ownedViewpoints[name='Logical%20Architecture']/@ownedRepresentations[name='Logical%20Architecture%20Blank']"/>
         <target xmi:type="org.polarsys.capella.core.data.la:LogicalComponentPkg" href="%5BMBSE%20Sous-Système%5D%20Module%20de%20déplacement.capella#6aa63e19-ccd3-4c3c-9151-37586a985445"/>
+      </ownedRepresentationDescriptors>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_9jimAAvlEfGFoLtvBukGNQ" name="New Logical Functions - System Functions" repPath="#_9iutsAvlEfGFoLtvBukGNQ" changeId="1771322087678">
+        <description xmi:type="description_2:CrossTableDescription" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/logical.odesign#//@ownedViewpoints[name='Logical%20Architecture']/@ownedRepresentations[name='Logical%20Functions%20-%20System%20Functions']"/>
+        <target xmi:type="org.polarsys.capella.core.data.la:LogicalArchitecture" href="%5BMBSE%20Sous-Système%5D%20Module%20de%20déplacement.capella#b9f34261-061e-4cfa-98ca-817d534423d3"/>
       </ownedRepresentationDescriptors>
     </ownedViews>
     <ownedViews xmi:type="viewpoint:DView" uid="_S6ttkAAiEfGRjOCy0jDVzw">
@@ -9200,4 +9204,263 @@
     <activatedLayers xmi:type="description_1:Layer" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/physical.odesign#//@ownedViewpoints[name='Physical%20Architecture']/@ownedRepresentations[name='Physical%20Architecture%20Blank']/@defaultLayer"/>
     <target xmi:type="org.polarsys.capella.core.data.pa:PhysicalComponentPkg" href="%5BMBSE%20Sous-Système%5D%20Module%20de%20déplacement.capella#1619d242-c6f5-4aa2-bb7e-d17371e74206"/>
   </diagram:DSemanticDiagram>
+  <table:DTable uid="_9iutsAvlEfGFoLtvBukGNQ" headerColumnWidth="540">
+    <target xmi:type="org.polarsys.capella.core.data.la:LogicalArchitecture" href="%5BMBSE%20Sous-Système%5D%20Module%20de%20déplacement.capella#b9f34261-061e-4cfa-98ca-817d534423d3"/>
+    <lines xmi:type="table:DLine" uid="_9i5s0AvlEfGFoLtvBukGNQ" label="Donner les informations de trajectoire à suivre">
+      <target xmi:type="org.polarsys.capella.core.data.la:LogicalFunction" href="%5BMBSE%20Sous-Système%5D%20Module%20de%20déplacement.capella#cbd6e814-72cb-4a9c-8101-7606ad18fcb3"/>
+      <semanticElements xmi:type="org.polarsys.capella.core.data.la:LogicalFunction" href="%5BMBSE%20Sous-Système%5D%20Module%20de%20déplacement.capella#cbd6e814-72cb-4a9c-8101-7606ad18fcb3"/>
+      <originMapping xmi:type="description_2:LineMapping" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/logical.odesign#//@ownedViewpoints[name='Logical%20Architecture']/@ownedRepresentations[name='Logical%20Functions%20-%20System%20Functions']/@ownedLineMappings[name='Logical%20Functions%201']"/>
+      <cells xmi:type="table:DCell" uid="_IkMQAAvmEfGFoLtvBukGNQ" label="X" column="_9jQSIgvlEfGFoLtvBukGNQ">
+        <target xmi:type="org.polarsys.capella.core.data.fa:FunctionRealization" href="%5BMBSE%20Sous-Système%5D%20Module%20de%20déplacement.capella#09237a6e-78d5-4700-98a1-55adf298e112"/>
+        <semanticElements xmi:type="org.polarsys.capella.core.data.fa:FunctionRealization" href="%5BMBSE%20Sous-Système%5D%20Module%20de%20déplacement.capella#09237a6e-78d5-4700-98a1-55adf298e112"/>
+        <intersectionMapping xmi:type="description_2:IntersectionMapping" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/logical.odesign#//@ownedViewpoints[name='Logical%20Architecture']/@ownedRepresentations[name='Logical%20Functions%20-%20System%20Functions']/@intersection.0"/>
+      </cells>
+    </lines>
+    <lines xmi:type="table:DLine" uid="_9i9XMAvlEfGFoLtvBukGNQ" label="Donner les informations de trajectoire à suivre (mode manuel)">
+      <target xmi:type="org.polarsys.capella.core.data.la:LogicalFunction" href="%5BMBSE%20Sous-Système%5D%20Module%20de%20déplacement.capella#3ddd2fcd-8e50-461d-b94f-ef8bf81da78e"/>
+      <semanticElements xmi:type="org.polarsys.capella.core.data.la:LogicalFunction" href="%5BMBSE%20Sous-Système%5D%20Module%20de%20déplacement.capella#3ddd2fcd-8e50-461d-b94f-ef8bf81da78e"/>
+      <originMapping xmi:type="description_2:LineMapping" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/logical.odesign#//@ownedViewpoints[name='Logical%20Architecture']/@ownedRepresentations[name='Logical%20Functions%20-%20System%20Functions']/@ownedLineMappings[name='Logical%20Functions%201']"/>
+      <cells xmi:type="table:DCell" uid="_GxgxcAvmEfGFoLtvBukGNQ" label="X" column="_9jQSIAvlEfGFoLtvBukGNQ">
+        <target xmi:type="org.polarsys.capella.core.data.fa:FunctionRealization" href="%5BMBSE%20Sous-Système%5D%20Module%20de%20déplacement.capella#4f03e0b9-7518-4645-a7ff-7783c56213cb"/>
+        <semanticElements xmi:type="org.polarsys.capella.core.data.fa:FunctionRealization" href="%5BMBSE%20Sous-Système%5D%20Module%20de%20déplacement.capella#4f03e0b9-7518-4645-a7ff-7783c56213cb"/>
+        <intersectionMapping xmi:type="description_2:IntersectionMapping" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/logical.odesign#//@ownedViewpoints[name='Logical%20Architecture']/@ownedRepresentations[name='Logical%20Functions%20-%20System%20Functions']/@intersection.0"/>
+      </cells>
+    </lines>
+    <lines xmi:type="table:DLine" uid="_9i9XMgvlEfGFoLtvBukGNQ" label="Fournir de l'énergie au système">
+      <target xmi:type="org.polarsys.capella.core.data.la:LogicalFunction" href="%5BMBSE%20Sous-Système%5D%20Module%20de%20déplacement.capella#43d607c2-e567-434d-a181-34720872b652"/>
+      <semanticElements xmi:type="org.polarsys.capella.core.data.la:LogicalFunction" href="%5BMBSE%20Sous-Système%5D%20Module%20de%20déplacement.capella#43d607c2-e567-434d-a181-34720872b652"/>
+      <originMapping xmi:type="description_2:LineMapping" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/logical.odesign#//@ownedViewpoints[name='Logical%20Architecture']/@ownedRepresentations[name='Logical%20Functions%20-%20System%20Functions']/@ownedLineMappings[name='Logical%20Functions%201']"/>
+      <cells xmi:type="table:DCell" uid="_LVyN4AvmEfGFoLtvBukGNQ" label="X" column="_9jQ5NgvlEfGFoLtvBukGNQ">
+        <target xmi:type="org.polarsys.capella.core.data.fa:FunctionRealization" href="%5BMBSE%20Sous-Système%5D%20Module%20de%20déplacement.capella#43d3ac9f-47cf-44ce-8c3a-fad51129be94"/>
+        <semanticElements xmi:type="org.polarsys.capella.core.data.fa:FunctionRealization" href="%5BMBSE%20Sous-Système%5D%20Module%20de%20déplacement.capella#43d3ac9f-47cf-44ce-8c3a-fad51129be94"/>
+        <intersectionMapping xmi:type="description_2:IntersectionMapping" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/logical.odesign#//@ownedViewpoints[name='Logical%20Architecture']/@ownedRepresentations[name='Logical%20Functions%20-%20System%20Functions']/@intersection.0"/>
+      </cells>
+    </lines>
+    <lines xmi:type="table:DLine" uid="_9i9XNAvlEfGFoLtvBukGNQ" label="Fournir la commande de déplacement (mode manuel)">
+      <target xmi:type="org.polarsys.capella.core.data.la:LogicalFunction" href="%5BMBSE%20Sous-Système%5D%20Module%20de%20déplacement.capella#1732e934-7e0d-4e9b-b610-dd8bf75600ad"/>
+      <semanticElements xmi:type="org.polarsys.capella.core.data.la:LogicalFunction" href="%5BMBSE%20Sous-Système%5D%20Module%20de%20déplacement.capella#1732e934-7e0d-4e9b-b610-dd8bf75600ad"/>
+      <originMapping xmi:type="description_2:LineMapping" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/logical.odesign#//@ownedViewpoints[name='Logical%20Architecture']/@ownedRepresentations[name='Logical%20Functions%20-%20System%20Functions']/@ownedLineMappings[name='Logical%20Functions%201']"/>
+      <cells xmi:type="table:DCell" uid="_H1nSwAvmEfGFoLtvBukGNQ" label="X" column="_9jQSIAvlEfGFoLtvBukGNQ">
+        <target xmi:type="org.polarsys.capella.core.data.fa:FunctionRealization" href="%5BMBSE%20Sous-Système%5D%20Module%20de%20déplacement.capella#08c0dfb5-7b5c-47c3-9ade-0acde7134166"/>
+        <semanticElements xmi:type="org.polarsys.capella.core.data.fa:FunctionRealization" href="%5BMBSE%20Sous-Système%5D%20Module%20de%20déplacement.capella#08c0dfb5-7b5c-47c3-9ade-0acde7134166"/>
+        <intersectionMapping xmi:type="description_2:IntersectionMapping" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/logical.odesign#//@ownedViewpoints[name='Logical%20Architecture']/@ownedRepresentations[name='Logical%20Functions%20-%20System%20Functions']/@intersection.0"/>
+      </cells>
+    </lines>
+    <lines xmi:type="table:DLine" uid="_9i9-QQvlEfGFoLtvBukGNQ" label="Fournir la commande de déplacement">
+      <target xmi:type="org.polarsys.capella.core.data.la:LogicalFunction" href="%5BMBSE%20Sous-Système%5D%20Module%20de%20déplacement.capella#87a6e37b-cdb7-4fa8-9adf-07c98418d64f"/>
+      <semanticElements xmi:type="org.polarsys.capella.core.data.la:LogicalFunction" href="%5BMBSE%20Sous-Système%5D%20Module%20de%20déplacement.capella#87a6e37b-cdb7-4fa8-9adf-07c98418d64f"/>
+      <originMapping xmi:type="description_2:LineMapping" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/logical.odesign#//@ownedViewpoints[name='Logical%20Architecture']/@ownedRepresentations[name='Logical%20Functions%20-%20System%20Functions']/@ownedLineMappings[name='Logical%20Functions%201']"/>
+      <cells xmi:type="table:DCell" uid="_9jhX4AvlEfGFoLtvBukGNQ" label="X" column="_9jQSIgvlEfGFoLtvBukGNQ">
+        <target xmi:type="org.polarsys.capella.core.data.fa:FunctionRealization" href="%5BMBSE%20Sous-Système%5D%20Module%20de%20déplacement.capella#d9dfdf3f-6408-4898-a850-d8126c3766ce"/>
+        <semanticElements xmi:type="org.polarsys.capella.core.data.fa:FunctionRealization" href="%5BMBSE%20Sous-Système%5D%20Module%20de%20déplacement.capella#d9dfdf3f-6408-4898-a850-d8126c3766ce"/>
+        <intersectionMapping xmi:type="description_2:IntersectionMapping" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/logical.odesign#//@ownedViewpoints[name='Logical%20Architecture']/@ownedRepresentations[name='Logical%20Functions%20-%20System%20Functions']/@intersection.0"/>
+      </cells>
+    </lines>
+    <lines xmi:type="table:DLine" uid="_9i9-QwvlEfGFoLtvBukGNQ" label="Convertir la commande en informations conpréhensible par le système">
+      <target xmi:type="org.polarsys.capella.core.data.la:LogicalFunction" href="%5BMBSE%20Sous-Système%5D%20Module%20de%20déplacement.capella#f2b6db13-123e-4e29-ad7e-8808739ce4f6"/>
+      <semanticElements xmi:type="org.polarsys.capella.core.data.la:LogicalFunction" href="%5BMBSE%20Sous-Système%5D%20Module%20de%20déplacement.capella#f2b6db13-123e-4e29-ad7e-8808739ce4f6"/>
+      <originMapping xmi:type="description_2:LineMapping" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/logical.odesign#//@ownedViewpoints[name='Logical%20Architecture']/@ownedRepresentations[name='Logical%20Functions%20-%20System%20Functions']/@ownedLineMappings[name='Logical%20Functions%201']"/>
+      <cells xmi:type="table:DCell" uid="_9jhX4gvlEfGFoLtvBukGNQ" label="X" column="_9jQSJAvlEfGFoLtvBukGNQ">
+        <target xmi:type="org.polarsys.capella.core.data.fa:FunctionRealization" href="%5BMBSE%20Sous-Système%5D%20Module%20de%20déplacement.capella#4edf9039-fec8-45f0-97c0-48d9e9b66f70"/>
+        <semanticElements xmi:type="org.polarsys.capella.core.data.fa:FunctionRealization" href="%5BMBSE%20Sous-Système%5D%20Module%20de%20déplacement.capella#4edf9039-fec8-45f0-97c0-48d9e9b66f70"/>
+        <intersectionMapping xmi:type="description_2:IntersectionMapping" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/logical.odesign#//@ownedViewpoints[name='Logical%20Architecture']/@ownedRepresentations[name='Logical%20Functions%20-%20System%20Functions']/@intersection.0"/>
+      </cells>
+    </lines>
+    <lines xmi:type="table:DLine" uid="_9i9-RQvlEfGFoLtvBukGNQ" label="Fournir un point de repère">
+      <target xmi:type="org.polarsys.capella.core.data.la:LogicalFunction" href="%5BMBSE%20Sous-Système%5D%20Module%20de%20déplacement.capella#8365b7d6-8e17-427c-b576-45dcec3d8b02"/>
+      <semanticElements xmi:type="org.polarsys.capella.core.data.la:LogicalFunction" href="%5BMBSE%20Sous-Système%5D%20Module%20de%20déplacement.capella#8365b7d6-8e17-427c-b576-45dcec3d8b02"/>
+      <originMapping xmi:type="description_2:LineMapping" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/logical.odesign#//@ownedViewpoints[name='Logical%20Architecture']/@ownedRepresentations[name='Logical%20Functions%20-%20System%20Functions']/@ownedLineMappings[name='Logical%20Functions%201']"/>
+      <cells xmi:type="table:DCell" uid="_9jhX5AvlEfGFoLtvBukGNQ" label="X" column="_9jQSJgvlEfGFoLtvBukGNQ">
+        <target xmi:type="org.polarsys.capella.core.data.fa:FunctionRealization" href="%5BMBSE%20Sous-Système%5D%20Module%20de%20déplacement.capella#9814496a-a5bf-4ff9-8fe6-f38b7de53d61"/>
+        <semanticElements xmi:type="org.polarsys.capella.core.data.fa:FunctionRealization" href="%5BMBSE%20Sous-Système%5D%20Module%20de%20déplacement.capella#9814496a-a5bf-4ff9-8fe6-f38b7de53d61"/>
+        <intersectionMapping xmi:type="description_2:IntersectionMapping" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/logical.odesign#//@ownedViewpoints[name='Logical%20Architecture']/@ownedRepresentations[name='Logical%20Functions%20-%20System%20Functions']/@intersection.0"/>
+      </cells>
+    </lines>
+    <lines xmi:type="table:DLine" uid="_9i9-RwvlEfGFoLtvBukGNQ" label="Propriétés physique du sol, de l'air ect.. (frottement, force de réaction, état)">
+      <target xmi:type="org.polarsys.capella.core.data.la:LogicalFunction" href="%5BMBSE%20Sous-Système%5D%20Module%20de%20déplacement.capella#c9429a9e-3253-44b9-bc7a-b613af417902"/>
+      <semanticElements xmi:type="org.polarsys.capella.core.data.la:LogicalFunction" href="%5BMBSE%20Sous-Système%5D%20Module%20de%20déplacement.capella#c9429a9e-3253-44b9-bc7a-b613af417902"/>
+      <originMapping xmi:type="description_2:LineMapping" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/logical.odesign#//@ownedViewpoints[name='Logical%20Architecture']/@ownedRepresentations[name='Logical%20Functions%20-%20System%20Functions']/@ownedLineMappings[name='Logical%20Functions%201']"/>
+      <cells xmi:type="table:DCell" uid="_9jhX5gvlEfGFoLtvBukGNQ" label="X" column="_9jQSKAvlEfGFoLtvBukGNQ">
+        <target xmi:type="org.polarsys.capella.core.data.fa:FunctionRealization" href="%5BMBSE%20Sous-Système%5D%20Module%20de%20déplacement.capella#cce8bfdc-9c89-4f2d-b126-d6c3aa5af883"/>
+        <semanticElements xmi:type="org.polarsys.capella.core.data.fa:FunctionRealization" href="%5BMBSE%20Sous-Système%5D%20Module%20de%20déplacement.capella#cce8bfdc-9c89-4f2d-b126-d6c3aa5af883"/>
+        <intersectionMapping xmi:type="description_2:IntersectionMapping" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/logical.odesign#//@ownedViewpoints[name='Logical%20Architecture']/@ownedRepresentations[name='Logical%20Functions%20-%20System%20Functions']/@intersection.0"/>
+      </cells>
+    </lines>
+    <lines xmi:type="table:DLine" uid="_9i9-SQvlEfGFoLtvBukGNQ" label="Convertir l'énergie en force">
+      <target xmi:type="org.polarsys.capella.core.data.la:LogicalFunction" href="%5BMBSE%20Sous-Système%5D%20Module%20de%20déplacement.capella#7fbaea4d-c3d4-442c-b180-6d309c134832"/>
+      <semanticElements xmi:type="org.polarsys.capella.core.data.la:LogicalFunction" href="%5BMBSE%20Sous-Système%5D%20Module%20de%20déplacement.capella#7fbaea4d-c3d4-442c-b180-6d309c134832"/>
+      <originMapping xmi:type="description_2:LineMapping" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/logical.odesign#//@ownedViewpoints[name='Logical%20Architecture']/@ownedRepresentations[name='Logical%20Functions%20-%20System%20Functions']/@ownedLineMappings[name='Logical%20Functions%201']"/>
+      <cells xmi:type="table:DCell" uid="_9jhX6AvlEfGFoLtvBukGNQ" label="X" column="_9jQ5MAvlEfGFoLtvBukGNQ">
+        <target xmi:type="org.polarsys.capella.core.data.fa:FunctionRealization" href="%5BMBSE%20Sous-Système%5D%20Module%20de%20déplacement.capella#e373d9ff-a3bc-4490-b3d5-0bba1cbb07d9"/>
+        <semanticElements xmi:type="org.polarsys.capella.core.data.fa:FunctionRealization" href="%5BMBSE%20Sous-Système%5D%20Module%20de%20déplacement.capella#e373d9ff-a3bc-4490-b3d5-0bba1cbb07d9"/>
+        <intersectionMapping xmi:type="description_2:IntersectionMapping" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/logical.odesign#//@ownedViewpoints[name='Logical%20Architecture']/@ownedRepresentations[name='Logical%20Functions%20-%20System%20Functions']/@intersection.0"/>
+      </cells>
+    </lines>
+    <lines xmi:type="table:DLine" uid="_9i9-SwvlEfGFoLtvBukGNQ" label="Convertir la force en mouvement par rapport au sol">
+      <target xmi:type="org.polarsys.capella.core.data.la:LogicalFunction" href="%5BMBSE%20Sous-Système%5D%20Module%20de%20déplacement.capella#c79efbac-e7a1-45c2-a518-06fc374b710d"/>
+      <semanticElements xmi:type="org.polarsys.capella.core.data.la:LogicalFunction" href="%5BMBSE%20Sous-Système%5D%20Module%20de%20déplacement.capella#c79efbac-e7a1-45c2-a518-06fc374b710d"/>
+      <originMapping xmi:type="description_2:LineMapping" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/logical.odesign#//@ownedViewpoints[name='Logical%20Architecture']/@ownedRepresentations[name='Logical%20Functions%20-%20System%20Functions']/@ownedLineMappings[name='Logical%20Functions%201']"/>
+      <cells xmi:type="table:DCell" uid="_9jhX6gvlEfGFoLtvBukGNQ" label="X" column="_9jQ5MgvlEfGFoLtvBukGNQ">
+        <target xmi:type="org.polarsys.capella.core.data.fa:FunctionRealization" href="%5BMBSE%20Sous-Système%5D%20Module%20de%20déplacement.capella#d6248bb4-c24e-45f2-9223-5a0ae878525b"/>
+        <semanticElements xmi:type="org.polarsys.capella.core.data.fa:FunctionRealization" href="%5BMBSE%20Sous-Système%5D%20Module%20de%20déplacement.capella#d6248bb4-c24e-45f2-9223-5a0ae878525b"/>
+        <intersectionMapping xmi:type="description_2:IntersectionMapping" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/logical.odesign#//@ownedViewpoints[name='Logical%20Architecture']/@ownedRepresentations[name='Logical%20Functions%20-%20System%20Functions']/@intersection.0"/>
+      </cells>
+    </lines>
+    <lines xmi:type="table:DLine" uid="_9i9-TQvlEfGFoLtvBukGNQ" label="Adapter la force en fonction de la commande">
+      <target xmi:type="org.polarsys.capella.core.data.la:LogicalFunction" href="%5BMBSE%20Sous-Système%5D%20Module%20de%20déplacement.capella#911e249c-0af7-40b1-abfc-7aa4b3dc3f57"/>
+      <semanticElements xmi:type="org.polarsys.capella.core.data.la:LogicalFunction" href="%5BMBSE%20Sous-Système%5D%20Module%20de%20déplacement.capella#911e249c-0af7-40b1-abfc-7aa4b3dc3f57"/>
+      <originMapping xmi:type="description_2:LineMapping" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/logical.odesign#//@ownedViewpoints[name='Logical%20Architecture']/@ownedRepresentations[name='Logical%20Functions%20-%20System%20Functions']/@ownedLineMappings[name='Logical%20Functions%201']"/>
+      <cells xmi:type="table:DCell" uid="_9jhX7AvlEfGFoLtvBukGNQ" label="X" column="_9jQ5NAvlEfGFoLtvBukGNQ">
+        <target xmi:type="org.polarsys.capella.core.data.fa:FunctionRealization" href="%5BMBSE%20Sous-Système%5D%20Module%20de%20déplacement.capella#2214d9b0-411b-4e2a-a922-59ca135c9f2d"/>
+        <semanticElements xmi:type="org.polarsys.capella.core.data.fa:FunctionRealization" href="%5BMBSE%20Sous-Système%5D%20Module%20de%20déplacement.capella#2214d9b0-411b-4e2a-a922-59ca135c9f2d"/>
+        <intersectionMapping xmi:type="description_2:IntersectionMapping" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/logical.odesign#//@ownedViewpoints[name='Logical%20Architecture']/@ownedRepresentations[name='Logical%20Functions%20-%20System%20Functions']/@intersection.0"/>
+      </cells>
+    </lines>
+    <lines xmi:type="table:DLine" uid="_9i9-TwvlEfGFoLtvBukGNQ" label="Fournir de l'énergie">
+      <target xmi:type="org.polarsys.capella.core.data.la:LogicalFunction" href="%5BMBSE%20Sous-Système%5D%20Module%20de%20déplacement.capella#10291626-209e-4a1b-b5c4-d9f7b9a1db1f"/>
+      <semanticElements xmi:type="org.polarsys.capella.core.data.la:LogicalFunction" href="%5BMBSE%20Sous-Système%5D%20Module%20de%20déplacement.capella#10291626-209e-4a1b-b5c4-d9f7b9a1db1f"/>
+      <originMapping xmi:type="description_2:LineMapping" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/logical.odesign#//@ownedViewpoints[name='Logical%20Architecture']/@ownedRepresentations[name='Logical%20Functions%20-%20System%20Functions']/@ownedLineMappings[name='Logical%20Functions%201']"/>
+      <cells xmi:type="table:DCell" uid="_9jhX7gvlEfGFoLtvBukGNQ" label="X" column="_9jQ5NgvlEfGFoLtvBukGNQ">
+        <target xmi:type="org.polarsys.capella.core.data.fa:FunctionRealization" href="%5BMBSE%20Sous-Système%5D%20Module%20de%20déplacement.capella#aa4a9481-eb2d-420f-8ce1-f33be3f91bda"/>
+        <semanticElements xmi:type="org.polarsys.capella.core.data.fa:FunctionRealization" href="%5BMBSE%20Sous-Système%5D%20Module%20de%20déplacement.capella#aa4a9481-eb2d-420f-8ce1-f33be3f91bda"/>
+        <intersectionMapping xmi:type="description_2:IntersectionMapping" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/logical.odesign#//@ownedViewpoints[name='Logical%20Architecture']/@ownedRepresentations[name='Logical%20Functions%20-%20System%20Functions']/@intersection.0"/>
+      </cells>
+    </lines>
+    <lines xmi:type="table:DLine" uid="_9i9-UQvlEfGFoLtvBukGNQ" label="Arbitrage des commandes">
+      <target xmi:type="org.polarsys.capella.core.data.la:LogicalFunction" href="%5BMBSE%20Sous-Système%5D%20Module%20de%20déplacement.capella#da1f641c-639a-46e6-a5e1-cd4acfdd901d"/>
+      <semanticElements xmi:type="org.polarsys.capella.core.data.la:LogicalFunction" href="%5BMBSE%20Sous-Système%5D%20Module%20de%20déplacement.capella#da1f641c-639a-46e6-a5e1-cd4acfdd901d"/>
+      <originMapping xmi:type="description_2:LineMapping" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/logical.odesign#//@ownedViewpoints[name='Logical%20Architecture']/@ownedRepresentations[name='Logical%20Functions%20-%20System%20Functions']/@ownedLineMappings[name='Logical%20Functions%201']"/>
+      <cells xmi:type="table:DCell" uid="_9jhX8AvlEfGFoLtvBukGNQ" label="X" column="_9jQ5OAvlEfGFoLtvBukGNQ">
+        <target xmi:type="org.polarsys.capella.core.data.fa:FunctionRealization" href="%5BMBSE%20Sous-Système%5D%20Module%20de%20déplacement.capella#e5363b69-85e0-49d4-9a3a-a8da44ad7c01"/>
+        <semanticElements xmi:type="org.polarsys.capella.core.data.fa:FunctionRealization" href="%5BMBSE%20Sous-Système%5D%20Module%20de%20déplacement.capella#e5363b69-85e0-49d4-9a3a-a8da44ad7c01"/>
+        <intersectionMapping xmi:type="description_2:IntersectionMapping" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/logical.odesign#//@ownedViewpoints[name='Logical%20Architecture']/@ownedRepresentations[name='Logical%20Functions%20-%20System%20Functions']/@intersection.0"/>
+      </cells>
+    </lines>
+    <lines xmi:type="table:DLine" uid="_9i9-UwvlEfGFoLtvBukGNQ" label="Récuperer les informations utiles des autres modules">
+      <target xmi:type="org.polarsys.capella.core.data.la:LogicalFunction" href="%5BMBSE%20Sous-Système%5D%20Module%20de%20déplacement.capella#b44a44f9-1d4e-47d1-977d-768023aa6cc9"/>
+      <semanticElements xmi:type="org.polarsys.capella.core.data.la:LogicalFunction" href="%5BMBSE%20Sous-Système%5D%20Module%20de%20déplacement.capella#b44a44f9-1d4e-47d1-977d-768023aa6cc9"/>
+      <originMapping xmi:type="description_2:LineMapping" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/logical.odesign#//@ownedViewpoints[name='Logical%20Architecture']/@ownedRepresentations[name='Logical%20Functions%20-%20System%20Functions']/@ownedLineMappings[name='Logical%20Functions%201']"/>
+      <cells xmi:type="table:DCell" uid="_sbC-kAvmEfGFoLtvBukGNQ" label="X" column="_9jQSJAvlEfGFoLtvBukGNQ">
+        <target xmi:type="org.polarsys.capella.core.data.fa:FunctionRealization" href="%5BMBSE%20Sous-Système%5D%20Module%20de%20déplacement.capella#1dde7b04-ecdc-4dd8-8be8-fa4d22284061"/>
+        <semanticElements xmi:type="org.polarsys.capella.core.data.fa:FunctionRealization" href="%5BMBSE%20Sous-Système%5D%20Module%20de%20déplacement.capella#1dde7b04-ecdc-4dd8-8be8-fa4d22284061"/>
+        <intersectionMapping xmi:type="description_2:IntersectionMapping" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/logical.odesign#//@ownedViewpoints[name='Logical%20Architecture']/@ownedRepresentations[name='Logical%20Functions%20-%20System%20Functions']/@intersection.0"/>
+      </cells>
+    </lines>
+    <lines xmi:type="table:DLine" uid="_9i9-VQvlEfGFoLtvBukGNQ" label="Arbitrer les différents signaux entrants">
+      <target xmi:type="org.polarsys.capella.core.data.la:LogicalFunction" href="%5BMBSE%20Sous-Système%5D%20Module%20de%20déplacement.capella#34ecd055-55a3-4854-9db6-a1c3292429b5"/>
+      <semanticElements xmi:type="org.polarsys.capella.core.data.la:LogicalFunction" href="%5BMBSE%20Sous-Système%5D%20Module%20de%20déplacement.capella#34ecd055-55a3-4854-9db6-a1c3292429b5"/>
+      <originMapping xmi:type="description_2:LineMapping" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/logical.odesign#//@ownedViewpoints[name='Logical%20Architecture']/@ownedRepresentations[name='Logical%20Functions%20-%20System%20Functions']/@ownedLineMappings[name='Logical%20Functions%201']"/>
+      <cells xmi:type="table:DCell" uid="_p0d94AvmEfGFoLtvBukGNQ" label="X" column="_9jQ5OAvlEfGFoLtvBukGNQ">
+        <target xmi:type="org.polarsys.capella.core.data.fa:FunctionRealization" href="%5BMBSE%20Sous-Système%5D%20Module%20de%20déplacement.capella#5b5574d8-c611-4bac-b837-0f9a321a9eaf"/>
+        <semanticElements xmi:type="org.polarsys.capella.core.data.fa:FunctionRealization" href="%5BMBSE%20Sous-Système%5D%20Module%20de%20déplacement.capella#5b5574d8-c611-4bac-b837-0f9a321a9eaf"/>
+        <intersectionMapping xmi:type="description_2:IntersectionMapping" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/logical.odesign#//@ownedViewpoints[name='Logical%20Architecture']/@ownedRepresentations[name='Logical%20Functions%20-%20System%20Functions']/@intersection.0"/>
+      </cells>
+    </lines>
+    <lines xmi:type="table:DLine" uid="_9i9-VwvlEfGFoLtvBukGNQ" label="Controller le moteur avec précision selon la commande">
+      <target xmi:type="org.polarsys.capella.core.data.la:LogicalFunction" href="%5BMBSE%20Sous-Système%5D%20Module%20de%20déplacement.capella#e097062b-efbe-43c4-b24c-c8ae2a748a41"/>
+      <semanticElements xmi:type="org.polarsys.capella.core.data.la:LogicalFunction" href="%5BMBSE%20Sous-Système%5D%20Module%20de%20déplacement.capella#e097062b-efbe-43c4-b24c-c8ae2a748a41"/>
+      <originMapping xmi:type="description_2:LineMapping" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/logical.odesign#//@ownedViewpoints[name='Logical%20Architecture']/@ownedRepresentations[name='Logical%20Functions%20-%20System%20Functions']/@ownedLineMappings[name='Logical%20Functions%201']"/>
+      <cells xmi:type="table:DCell" uid="_nSXNgAvmEfGFoLtvBukGNQ" label="X" column="_9jQ5NAvlEfGFoLtvBukGNQ">
+        <target xmi:type="org.polarsys.capella.core.data.fa:FunctionRealization" href="%5BMBSE%20Sous-Système%5D%20Module%20de%20déplacement.capella#188e6135-f31b-493f-b9a1-26e9ef7cfb73"/>
+        <semanticElements xmi:type="org.polarsys.capella.core.data.fa:FunctionRealization" href="%5BMBSE%20Sous-Système%5D%20Module%20de%20déplacement.capella#188e6135-f31b-493f-b9a1-26e9ef7cfb73"/>
+        <intersectionMapping xmi:type="description_2:IntersectionMapping" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/logical.odesign#//@ownedViewpoints[name='Logical%20Architecture']/@ownedRepresentations[name='Logical%20Functions%20-%20System%20Functions']/@intersection.0"/>
+      </cells>
+    </lines>
+    <lines xmi:type="table:DLine" uid="_9i9-WQvlEfGFoLtvBukGNQ" label="Faire tourner un axe selon la commande">
+      <target xmi:type="org.polarsys.capella.core.data.la:LogicalFunction" href="%5BMBSE%20Sous-Système%5D%20Module%20de%20déplacement.capella#1be46c76-db65-422f-82eb-6ce2d46c641e"/>
+      <semanticElements xmi:type="org.polarsys.capella.core.data.la:LogicalFunction" href="%5BMBSE%20Sous-Système%5D%20Module%20de%20déplacement.capella#1be46c76-db65-422f-82eb-6ce2d46c641e"/>
+      <originMapping xmi:type="description_2:LineMapping" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/logical.odesign#//@ownedViewpoints[name='Logical%20Architecture']/@ownedRepresentations[name='Logical%20Functions%20-%20System%20Functions']/@ownedLineMappings[name='Logical%20Functions%201']"/>
+      <cells xmi:type="table:DCell" uid="_j0ibwAvmEfGFoLtvBukGNQ" label="X" column="_9jQ5MAvlEfGFoLtvBukGNQ">
+        <target xmi:type="org.polarsys.capella.core.data.fa:FunctionRealization" href="%5BMBSE%20Sous-Système%5D%20Module%20de%20déplacement.capella#b6164a86-477c-48df-a3b0-32609c38d356"/>
+        <semanticElements xmi:type="org.polarsys.capella.core.data.fa:FunctionRealization" href="%5BMBSE%20Sous-Système%5D%20Module%20de%20déplacement.capella#b6164a86-477c-48df-a3b0-32609c38d356"/>
+        <intersectionMapping xmi:type="description_2:IntersectionMapping" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/logical.odesign#//@ownedViewpoints[name='Logical%20Architecture']/@ownedRepresentations[name='Logical%20Functions%20-%20System%20Functions']/@intersection.0"/>
+      </cells>
+    </lines>
+    <lines xmi:type="table:DLine" uid="_9i9-WwvlEfGFoLtvBukGNQ" label="Moduler post moteur la vitesse et le couple">
+      <target xmi:type="org.polarsys.capella.core.data.la:LogicalFunction" href="%5BMBSE%20Sous-Système%5D%20Module%20de%20déplacement.capella#680d8391-b60d-4a77-a272-51e703539a99"/>
+      <semanticElements xmi:type="org.polarsys.capella.core.data.la:LogicalFunction" href="%5BMBSE%20Sous-Système%5D%20Module%20de%20déplacement.capella#680d8391-b60d-4a77-a272-51e703539a99"/>
+      <originMapping xmi:type="description_2:LineMapping" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/logical.odesign#//@ownedViewpoints[name='Logical%20Architecture']/@ownedRepresentations[name='Logical%20Functions%20-%20System%20Functions']/@ownedLineMappings[name='Logical%20Functions%201']"/>
+      <cells xmi:type="table:DCell" uid="_aHaPIAvmEfGFoLtvBukGNQ" label="X" column="_9jQ5NAvlEfGFoLtvBukGNQ">
+        <target xmi:type="org.polarsys.capella.core.data.fa:FunctionRealization" href="%5BMBSE%20Sous-Système%5D%20Module%20de%20déplacement.capella#02d2affd-d8d1-4764-b812-ba88fd7e9bf0"/>
+        <semanticElements xmi:type="org.polarsys.capella.core.data.fa:FunctionRealization" href="%5BMBSE%20Sous-Système%5D%20Module%20de%20déplacement.capella#02d2affd-d8d1-4764-b812-ba88fd7e9bf0"/>
+        <intersectionMapping xmi:type="description_2:IntersectionMapping" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/logical.odesign#//@ownedViewpoints[name='Logical%20Architecture']/@ownedRepresentations[name='Logical%20Functions%20-%20System%20Functions']/@intersection.0"/>
+      </cells>
+    </lines>
+    <lines xmi:type="table:DLine" uid="_9i9-XQvlEfGFoLtvBukGNQ" label="Transmettre le mouvement à l'actionneur final">
+      <target xmi:type="org.polarsys.capella.core.data.la:LogicalFunction" href="%5BMBSE%20Sous-Système%5D%20Module%20de%20déplacement.capella#e91cd7fc-3082-40c7-8dcc-4e5056c0a790"/>
+      <semanticElements xmi:type="org.polarsys.capella.core.data.la:LogicalFunction" href="%5BMBSE%20Sous-Système%5D%20Module%20de%20déplacement.capella#e91cd7fc-3082-40c7-8dcc-4e5056c0a790"/>
+      <originMapping xmi:type="description_2:LineMapping" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/logical.odesign#//@ownedViewpoints[name='Logical%20Architecture']/@ownedRepresentations[name='Logical%20Functions%20-%20System%20Functions']/@ownedLineMappings[name='Logical%20Functions%201']"/>
+    </lines>
+    <lines xmi:type="table:DLine" uid="_9i9-XwvlEfGFoLtvBukGNQ" label="Convertir la force par rapport au sol en mouvement">
+      <target xmi:type="org.polarsys.capella.core.data.la:LogicalFunction" href="%5BMBSE%20Sous-Système%5D%20Module%20de%20déplacement.capella#ba0246c3-42f1-468a-aed8-6c99ca4d9c06"/>
+      <semanticElements xmi:type="org.polarsys.capella.core.data.la:LogicalFunction" href="%5BMBSE%20Sous-Système%5D%20Module%20de%20déplacement.capella#ba0246c3-42f1-468a-aed8-6c99ca4d9c06"/>
+      <originMapping xmi:type="description_2:LineMapping" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/logical.odesign#//@ownedViewpoints[name='Logical%20Architecture']/@ownedRepresentations[name='Logical%20Functions%20-%20System%20Functions']/@ownedLineMappings[name='Logical%20Functions%201']"/>
+      <cells xmi:type="table:DCell" uid="_VbkLEAvmEfGFoLtvBukGNQ" label="X" column="_9jQ5MgvlEfGFoLtvBukGNQ">
+        <target xmi:type="org.polarsys.capella.core.data.fa:FunctionRealization" href="%5BMBSE%20Sous-Système%5D%20Module%20de%20déplacement.capella#884a9890-438a-466d-bf02-e9ab005b88a7"/>
+        <semanticElements xmi:type="org.polarsys.capella.core.data.fa:FunctionRealization" href="%5BMBSE%20Sous-Système%5D%20Module%20de%20déplacement.capella#884a9890-438a-466d-bf02-e9ab005b88a7"/>
+        <intersectionMapping xmi:type="description_2:IntersectionMapping" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/logical.odesign#//@ownedViewpoints[name='Logical%20Architecture']/@ownedRepresentations[name='Logical%20Functions%20-%20System%20Functions']/@intersection.0"/>
+      </cells>
+    </lines>
+    <lines xmi:type="table:DLine" uid="_9i9-YQvlEfGFoLtvBukGNQ" label="Résister au mouvement">
+      <target xmi:type="org.polarsys.capella.core.data.la:LogicalFunction" href="%5BMBSE%20Sous-Système%5D%20Module%20de%20déplacement.capella#9a803885-eb6b-4ba4-9504-f397a168a6cf"/>
+      <semanticElements xmi:type="org.polarsys.capella.core.data.la:LogicalFunction" href="%5BMBSE%20Sous-Système%5D%20Module%20de%20déplacement.capella#9a803885-eb6b-4ba4-9504-f397a168a6cf"/>
+      <originMapping xmi:type="description_2:LineMapping" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/logical.odesign#//@ownedViewpoints[name='Logical%20Architecture']/@ownedRepresentations[name='Logical%20Functions%20-%20System%20Functions']/@ownedLineMappings[name='Logical%20Functions%201']"/>
+      <cells xmi:type="table:DCell" uid="_TdMZ4AvmEfGFoLtvBukGNQ" label="X" column="_9jQSKAvlEfGFoLtvBukGNQ">
+        <target xmi:type="org.polarsys.capella.core.data.fa:FunctionRealization" href="%5BMBSE%20Sous-Système%5D%20Module%20de%20déplacement.capella#cb8067e9-67ca-4fb7-85d7-3f524a329b36"/>
+        <semanticElements xmi:type="org.polarsys.capella.core.data.fa:FunctionRealization" href="%5BMBSE%20Sous-Système%5D%20Module%20de%20déplacement.capella#cb8067e9-67ca-4fb7-85d7-3f524a329b36"/>
+        <intersectionMapping xmi:type="description_2:IntersectionMapping" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/logical.odesign#//@ownedViewpoints[name='Logical%20Architecture']/@ownedRepresentations[name='Logical%20Functions%20-%20System%20Functions']/@intersection.0"/>
+      </cells>
+    </lines>
+    <columns xmi:type="table:DTargetColumn" uid="_9jQSIAvlEfGFoLtvBukGNQ" label="Fournir la commande de déplacement (mode manuel)" cells="_GxgxcAvmEfGFoLtvBukGNQ _H1nSwAvmEfGFoLtvBukGNQ" width="402">
+      <target xmi:type="org.polarsys.capella.core.data.ctx:SystemFunction" href="%5BMBSE%20Sous-Système%5D%20Module%20de%20déplacement.capella#fe7129b9-696b-45c7-ad7b-6d0bcb52c560"/>
+      <semanticElements xmi:type="org.polarsys.capella.core.data.ctx:SystemFunction" href="%5BMBSE%20Sous-Système%5D%20Module%20de%20déplacement.capella#fe7129b9-696b-45c7-ad7b-6d0bcb52c560"/>
+      <originMapping xmi:type="description_2:ElementColumnMapping" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/logical.odesign#//@ownedViewpoints[name='Logical%20Architecture']/@ownedRepresentations[name='Logical%20Functions%20-%20System%20Functions']/@ownedColumnMappings.0"/>
+    </columns>
+    <columns xmi:type="table:DTargetColumn" uid="_9jQSIgvlEfGFoLtvBukGNQ" label="Fournir la commande de déplacement" cells="_9jhX4AvlEfGFoLtvBukGNQ _IkMQAAvmEfGFoLtvBukGNQ" width="296">
+      <target xmi:type="org.polarsys.capella.core.data.ctx:SystemFunction" href="%5BMBSE%20Sous-Système%5D%20Module%20de%20déplacement.capella#683da371-0d29-4ef8-91cf-ddfa6897361a"/>
+      <semanticElements xmi:type="org.polarsys.capella.core.data.ctx:SystemFunction" href="%5BMBSE%20Sous-Système%5D%20Module%20de%20déplacement.capella#683da371-0d29-4ef8-91cf-ddfa6897361a"/>
+      <originMapping xmi:type="description_2:ElementColumnMapping" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/logical.odesign#//@ownedViewpoints[name='Logical%20Architecture']/@ownedRepresentations[name='Logical%20Functions%20-%20System%20Functions']/@ownedColumnMappings.0"/>
+    </columns>
+    <columns xmi:type="table:DTargetColumn" uid="_9jQSJAvlEfGFoLtvBukGNQ" label="Convertir la commande en informations conpréhensible par le système" cells="_9jhX4gvlEfGFoLtvBukGNQ _sbC-kAvmEfGFoLtvBukGNQ" width="510">
+      <target xmi:type="org.polarsys.capella.core.data.ctx:SystemFunction" href="%5BMBSE%20Sous-Système%5D%20Module%20de%20déplacement.capella#41fee726-c32b-4a16-8c02-f8ab91252b31"/>
+      <semanticElements xmi:type="org.polarsys.capella.core.data.ctx:SystemFunction" href="%5BMBSE%20Sous-Système%5D%20Module%20de%20déplacement.capella#41fee726-c32b-4a16-8c02-f8ab91252b31"/>
+      <originMapping xmi:type="description_2:ElementColumnMapping" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/logical.odesign#//@ownedViewpoints[name='Logical%20Architecture']/@ownedRepresentations[name='Logical%20Functions%20-%20System%20Functions']/@ownedColumnMappings.0"/>
+    </columns>
+    <columns xmi:type="table:DTargetColumn" uid="_9jQSJgvlEfGFoLtvBukGNQ" label="Fournir un point de repère" cells="_9jhX5AvlEfGFoLtvBukGNQ" width="216">
+      <target xmi:type="org.polarsys.capella.core.data.ctx:SystemFunction" href="%5BMBSE%20Sous-Système%5D%20Module%20de%20déplacement.capella#2e347d5c-babb-4bdf-8680-29e614903d62"/>
+      <semanticElements xmi:type="org.polarsys.capella.core.data.ctx:SystemFunction" href="%5BMBSE%20Sous-Système%5D%20Module%20de%20déplacement.capella#2e347d5c-babb-4bdf-8680-29e614903d62"/>
+      <originMapping xmi:type="description_2:ElementColumnMapping" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/logical.odesign#//@ownedViewpoints[name='Logical%20Architecture']/@ownedRepresentations[name='Logical%20Functions%20-%20System%20Functions']/@ownedColumnMappings.0"/>
+    </columns>
+    <columns xmi:type="table:DTargetColumn" uid="_9jQSKAvlEfGFoLtvBukGNQ" label="Propriétés physique du sol, de l'air ect.. (frottement, force de réaction, état)" cells="_9jhX5gvlEfGFoLtvBukGNQ _TdMZ4AvmEfGFoLtvBukGNQ" width="537">
+      <target xmi:type="org.polarsys.capella.core.data.ctx:SystemFunction" href="%5BMBSE%20Sous-Système%5D%20Module%20de%20déplacement.capella#fc07debb-cf84-49b5-beeb-905440d25372"/>
+      <semanticElements xmi:type="org.polarsys.capella.core.data.ctx:SystemFunction" href="%5BMBSE%20Sous-Système%5D%20Module%20de%20déplacement.capella#fc07debb-cf84-49b5-beeb-905440d25372"/>
+      <originMapping xmi:type="description_2:ElementColumnMapping" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/logical.odesign#//@ownedViewpoints[name='Logical%20Architecture']/@ownedRepresentations[name='Logical%20Functions%20-%20System%20Functions']/@ownedColumnMappings.0"/>
+    </columns>
+    <columns xmi:type="table:DTargetColumn" uid="_9jQ5MAvlEfGFoLtvBukGNQ" label="Convertir l'énergie en force" cells="_9jhX6AvlEfGFoLtvBukGNQ _j0ibwAvmEfGFoLtvBukGNQ" width="222">
+      <target xmi:type="org.polarsys.capella.core.data.ctx:SystemFunction" href="%5BMBSE%20Sous-Système%5D%20Module%20de%20déplacement.capella#797c6826-295b-4a75-9463-a29942a1013a"/>
+      <semanticElements xmi:type="org.polarsys.capella.core.data.ctx:SystemFunction" href="%5BMBSE%20Sous-Système%5D%20Module%20de%20déplacement.capella#797c6826-295b-4a75-9463-a29942a1013a"/>
+      <originMapping xmi:type="description_2:ElementColumnMapping" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/logical.odesign#//@ownedViewpoints[name='Logical%20Architecture']/@ownedRepresentations[name='Logical%20Functions%20-%20System%20Functions']/@ownedColumnMappings.0"/>
+    </columns>
+    <columns xmi:type="table:DTargetColumn" uid="_9jQ5MgvlEfGFoLtvBukGNQ" label="Convertir la force en mouvement par rapport au sol" cells="_9jhX6gvlEfGFoLtvBukGNQ _VbkLEAvmEfGFoLtvBukGNQ" width="383">
+      <target xmi:type="org.polarsys.capella.core.data.ctx:SystemFunction" href="%5BMBSE%20Sous-Système%5D%20Module%20de%20déplacement.capella#420f2fa9-4b56-41bd-8dd3-0c03b34a5d1f"/>
+      <semanticElements xmi:type="org.polarsys.capella.core.data.ctx:SystemFunction" href="%5BMBSE%20Sous-Système%5D%20Module%20de%20déplacement.capella#420f2fa9-4b56-41bd-8dd3-0c03b34a5d1f"/>
+      <originMapping xmi:type="description_2:ElementColumnMapping" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/logical.odesign#//@ownedViewpoints[name='Logical%20Architecture']/@ownedRepresentations[name='Logical%20Functions%20-%20System%20Functions']/@ownedColumnMappings.0"/>
+    </columns>
+    <columns xmi:type="table:DTargetColumn" uid="_9jQ5NAvlEfGFoLtvBukGNQ" label="Adapter la force en fonction de la commande" cells="_9jhX7AvlEfGFoLtvBukGNQ _aHaPIAvmEfGFoLtvBukGNQ _nSXNgAvmEfGFoLtvBukGNQ" width="346">
+      <target xmi:type="org.polarsys.capella.core.data.ctx:SystemFunction" href="%5BMBSE%20Sous-Système%5D%20Module%20de%20déplacement.capella#e1e3474a-d443-467c-9f86-b5454c557145"/>
+      <semanticElements xmi:type="org.polarsys.capella.core.data.ctx:SystemFunction" href="%5BMBSE%20Sous-Système%5D%20Module%20de%20déplacement.capella#e1e3474a-d443-467c-9f86-b5454c557145"/>
+      <originMapping xmi:type="description_2:ElementColumnMapping" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/logical.odesign#//@ownedViewpoints[name='Logical%20Architecture']/@ownedRepresentations[name='Logical%20Functions%20-%20System%20Functions']/@ownedColumnMappings.0"/>
+    </columns>
+    <columns xmi:type="table:DTargetColumn" uid="_9jQ5NgvlEfGFoLtvBukGNQ" label="Fournir de l'énergie" cells="_9jhX7gvlEfGFoLtvBukGNQ _LVyN4AvmEfGFoLtvBukGNQ" width="171">
+      <target xmi:type="org.polarsys.capella.core.data.ctx:SystemFunction" href="%5BMBSE%20Sous-Système%5D%20Module%20de%20déplacement.capella#ee22f88f-f123-4d6d-8479-75562fb5d612"/>
+      <semanticElements xmi:type="org.polarsys.capella.core.data.ctx:SystemFunction" href="%5BMBSE%20Sous-Système%5D%20Module%20de%20déplacement.capella#ee22f88f-f123-4d6d-8479-75562fb5d612"/>
+      <originMapping xmi:type="description_2:ElementColumnMapping" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/logical.odesign#//@ownedViewpoints[name='Logical%20Architecture']/@ownedRepresentations[name='Logical%20Functions%20-%20System%20Functions']/@ownedColumnMappings.0"/>
+    </columns>
+    <columns xmi:type="table:DTargetColumn" uid="_9jQ5OAvlEfGFoLtvBukGNQ" label="Arbitrage des commandes" cells="_9jhX8AvlEfGFoLtvBukGNQ _p0d94AvmEfGFoLtvBukGNQ" width="218">
+      <target xmi:type="org.polarsys.capella.core.data.ctx:SystemFunction" href="%5BMBSE%20Sous-Système%5D%20Module%20de%20déplacement.capella#7e50352c-20eb-47c5-8f40-d97cc9823d71"/>
+      <semanticElements xmi:type="org.polarsys.capella.core.data.ctx:SystemFunction" href="%5BMBSE%20Sous-Système%5D%20Module%20de%20déplacement.capella#7e50352c-20eb-47c5-8f40-d97cc9823d71"/>
+      <originMapping xmi:type="description_2:ElementColumnMapping" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/logical.odesign#//@ownedViewpoints[name='Logical%20Architecture']/@ownedRepresentations[name='Logical%20Functions%20-%20System%20Functions']/@ownedColumnMappings.0"/>
+    </columns>
+    <description xmi:type="description_2:CrossTableDescription" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/logical.odesign#//@ownedViewpoints[name='Logical%20Architecture']/@ownedRepresentations[name='Logical%20Functions%20-%20System%20Functions']"/>
+  </table:DTable>
 </xmi:XMI>

@@ -45,7 +45,8 @@
       <ownedFunctionPkg xsi:type="org.polarsys.capella.core.data.oa:OperationalActivityPkg"
           id="1f4c386a-2071-4e73-84e2-5b9c2abe7e76" name="Operational Activities">
         <ownedOperationalActivities xsi:type="org.polarsys.capella.core.data.oa:OperationalActivity"
-            id="95cfd736-77ef-49d1-a39f-786c5a513bd0" name="Root Operational Activity"/>
+            id="95cfd736-77ef-49d1-a39f-786c5a513bd0" name="Se déplacer selon les commandes d'entrée"
+            description="&lt;p>H&amp;eacute;rit&amp;eacute; des besoins du robot&lt;/p>&#xA;"/>
       </ownedFunctionPkg>
       <ownedAbstractCapabilityPkg xsi:type="org.polarsys.capella.core.data.oa:OperationalCapabilityPkg"
           id="153a661f-f385-495f-bb63-31718e4e4e5e" name="Operational Capabilities"/>
@@ -63,7 +64,8 @@
       <ownedFunctionPkg xsi:type="org.polarsys.capella.core.data.ctx:SystemFunctionPkg"
           id="6865bfac-febc-4ef9-ab20-15eac60e2d6b" name="System Functions">
         <ownedSystemFunctions xsi:type="org.polarsys.capella.core.data.ctx:SystemFunction"
-            id="e850f5de-795f-4573-9ade-fc3388341c95" name="Root System Function">
+            id="e850f5de-795f-4573-9ade-fc3388341c95" name="Se déplacer selon les commandes d'entrée"
+            description="&lt;p>H&amp;eacute;rit&amp;eacute; des besoins du robot&lt;/p>&#xA;">
           <ownedFunctionalChains xsi:type="org.polarsys.capella.core.data.fa:FunctionalChain"
               id="54b26db3-43c5-4044-8845-955dbdef86da" name="Chaine énergétique">
             <ownedFunctionalChainInvolvements xsi:type="org.polarsys.capella.core.data.fa:FunctionalChainInvolvementLink"
@@ -130,41 +132,48 @@
                 id="a696bcd1-c709-441b-b503-d3067e3a5e23" involved="#e1e3474a-d443-467c-9f86-b5454c557145"/>
           </ownedFunctionalChains>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.ctx:SystemFunction"
-              id="fe7129b9-696b-45c7-ad7b-6d0bcb52c560" name="Fournir la commande de déplacement (mode manuel)">
+              id="fe7129b9-696b-45c7-ad7b-6d0bcb52c560" name="Fournir la commande de déplacement (mode manuel)"
+              description="&lt;p>Sous forme de valeur de vitesse et de cap&lt;/p>&#xA;">
             <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
                 id="80e9b8b9-a604-4288-9282-cfa6b13d59b0" name="FOP 1"/>
           </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.ctx:SystemFunction"
-              id="683da371-0d29-4ef8-91cf-ddfa6897361a" name="Fournir la commande de déplacement">
+              id="683da371-0d29-4ef8-91cf-ddfa6897361a" name="Fournir la commande de déplacement"
+              description="&lt;p>Sous forme de valeur de vitesse et de cap&lt;/p>&#xA;">
             <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
                 id="23d1c13c-3579-4374-96f3-bc9763deafc3" name="FOP 1"/>
           </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.ctx:SystemFunction"
-              id="41fee726-c32b-4a16-8c02-f8ab91252b31" name="Convertir la commande en informations conpréhensible par le système">
+              id="41fee726-c32b-4a16-8c02-f8ab91252b31" name="Convertir la commande en informations conpréhensible par le système"
+              description="&lt;p>Du formatage pour passer entre les 2 architectures. Peut &amp;ecirc;tre une &amp;eacute;tape inutile si le format est le m&amp;ecirc;me.&lt;/p>&#xA;">
             <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
                 id="5d1d594b-a3a0-415f-bd12-6bf77e83b3cf" name="FIP 1"/>
             <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
                 id="e9bbac31-c6c8-43e1-a6e1-915e175d53d9" name="FOP 1"/>
           </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.ctx:SystemFunction"
-              id="2e347d5c-babb-4bdf-8680-29e614903d62" name="Fournir un point de repère">
+              id="2e347d5c-babb-4bdf-8680-29e614903d62" name="Fournir un point de repère"
+              description="&lt;p>Pour &amp;eacute;valuer le d&amp;eacute;placement relatif&lt;/p>&#xA;">
             <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
                 id="ec70a82c-ae63-45ff-b116-6a29a95d3310" name="FOP 1"/>
           </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.ctx:SystemFunction"
-              id="fc07debb-cf84-49b5-beeb-905440d25372" name="Propriétés physique du sol, de l'air ect.. (frottement, force de réaction, état)">
+              id="fc07debb-cf84-49b5-beeb-905440d25372" name="Propriétés physique du sol, de l'air ect.. (frottement, force de réaction, état)"
+              description="&lt;p>La force de r&amp;eacute;action va &amp;ecirc;tre utilis&amp;eacute;e pour le d&amp;eacute;placement.&lt;/p>&#xA;">
             <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
                 id="d821662c-492e-4bfc-b7ad-f63d9dd90a74" name="FOP 1"/>
           </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.ctx:SystemFunction"
-              id="797c6826-295b-4a75-9463-a29942a1013a" name="Convertir l'énergie en force">
+              id="797c6826-295b-4a75-9463-a29942a1013a" name="Convertir l'énergie en force"
+              description="&lt;p>Le choix d&amp;#39;un moteur &amp;eacute;lectrique pour cette&amp;nbsp;semble d&amp;eacute;couler du choix d&amp;#39;utiliser une batterie pour le syst&amp;egrave;me.&lt;/p>&#xA;">
             <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
                 id="0c9146b9-2d9d-4444-a369-03d05105ed46" name="FIP 1"/>
             <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
                 id="1671643d-13da-4041-a0b5-2ec5e314f56c" name="FOP 1"/>
           </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.ctx:SystemFunction"
-              id="420f2fa9-4b56-41bd-8dd3-0c03b34a5d1f" name="Convertir la force en mouvement par rapport au sol">
+              id="420f2fa9-4b56-41bd-8dd3-0c03b34a5d1f" name="Convertir la force en mouvement par rapport au sol"
+              description="&lt;p>Exemples: Roue / H&amp;eacute;lice&lt;/p>&#xA;">
             <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
                 id="bd5cef4f-4a6b-467b-9ca6-92e88584b4c7" name="FIP 1"/>
             <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
@@ -173,7 +182,8 @@
                 id="01177b6b-740c-40a5-bbba-5d6ba86f1aed" name="FIP 3"/>
           </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.ctx:SystemFunction"
-              id="e1e3474a-d443-467c-9f86-b5454c557145" name="Adapter la force en fonction de la commande">
+              id="e1e3474a-d443-467c-9f86-b5454c557145" name="Adapter la force en fonction de la commande"
+              description="&lt;p>Regroupe &amp;agrave; la fois le controlleur du moteur et &amp;eacute;ventuellement la bo&amp;icirc;te de vitesse par exemple.&lt;/p>&#xA;">
             <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
                 id="72577b91-573b-459a-811a-c4b0b584bcc3" name="FIP 1"/>
             <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
@@ -182,12 +192,14 @@
                 id="62120215-9026-4b69-ab17-fec84b816eec" name="FOP 1"/>
           </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.ctx:SystemFunction"
-              id="ee22f88f-f123-4d6d-8479-75562fb5d612" name="Fournir de l'énergie">
+              id="ee22f88f-f123-4d6d-8479-75562fb5d612" name="Fournir de l'énergie"
+              description="&lt;p>(Energie electrique)&lt;/p>&#xA;">
             <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
                 id="0c9166af-95e9-404b-8c41-dacaf9be0bf4" name="FOP 1"/>
           </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.ctx:SystemFunction"
-              id="7e50352c-20eb-47c5-8f40-d97cc9823d71" name="Arbitrage des commandes">
+              id="7e50352c-20eb-47c5-8f40-d97cc9823d71" name="Arbitrage des commandes"
+              description="&lt;p>En g&amp;eacute;n&amp;eacute;ral, on va donner la priorit&amp;eacute; &amp;agrave; la commande manuelle.&lt;/p>&#xA;">
             <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
                 id="a0c4be17-3cb4-4260-bcd3-26ee8c131f6a" name="FIP 1"/>
             <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
@@ -339,7 +351,8 @@
         <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="379071e8-6373-4c07-bb33-3905648402b4"
             name="Batterie" abstractType="#ae461d12-8abc-4753-81d7-d07637a367f6"/>
         <ownedSystemComponents xsi:type="org.polarsys.capella.core.data.ctx:SystemComponent"
-            id="d80e2825-0f39-400b-bc2a-99bc5d68cdf8" name="Module de déplacement">
+            id="d80e2825-0f39-400b-bc2a-99bc5d68cdf8" name="Module de déplacement"
+            description="&lt;p>Le sous-syst&amp;egrave;me &amp;eacute;tudi&amp;eacute; qui d&amp;eacute;coule du robot.&lt;/p>&#xA;">
           <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
               id="98e0ff06-090c-43b8-8a71-226017141e11" targetElement="#41fee726-c32b-4a16-8c02-f8ab91252b31"
               sourceElement="#d80e2825-0f39-400b-bc2a-99bc5d68cdf8"/>
@@ -363,6 +376,7 @@
         </ownedSystemComponents>
         <ownedSystemComponents xsi:type="org.polarsys.capella.core.data.ctx:SystemComponent"
             id="29ee1d88-3abc-4bc7-b8d6-c4ee9c7af5ed" name="Module de trajectoire"
+            description="&lt;p>Renvoie les commandes pour le d&amp;eacute;placement &amp;agrave; partir de la trajectoire calcul&amp;eacute;e.&lt;/p>&#xA;"
             actor="true">
           <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
               id="3b1fa36b-253f-4038-85f8-d51d2fff0485" targetElement="#683da371-0d29-4ef8-91cf-ddfa6897361a"
@@ -370,13 +384,15 @@
         </ownedSystemComponents>
         <ownedSystemComponents xsi:type="org.polarsys.capella.core.data.ctx:SystemComponent"
             id="6ee689c6-8634-4931-8b01-0c4352f4edd2" name="Application de supervision"
+            description="&lt;p>ATTENTION : Ce n&amp;#39;est pas l&amp;#39;interface ici mais l&amp;#39;application qui r&amp;eacute;cup&amp;egrave;re les informations de l&amp;#39;interface. Celle-ci renvoie la trajectoire souhait&amp;eacute;e par l&amp;#39;utilisateur sous forme de vitesse et de cap.&lt;/p>&#xA;"
             actor="true">
           <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
               id="f40ba7ff-7622-4619-be45-367cd4f16f5e" targetElement="#fe7129b9-696b-45c7-ad7b-6d0bcb52c560"
               sourceElement="#6ee689c6-8634-4931-8b01-0c4352f4edd2"/>
         </ownedSystemComponents>
         <ownedSystemComponents xsi:type="org.polarsys.capella.core.data.ctx:SystemComponent"
-            id="43d47967-aa9d-49a8-be59-270ae75ebf09" name="Campus" actor="true">
+            id="43d47967-aa9d-49a8-be59-270ae75ebf09" name="Campus" description="&lt;p>Notament le sol du Campus&lt;/p>&#xA;"
+            actor="true">
           <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
               id="ffa4be6b-bd96-402a-97b1-e54250027117" targetElement="#2e347d5c-babb-4bdf-8680-29e614903d62"
               sourceElement="#43d47967-aa9d-49a8-be59-270ae75ebf09"/>
@@ -385,7 +401,8 @@
               sourceElement="#43d47967-aa9d-49a8-be59-270ae75ebf09"/>
         </ownedSystemComponents>
         <ownedSystemComponents xsi:type="org.polarsys.capella.core.data.ctx:SystemComponent"
-            id="ae461d12-8abc-4753-81d7-d07637a367f6" name="Batterie" actor="true">
+            id="ae461d12-8abc-4753-81d7-d07637a367f6" name="Batterie" description="&lt;p>Juste une batterie&lt;/p>&#xA;"
+            actor="true">
           <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
               id="7a7d8a74-fb9d-484c-9623-e74787ed6ffe" targetElement="#ee22f88f-f123-4d6d-8479-75562fb5d612"
               sourceElement="#ae461d12-8abc-4753-81d7-d07637a367f6"/>
@@ -925,7 +942,8 @@
               id="3ad1f1c0-c793-43dd-a095-af4354f1882e" targetElement="#d80e2825-0f39-400b-bc2a-99bc5d68cdf8"
               sourceElement="#68413308-f051-4c1c-8c61-99c5779637ab"/>
           <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
-              id="119e7300-36d1-4c7e-9aa5-21593e03d68b" name="Module de déplacement">
+              id="119e7300-36d1-4c7e-9aa5-21593e03d68b" name="Module de déplacement"
+              description="&lt;p>cf acteurs pr&amp;eacute;c&amp;eacute;dents&lt;/p>&#xA;">
             <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="af45e027-970c-4cdd-b55c-0f9f3aff8065"
                 name="Transmission de la force au sol" abstractType="#8f5d2af7-aefb-44fe-9ee6-b41f7b98d300"/>
             <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="ebc05ed1-02a5-4abe-8128-efd1abb7302e"
@@ -995,13 +1013,15 @@
           </ownedLogicalComponents>
         </ownedLogicalComponents>
         <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
-            id="3ad40cf6-a8d8-4237-9cd2-0b528293edda" name="Batterie" actor="true">
+            id="3ad40cf6-a8d8-4237-9cd2-0b528293edda" name="Batterie" description="&lt;p>cf acteurs pr&amp;eacute;c&amp;eacute;dents&lt;/p>&#xA;"
+            actor="true">
           <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
               id="80c1208b-b32c-442e-9ae2-aa4270fa408c" targetElement="#43d607c2-e567-434d-a181-34720872b652"
               sourceElement="#3ad40cf6-a8d8-4237-9cd2-0b528293edda"/>
         </ownedLogicalComponents>
         <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
             id="8962dd72-a3dc-4df0-a55c-19e8b896b334" name="Module de trajectoire"
+            description="&lt;p>cf acteurs pr&amp;eacute;c&amp;eacute;dents&lt;/p>&#xA;"
             actor="true">
           <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
               id="c5453b69-5354-40ea-8403-daea31c8b6cc" targetElement="#cbd6e814-72cb-4a9c-8101-7606ad18fcb3"
@@ -1009,13 +1029,15 @@
         </ownedLogicalComponents>
         <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
             id="d75799ef-7fbe-402e-8e5f-455cfbd36d0f" name="Application de supervision"
+            description="&lt;p>cf acteurs pr&amp;eacute;c&amp;eacute;dents&lt;/p>&#xA;"
             actor="true">
           <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
               id="04ca00cb-f6f2-406e-b786-3755bcfe8e4d" targetElement="#3ddd2fcd-8e50-461d-b94f-ef8bf81da78e"
               sourceElement="#d75799ef-7fbe-402e-8e5f-455cfbd36d0f"/>
         </ownedLogicalComponents>
         <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
-            id="41fb5fa7-4509-4602-a555-b114c1bbb86a" name="Campus" actor="true">
+            id="41fb5fa7-4509-4602-a555-b114c1bbb86a" name="Campus" description="&lt;p>cf acteurs pr&amp;eacute;c&amp;eacute;dents&lt;/p>&#xA;"
+            actor="true">
           <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
               id="01247a41-4231-4e10-b17f-78e080c9b338" targetElement="#9a803885-eb6b-4ba4-9504-f397a168a6cf"
               sourceElement="#41fb5fa7-4509-4602-a555-b114c1bbb86a"/>
@@ -1803,7 +1825,8 @@
         <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="1db8785a-f1eb-4672-8389-49913219716c"
             name="Campus" abstractType="#64b964a1-d4a7-40a4-9caa-61666ec4e778"/>
         <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
-            id="f4f35a68-c52a-45ae-aec4-f502224617e0" name="Physical System">
+            id="f4f35a68-c52a-45ae-aec4-f502224617e0" description="&lt;p>cf acteurs pr&amp;eacute;c&amp;eacute;dents&lt;/p>&#xA;"
+            name="Physical System">
           <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="74479721-aae9-47d6-9c33-7d95e4206aee"
               name="Roues" abstractType="#5fc931f9-db82-40e5-a62f-9ed3ac3893d3">
             <ownedDeploymentLinks xsi:type="org.polarsys.capella.core.data.pa.deployment:PartDeploymentLink"
@@ -1938,22 +1961,22 @@
           </ownedPhysicalComponents>
         </ownedPhysicalComponents>
         <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
-            id="a5e10ca8-e49b-44bc-a944-fa647ebcdae5" name="Module de trajectoire"
-            actor="true" nature="NODE">
+            id="a5e10ca8-e49b-44bc-a944-fa647ebcdae5" description="&lt;p>cf acteurs pr&amp;eacute;c&amp;eacute;dents&lt;/p>&#xA;"
+            name="Module de trajectoire" actor="true" nature="NODE">
           <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
               id="2e0879b6-3a0a-4eb6-a69a-9f341ee380c2" targetElement="#60e44827-627b-47c7-963e-8238c1fddc2e"
               sourceElement="#a5e10ca8-e49b-44bc-a944-fa647ebcdae5"/>
         </ownedPhysicalComponents>
         <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
-            id="12267d22-b188-4833-a2f2-247a79c7e987" name="Application de supervision"
-            actor="true" nature="NODE">
+            id="12267d22-b188-4833-a2f2-247a79c7e987" description="&lt;p>cf acteurs pr&amp;eacute;c&amp;eacute;dents&lt;/p>&#xA;"
+            name="Application de supervision" actor="true" nature="NODE">
           <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
               id="52b1a0b0-5035-400b-82a8-1e0f22028447" targetElement="#dfef30cb-09da-4451-9e5f-4c230c53f785"
               sourceElement="#12267d22-b188-4833-a2f2-247a79c7e987"/>
         </ownedPhysicalComponents>
         <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
-            id="1eb90848-88ca-4942-b8f7-ee6fc91f0d71" name="Batterie" actor="true"
-            nature="NODE">
+            id="1eb90848-88ca-4942-b8f7-ee6fc91f0d71" description="&lt;p>cf acteurs pr&amp;eacute;c&amp;eacute;dents&lt;/p>&#xA;"
+            name="Batterie" actor="true" nature="NODE">
           <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
               id="c0ac8c14-2651-4736-bd2f-c0c85db353d0" targetElement="#9ea56727-990d-45fe-9611-2cf4b5e8f6d2"
               sourceElement="#1eb90848-88ca-4942-b8f7-ee6fc91f0d71"/>
@@ -1962,7 +1985,8 @@
               sourceElement="#1eb90848-88ca-4942-b8f7-ee6fc91f0d71"/>
         </ownedPhysicalComponents>
         <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
-            id="64b964a1-d4a7-40a4-9caa-61666ec4e778" name="Campus" actor="true" nature="NODE">
+            id="64b964a1-d4a7-40a4-9caa-61666ec4e778" description="&lt;p>cf acteurs pr&amp;eacute;c&amp;eacute;dents&lt;/p>&#xA;"
+            name="Campus" actor="true" nature="NODE">
           <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
               id="8e09c633-f44d-4800-b41d-49254782f648" targetElement="#0f997283-511e-4d19-b78b-f091f8238405"
               sourceElement="#64b964a1-d4a7-40a4-9caa-61666ec4e778"/>

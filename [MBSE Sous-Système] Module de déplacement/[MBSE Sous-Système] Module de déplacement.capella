@@ -1298,11 +1298,8 @@
                 id="9c2c13ce-75e5-40f6-a5cd-1e914b46fb6c" involved="#0f997283-511e-4d19-b78b-f091f8238405"/>
           </ownedFunctionalChains>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.pa:PhysicalFunction"
-              id="aa8036a8-6b89-48ca-aaa2-b038dbdf5699" name="PhysicalFunction 1"/>
-          <ownedFunctions xsi:type="org.polarsys.capella.core.data.pa:PhysicalFunction"
-              id="62cc44dd-5116-4a2c-a244-0ee093a2bf60" name="PhysicalFunction 2"/>
-          <ownedFunctions xsi:type="org.polarsys.capella.core.data.pa:PhysicalFunction"
-              id="60e44827-627b-47c7-963e-8238c1fddc2e" name="Donner les informations de trajectoire à suivre">
+              id="60e44827-627b-47c7-963e-8238c1fddc2e" name="Donner les informations de trajectoire à suivre"
+              description="&lt;p>cf logical functions&lt;/p>&#xA;">
             <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
                 id="d2f8ac7d-97c4-4ddc-a99d-6c3e63d1e2f0" name="FOP 1">
               <ownedPortRealizations xsi:type="org.polarsys.capella.core.data.information:PortRealization"
@@ -1314,7 +1311,8 @@
                 sourceElement="#60e44827-627b-47c7-963e-8238c1fddc2e"/>
           </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.pa:PhysicalFunction"
-              id="dfef30cb-09da-4451-9e5f-4c230c53f785" name="Donner les informations de trajectoire à suivre (mode manuel)">
+              id="dfef30cb-09da-4451-9e5f-4c230c53f785" name="Donner les informations de trajectoire à suivre (mode manuel)"
+              description="&lt;p>cf logical functions&lt;/p>&#xA;">
             <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
                 id="558e33c6-365f-4b04-a92c-1a98f9c104f0" name="FOP 1">
               <ownedPortRealizations xsi:type="org.polarsys.capella.core.data.information:PortRealization"
@@ -1339,7 +1337,8 @@
                 sourceElement="#5a66c88c-a85e-421c-a279-b2466ce55c4a"/>
           </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.pa:PhysicalFunction"
-              id="dc1c8af1-7a78-4e61-9270-58e95be5349e" name="Fournir la commande de déplacement (mode manuel)">
+              id="dc1c8af1-7a78-4e61-9270-58e95be5349e" name="Fournir la commande de déplacement (mode manuel)"
+              description="&lt;p>cf logical functions&lt;/p>&#xA;">
             <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
                 id="890d14bd-0443-42e7-bd6d-37c8ac4a3d4e" name="FOP 1">
               <ownedPortRealizations xsi:type="org.polarsys.capella.core.data.information:PortRealization"
@@ -1351,7 +1350,8 @@
                 sourceElement="#dc1c8af1-7a78-4e61-9270-58e95be5349e"/>
           </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.pa:PhysicalFunction"
-              id="b8c9d4bf-89f6-41b5-bbc9-ca928be4342a" name="Fournir la commande de déplacement">
+              id="b8c9d4bf-89f6-41b5-bbc9-ca928be4342a" name="Fournir la commande de déplacement"
+              description="&lt;p>cf logical functions&lt;/p>&#xA;">
             <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
                 id="e7dbd17a-a6db-48ae-9569-5568c0c26d0d" name="FOP 1">
               <ownedPortRealizations xsi:type="org.polarsys.capella.core.data.information:PortRealization"
@@ -1363,7 +1363,8 @@
                 sourceElement="#b8c9d4bf-89f6-41b5-bbc9-ca928be4342a"/>
           </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.pa:PhysicalFunction"
-              id="e01d95d9-4078-47c2-8bac-4ace7079df32" name="Convertir la commande en informations conpréhensible par le système">
+              id="e01d95d9-4078-47c2-8bac-4ace7079df32" name="Convertir la commande en informations conpréhensible par le système"
+              description="&lt;p>cf logical functions&lt;/p>&#xA;">
             <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
                 id="9c599524-ab65-4930-8c07-069a07c7dda7" name="FIP 1">
               <ownedPortRealizations xsi:type="org.polarsys.capella.core.data.information:PortRealization"
@@ -1381,7 +1382,8 @@
                 sourceElement="#e01d95d9-4078-47c2-8bac-4ace7079df32"/>
           </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.pa:PhysicalFunction"
-              id="260b02c0-06ba-484f-8203-516c8287cc77" name="Fournir un point de repère">
+              id="260b02c0-06ba-484f-8203-516c8287cc77" name="Fournir un point de repère"
+              description="&lt;p>cf logical functions&lt;/p>&#xA;">
             <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
                 id="a90cf187-8e20-46a9-8eec-31cb19447dd5" name="FOP 1">
               <ownedPortRealizations xsi:type="org.polarsys.capella.core.data.information:PortRealization"
@@ -1393,7 +1395,8 @@
                 sourceElement="#260b02c0-06ba-484f-8203-516c8287cc77"/>
           </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.pa:PhysicalFunction"
-              id="62084cf5-9786-444d-903e-437fc117fd1e" name="Propriétés physique du sol, de l'air ect.. (frottement, force de réaction, état)">
+              id="62084cf5-9786-444d-903e-437fc117fd1e" name="Propriétés physique du sol, de l'air ect.. (frottement, force de réaction, état)"
+              description="&lt;p>cf logical functions&lt;/p>&#xA;">
             <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
                 id="96f02337-bff1-4b4f-8f46-f0046636e8a0" name="FOP 1">
               <ownedPortRealizations xsi:type="org.polarsys.capella.core.data.information:PortRealization"
@@ -1405,7 +1408,8 @@
                 sourceElement="#62084cf5-9786-444d-903e-437fc117fd1e"/>
           </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.pa:PhysicalFunction"
-              id="6a30eebc-57fc-45bb-b7d7-9094d28cb136" name="Convertir 'énergie en force">
+              id="6a30eebc-57fc-45bb-b7d7-9094d28cb136" name="Convertir l'énergie en force"
+              description="&lt;p>cf logical functions&lt;/p>&#xA;">
             <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
                 id="28028b62-2fff-4df9-bb15-54733daafd94" name="FIP 1">
               <ownedPortRealizations xsi:type="org.polarsys.capella.core.data.information:PortRealization"
@@ -1447,7 +1451,8 @@
                 sourceElement="#c800ef82-ca15-4ea0-8007-4186f40061a7"/>
           </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.pa:PhysicalFunction"
-              id="3bde47cc-708b-4891-ac30-ec5a840ef401" name="Adapter la force en fonction de la commande">
+              id="3bde47cc-708b-4891-ac30-ec5a840ef401" name="Adapter la force en fonction de la commande"
+              description="&lt;p>cf logical functions&lt;/p>&#xA;">
             <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
                 id="5c3eb2c0-d79b-4ce4-a519-5426c46f0406" name="FIP 1">
               <ownedPortRealizations xsi:type="org.polarsys.capella.core.data.information:PortRealization"
@@ -1471,7 +1476,8 @@
                 sourceElement="#3bde47cc-708b-4891-ac30-ec5a840ef401"/>
           </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.pa:PhysicalFunction"
-              id="9ea56727-990d-45fe-9611-2cf4b5e8f6d2" name="Fournir de l'énergie">
+              id="9ea56727-990d-45fe-9611-2cf4b5e8f6d2" name="Fournir de l'énergie"
+              description="&lt;p>cf logical functions&lt;/p>&#xA;">
             <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
                 id="539778ea-7115-4a21-a5d2-110d9a3615ec" name="FOP 1">
               <ownedPortRealizations xsi:type="org.polarsys.capella.core.data.information:PortRealization"
@@ -1483,7 +1489,8 @@
                 sourceElement="#9ea56727-990d-45fe-9611-2cf4b5e8f6d2"/>
           </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.pa:PhysicalFunction"
-              id="0cc53f23-8409-450d-a050-d213ee05227d" name="Arbitrage des commandes">
+              id="0cc53f23-8409-450d-a050-d213ee05227d" name="Arbitrage des commandes"
+              description="&lt;p>cf logical functions&lt;/p>&#xA;">
             <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
                 id="b0752948-c62d-4fdc-a245-0d6079ad8374" name="FIP 1">
               <ownedPortRealizations xsi:type="org.polarsys.capella.core.data.information:PortRealization"
@@ -1507,7 +1514,8 @@
                 sourceElement="#0cc53f23-8409-450d-a050-d213ee05227d"/>
           </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.pa:PhysicalFunction"
-              id="e1119d1b-3e6b-4fa2-bf6e-1364acc7af6a" name="Récuperer les informations utiles des autres modules">
+              id="e1119d1b-3e6b-4fa2-bf6e-1364acc7af6a" name="Récuperer les informations utiles des autres modules"
+              description="&lt;p>cf logical functions&lt;/p>&#xA;">
             <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
                 id="2df170d4-56f4-4e80-9227-526921d8fe93" name="FIP 1">
               <ownedPortRealizations xsi:type="org.polarsys.capella.core.data.information:PortRealization"
@@ -1531,7 +1539,8 @@
                 sourceElement="#e1119d1b-3e6b-4fa2-bf6e-1364acc7af6a"/>
           </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.pa:PhysicalFunction"
-              id="2a60a8cf-c8e0-4b48-8c04-9716a5fad431" name="Arbitrer les différents signaux entrants">
+              id="2a60a8cf-c8e0-4b48-8c04-9716a5fad431" name="Arbitrer les différents signaux entrants"
+              description="&lt;p>cf logical functions&lt;/p>&#xA;">
             <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
                 id="850531d5-c18f-41a0-8c45-ef5731443d43" name="FIP 1">
               <ownedPortRealizations xsi:type="org.polarsys.capella.core.data.information:PortRealization"
@@ -1549,7 +1558,8 @@
                 sourceElement="#2a60a8cf-c8e0-4b48-8c04-9716a5fad431"/>
           </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.pa:PhysicalFunction"
-              id="374e3ed1-4b74-4fc2-a94a-eb79d7d70c7f" name="Controller le moteur avec précision selon la commande">
+              id="374e3ed1-4b74-4fc2-a94a-eb79d7d70c7f" name="Controller le moteur avec précision selon la commande"
+              description="&lt;p>cf logical functions&lt;/p>&#xA;">
             <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
                 id="4bfa7c88-f385-403e-913d-3937a9c12004" name="FIP 1">
               <ownedPortRealizations xsi:type="org.polarsys.capella.core.data.information:PortRealization"
@@ -1573,7 +1583,8 @@
                 sourceElement="#374e3ed1-4b74-4fc2-a94a-eb79d7d70c7f"/>
           </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.pa:PhysicalFunction"
-              id="d030bb09-df05-4aeb-bc32-463ea45142e0" name="Faire tourner un axe selon la commande">
+              id="d030bb09-df05-4aeb-bc32-463ea45142e0" name="Faire tourner un axe selon la commande"
+              description="&lt;p>cf logical functions&lt;/p>&#xA;">
             <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
                 id="faa0ae3f-6cc2-4604-afcc-85339ec44170" name="FIP 1">
               <ownedPortRealizations xsi:type="org.polarsys.capella.core.data.information:PortRealization"
@@ -1603,7 +1614,8 @@
                 sourceElement="#d030bb09-df05-4aeb-bc32-463ea45142e0"/>
           </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.pa:PhysicalFunction"
-              id="fa1bcc9b-e461-40ce-a569-fdfc2e59bc21" name="Moduler post moteur la vitesse et le couple">
+              id="fa1bcc9b-e461-40ce-a569-fdfc2e59bc21" name="Moduler post moteur la vitesse et le couple"
+              description="&lt;p>cf logical functions&lt;/p>&#xA;">
             <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
                 id="da74e124-a394-47e8-bc3d-6a7a5f97a941" name="FIP 1">
               <ownedPortRealizations xsi:type="org.polarsys.capella.core.data.information:PortRealization"
@@ -1621,7 +1633,8 @@
                 sourceElement="#fa1bcc9b-e461-40ce-a569-fdfc2e59bc21"/>
           </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.pa:PhysicalFunction"
-              id="85725bff-452f-4de5-8803-87658447b29c" name="Transmettre le mouvement à l'actionneur final">
+              id="85725bff-452f-4de5-8803-87658447b29c" name="Transmettre le mouvement à l'actionneur final"
+              description="&lt;p>cf logical functions&lt;/p>&#xA;">
             <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
                 id="2ec26693-5783-4dee-b8b3-76a76980a8a0" name="FIP 1">
               <ownedPortRealizations xsi:type="org.polarsys.capella.core.data.information:PortRealization"
@@ -1639,7 +1652,8 @@
                 sourceElement="#85725bff-452f-4de5-8803-87658447b29c"/>
           </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.pa:PhysicalFunction"
-              id="eb007d22-d31a-4a35-ab14-5adaed7f69cd" name="Convertir la force par rapport au sol en mouvement">
+              id="eb007d22-d31a-4a35-ab14-5adaed7f69cd" name="Convertir la force par rapport au sol en mouvement"
+              description="&lt;p>cf logical functions&lt;/p>&#xA;">
             <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
                 id="e4a809b8-8a7f-4683-b1d5-15f3f9006a06" name="FIP 1">
               <ownedPortRealizations xsi:type="org.polarsys.capella.core.data.information:PortRealization"
@@ -1663,7 +1677,8 @@
                 sourceElement="#eb007d22-d31a-4a35-ab14-5adaed7f69cd"/>
           </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.pa:PhysicalFunction"
-              id="0f997283-511e-4d19-b78b-f091f8238405" name="Résister au mouvement">
+              id="0f997283-511e-4d19-b78b-f091f8238405" name="Résister au mouvement"
+              description="&lt;p>cf logical functions&lt;/p>&#xA;">
             <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
                 id="9cb8455c-9b00-4d16-8032-d02d67a0e723" name="FIP 1">
               <ownedPortRealizations xsi:type="org.polarsys.capella.core.data.information:PortRealization"
@@ -1847,9 +1862,9 @@
       <ownedInterfacePkg xsi:type="org.polarsys.capella.core.data.cs:InterfacePkg"
           id="7846b133-64c4-4870-bf53-8c4a946067b3" name="Interfaces">
         <ownedInterfaces xsi:type="org.polarsys.capella.core.data.cs:Interface" id="bc3db85b-a2e1-4091-ac3a-a5d9e0a2354f"
-            name="VItesse et direction"/>
+            name="Vitesse et direction" description="&lt;p>Vecteur vitesse (en m/s) 2D et angle 2D en radians&lt;/p>&#xA;"/>
         <ownedInterfaces xsi:type="org.polarsys.capella.core.data.cs:Interface" id="f0ad5f8f-bab3-4fc0-a932-66a9e78f8b5a"
-            name="Commande moteur"/>
+            name="Commande moteur" description="&lt;p>Commande en Duty pour le moteur&lt;/p>&#xA;"/>
       </ownedInterfacePkg>
       <ownedDataPkg xsi:type="org.polarsys.capella.core.data.information:DataPkg"
           id="9f0c8bc2-eadb-4001-ad69-3efb5090d2d8" name="Data"/>
